@@ -1,0 +1,3 @@
+[submodule "jbossauto"]
+	path = jbossauto
+	url = https://github.com/SpiderLabs/jboss-autopwn.git
