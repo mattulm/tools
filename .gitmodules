@@ -223,3 +223,102 @@
 [submodule "network/masscan"]
 	path = network/masscan
 	url = https://github.com/robertdavidgraham/masscan.git
+[submodule "nmap/2wire"]
+	path = nmap/2wire
+	url = https://github.com/abrdiaz/nse.git
+[submodule "nmap/wp"]
+	path = nmap/wp
+	url = https://github.com/hkm/nmap-nse-scripts.git
+[submodule "nmap/m00zh33"]
+	path = nmap/m00zh33
+	url = https://github.com/m00zh33/NseScripting.git
+[submodule "nmap/robtex"]
+	path = nmap/robtex
+	url = https://github.com/zendyani/nse-scripts.git
+[submodule "shellcode/isislab"]
+	path = shellcode/isislab
+	url = https://github.com/isislab/Shellcode.git
+[submodule "metasploit/nullbind"]
+	path = metasploit/nullbind
+	url = https://github.com/nullbind/Metasploit-Modules.git
+[submodule "powershell/nullbind"]
+	path = powershell/nullbind
+	url = https://github.com/nullbind/Powershellery.git
+[submodule "web/wpsploit"]
+	path = web/wpsploit
+	url = https://github.com/0pc0deFR/wordpress-sploit-framework.git
+[submodule "web/Hood3dRob1n"]
+	path = web/Hood3dRob1n
+	url = https://github.com/Hood3dRob1n/SQLi.git
+[submodule "network/LinuxRDP"]
+	path = network/LinuxRDP
+	url = https://github.com/Hood3dRob1n/Linux-RDP.git
+[submodule "network/yasp"]
+	path = network/yasp
+	url = https://github.com/Hood3dRob1n/Y.A.S.P..git
+[submodule "misc/kalista"]
+	path = misc/kalista
+	url = https://github.com/Hood3dRob1n/Kalista.git
+[submodule "misc/ah8r"]
+	path = misc/ah8r
+	url = https://github.com/ah8r/password-dictionaries.git
+[submodule "network/161"]
+	path = network/161
+	url = https://github.com/trailofbits/onesixtyone.git
+[submodule "network/nwsetf"]
+	path = network/nwsetf
+	url = https://github.com/networkscanneretf/NetworkScanner.git
+[submodule "network/arpscan"]
+	path = network/arpscan
+	url = https://github.com/filefrog/arpscan.git
+[submodule "shellcode/scexec"]
+	path = shellcode/scexec
+	url = https://github.com/inquisb/shellcodeexec.git
+[submodule "shellcode/mubix"]
+	path = shellcode/mubix
+	url = https://github.com/mubix/post-exploitation.git
+[submodule "web/owtf"]
+	path = web/owtf
+	url = https://github.com/owtf/owtf.git
+[submodule "network/egresser"]
+	path = network/egresser
+	url = https://github.com/cyberisltd/Egresser.git
+[submodule "exploits/0pc0deFR"]
+	path = exploits/0pc0deFR
+	url = https://github.com/0pc0deFR/Exploits.git
+[submodule "metasploit/q"]
+	path = metasploit/q
+	url = https://github.com/pwnwiki/q.git
+[submodule "powershell/clymb3r"]
+	path = powershell/clymb3r
+	url = https://github.com/clymb3r/PowerShell.git
+[submodule "powershell/breakersall"]
+	path = powershell/breakersall
+	url = https://github.com/breakersall/PowershellScripts.git
+[submodule "misc/nullbind"]
+	path = misc/nullbind
+	url = https://github.com/nullbind/Other-Projects.git
+[submodule "misc/cldrn"]
+	path = misc/cldrn
+	url = https://github.com/cldrn/pentesting.git
+[submodule "misc/odat"]
+	path = misc/odat
+	url = https://github.com/quentinhardy/odat.git
+[submodule "misc/sptoolkit"]
+	path = misc/sptoolkit
+	url = https://github.com/sptoolkit/sptoolkit.git
+[submodule "misc/easy-creds"]
+	path = misc/easy-creds
+	url = https://github.com/brav0hax/easy-creds.git
+[submodule "metasploit/metassh"]
+	path = metasploit/metassh
+	url = https://github.com/dirtyfilthy/metassh.git
+[submodule "powershell/unicorn"]
+	path = powershell/unicorn
+	url = https://github.com/trustedsec/unicorn.git
+[submodule "web/wp-fingerprint"]
+	path = web/wp-fingerprint
+	url = https://github.com/ancat/wp-fingerprint.git
+[submodule "network/pyrecon"]
+	path = network/pyrecon
+	url = https://github.com/slaughterjames/PYRecon.git
