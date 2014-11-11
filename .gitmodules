@@ -1,3 +1,225 @@
 [submodule "jbossauto"]
 	path = jbossauto
 	url = https://github.com/SpiderLabs/jboss-autopwn.git
+[submodule "web/jbossauto"]
+	path = web/jbossauto
+	url = https://github.com/SpiderLabs/jboss-autopwn.git
+[submodule "web/webzy"]
+	path = web/webzy
+	url = https://github.com/yehia-mamdouh/WeBzY.git
+[submodule "web/xssya"]
+	path = web/xssya
+	url = https://github.com/yehia-mamdouh/XSSYA.git
+[submodule "web/cross"]
+	path = web/cross
+	url = https://github.com/thesp0nge/cross.git
+[submodule "web/xssf"]
+	path = web/xssf
+	url = https://github.com/sempervictus/xssf.git
+[submodule "web/xssp"]
+	path = web/xssp
+	url = https://github.com/zonehook/XSS-Platform.git
+[submodule "web/mosquito"]
+	path = web/mosquito
+	url = https://github.com/koto/mosquito.git
+[submodule "vulnscrape"]
+	path = vulnscrape
+	url = https://github.com/einaros/vulnscrape.git
+[submodule "web/xssprobe"]
+	path = web/xssprobe
+	url = https://github.com/evilcos/xssprobe.git
+[submodule "web/dsxs"]
+	path = web/dsxs
+	url = https://github.com/stamparm/DSXS.git
+[submodule "web/vulnscrape"]
+	path = web/vulnscrape
+	url = https://github.com/einaros/vulnscrape.git
+[submodule "web/xsscrappy"]
+	path = web/xsscrappy
+	url = https://github.com/DanMcInerney/xsscrapy.git
+[submodule "web/xsschef"]
+	path = web/xsschef
+	url = https://github.com/koto/xsschef.git
+[submodule "web/vulndetector"]
+	path = web/vulndetector
+	url = https://github.com/BCable/vulndetector.git
+[submodule "web/sqlier"]
+	path = web/sqlier
+	url = https://github.com/BCable/sqlier.git
+[submodule "web/xenotix"]
+	path = web/xenotix
+	url = https://github.com/ajinabraham/OWASP-Xenotix-XSS-Exploit-Framework.git
+[submodule "web/xssscanner"]
+	path = web/xssscanner
+	url = https://github.com/flyr4nk/XssScaner.git
+[submodule "web/xsssniper"]
+	path = web/xsssniper
+	url = https://github.com/gbrindisi/xsssniper.git
+[submodule "web/domxssscan"]
+	path = web/domxssscan
+	url = https://github.com/yaph/domxssscanner.git
+[submodule "web/xssjs"]
+	path = web/xssjs
+	url = https://github.com/sophsec/xss.js.git
+[submodule "web/xssharvest"]
+	path = web/xssharvest
+	url = https://github.com/Miserlou/XSS-Harvest.git
+[submodule "web/xssshellpayload"]
+	path = web/xssshellpayload
+	url = https://github.com/Varbaek/xss-shell-payloads.git
+[submodule "web/hqlmap"]
+	path = web/hqlmap
+	url = https://github.com/PaulSec/HQLmap.git
+[submodule "web/nogotofail"]
+	path = web/nogotofail
+	url = https://github.com/google/nogotofail.git
+[submodule "nmap/exif-spider"]
+	path = nmap/exif-spider
+	url = https://github.com/iagox86/nmap-exif-spider.git
+[submodule "web/mcir"]
+	path = web/mcir
+	url = https://github.com/SpiderLabs/MCIR.git
+[submodule "network/batchyDNS"]
+	path = network/batchyDNS
+	url = https://github.com/SpiderLabs/batchyDNS.git
+[submodule "network/bnat"]
+	path = network/bnat
+	url = https://github.com/claudijd/bnat.git
+[submodule "network/upnp"]
+	path = network/upnp
+	url = https://github.com/SpiderLabs/UPnP-request-generator.git
+[submodule "web/beefinject"]
+	path = web/beefinject
+	url = https://github.com/SpiderLabs/beef_injection_framework.git
+[submodule "network/responder"]
+	path = network/responder
+	url = https://github.com/SpiderLabs/Responder.git
+[submodule "network/ikeforce"]
+	path = network/ikeforce
+	url = https://github.com/SpiderLabs/ikeforce.git
+[submodule "network/groupenum"]
+	path = network/groupenum
+	url = https://github.com/SpiderLabs/groupenum.git
+[submodule "nmap/poisonivy"]
+	path = nmap/poisonivy
+	url = https://github.com/herebepanda/nmap-nse.git
+[submodule "nmap/b4ldr"]
+	path = nmap/b4ldr
+	url = https://github.com/b4ldr/nse-scripts.git
+[submodule "nmap/cve20122122"]
+	path = nmap/cve20122122
+	url = https://github.com/offensivecoder/nmap-nse-scripts.git
+[submodule "nmap/httpstuff"]
+	path = nmap/httpstuff
+	url = https://github.com/s4n7h0/NSE.git
+[submodule "nmap/hkm"]
+	path = nmap/hkm
+	url = https://github.com/hkm/nmap-nse-scripts.git
+[submodule "nmap/cve20100738"]
+	path = nmap/cve20100738
+	url = https://github.com/tiago4orion/nmap-scripts.git
+[submodule "nmap/rikiji"]
+	path = nmap/rikiji
+	url = https://github.com/rikiji/nmap-scripts.git
+[submodule "nmap/shellshock"]
+	path = nmap/shellshock
+	url = https://github.com/maetrics/nmap-scripts.git
+[submodule "nmap/fabaff"]
+	path = nmap/fabaff
+	url = https://github.com/fabaff/nmap-scripts.git
+[submodule "nmap/eelsivart"]
+	path = nmap/eelsivart
+	url = https://github.com/eelsivart/vnc-screenshot.git
+[submodule "nmap/dnsbrute"]
+	path = nmap/dnsbrute
+	url = https://github.com/cirrusj/nmap-dns-brute.git
+[submodule "nmap/livestreet"]
+	path = nmap/livestreet
+	url = https://github.com/dukebarman/luanmap.git
+[submodule "nmap/printers"]
+	path = nmap/printers
+	url = https://github.com/Edauksis/get-printer-mac-nse.git
+[submodule "nmap/nsploit"]
+	path = nmap/nsploit
+	url = https://github.com/bonsaiviking/Nsploit.git
+[submodule "metasploit/sussurro"]
+	path = metasploit/sussurro
+	url = https://github.com/sussurro/Metasploit-Tools.git
+[submodule "metasploit/pig"]
+	path = metasploit/pig
+	url = https://github.com/sussurro/Metasploit-PIG.git
+[submodule "web/pysqli"]
+	path = web/pysqli
+	url = https://github.com/sysdream/pysqli.git
+[submodule "web/drone"]
+	path = web/drone
+	url = https://github.com/ibarria0/drone.git
+[submodule "web/XSRF-Scanner"]
+	path = web/XSRF-Scanner
+	url = https://github.com/h0gar/XSRF-Scanner.git
+[submodule "web/isr-sqlget"]
+	path = web/isr-sqlget
+	url = https://github.com/infobyte/isr-sqlget.git
+[submodule "web/bbqsql"]
+	path = web/bbqsql
+	url = https://github.com/Neohapsis/bbqsql.git
+[submodule "web/SQLBrute"]
+	path = web/SQLBrute
+	url = https://github.com/GDSSecurity/SQLBrute.git
+[submodule "web/sqloff"]
+	path = web/sqloff
+	url = https://github.com/dvrasp/sqloff.git
+[submodule "web/websploit"]
+	path = web/websploit
+	url = https://github.com/websploit/websploit.git
+[submodule "web/sqllmp"]
+	path = web/sqllmp
+	url = https://github.com/halos/sqlImp.git
+[submodule "web/sqlii"]
+	path = web/sqlii
+	url = https://github.com/leeman96/sqlii.git
+[submodule "web/bbit"]
+	path = web/bbit
+	url = https://github.com/agix/My-SQL-boolean-based-injection-tools.git
+[submodule "flash/flashbang"]
+	path = flash/flashbang
+	url = https://github.com/cure53/Flashbang.git
+[submodule "nmap/heartbleed"]
+	path = nmap/heartbleed
+	url = https://github.com/justfalter/heartbleed-nse.git
+[submodule "nmap/http-path"]
+	path = nmap/http-path
+	url = https://github.com/CaledoniaProject/nse-scripts.git
+[submodule "nmap/vnc-auth"]
+	path = nmap/vnc-auth
+	url = https://github.com/nosteve/vnc-auth.git
+[submodule "nmap/open-proxy"]
+	path = nmap/open-proxy
+	url = https://github.com/vicendominguez/http-open-proxy-anon.git
+[submodule "nmap/jmx"]
+	path = nmap/jmx
+	url = https://github.com/davidshaw/toorcon2010.git
+[submodule "nmap/http-rails"]
+	path = nmap/http-rails
+	url = https://github.com/michenriksen/nmap-scripts.git
+[submodule "nmap/ntlm"]
+	path = nmap/ntlm
+	url = https://github.com/deanjerkovich/nmap-nse-scripts.git
+[submodule "nmap/switches"]
+	path = nmap/switches
+	url = https://github.com/3vi1john/nmap-nse-scripts.git
+[submodule "nmap/scada"]
+	path = nmap/scada
+	url = https://github.com/drainware/nmap-scada.git
+[submodule "nmap/xploitSearch"]
+	path = nmap/xploitSearch
+	url = https://github.com/originx/Nmap-xploitSearch.git
+[submodule "network/smbexec"]
+	path = network/smbexec
+	url = https://github.com/brav0hax/smbexec.git
+[submodule "network/discover"]
+	path = network/discover
+	url = https://github.com/leebaird/discover.git
+[submodule "network/masscan"]
+	path = network/masscan
+	url = https://github.com/robertdavidgraham/masscan.git
