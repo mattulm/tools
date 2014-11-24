@@ -322,3 +322,66 @@
 [submodule "network/pyrecon"]
 	path = network/pyrecon
 	url = https://github.com/slaughterjames/PYRecon.git
+[submodule "web/dsss"]
+	path = web/dsss
+	url = https://github.com/stamparm/DSSS.git
+[submodule "network/sparty"]
+	path = network/sparty
+	url = https://github.com/alias1/sparty.git
+[submodule "metasploit/vsploit"]
+	path = metasploit/vsploit
+	url = https://github.com/zhiwenuil/vSploit.git
+[submodule "metasploit/dark0perator"]
+	path = metasploit/dark0perator
+	url = https://github.com/darkoperator/Metasploit-Plugins.git
+[submodule "ronin/zhiwenuil"]
+	path = ronin/zhiwenuil
+	url = https://github.com/zhiwenuil/ronin-exploits.git
+[submodule "ronin/ronin"]
+	path = ronin/ronin
+	url = https://github.com/ronin-ruby/ronin.git
+[submodule "ronin/roninweb"]
+	path = ronin/roninweb
+	url = https://github.com/ronin-ruby/ronin-web.git
+[submodule "ronin/scanners"]
+	path = ronin/scanners
+	url = https://github.com/ronin-ruby/ronin-scanners.git
+[submodule "ronin/sql"]
+	path = ronin/sql
+	url = https://github.com/ronin-ruby/ronin-sql.git
+[submodule "ronin/metasploit"]
+	path = ronin/metasploit
+	url = https://github.com/ronin-ruby/ronin-metasploit.git
+[submodule "metasploit/msf4"]
+	path = metasploit/msf4
+	url = https://github.com/2uro/metasploit-4.-.-.git
+[submodule "metasploit/darkharper2"]
+	path = metasploit/darkharper2
+	url = https://github.com/darkharper2/metasploit.git
+[submodule "metasploit/linuxgeek247"]
+	path = metasploit/linuxgeek247
+	url = https://github.com/linuxgeek247/metasploit_scripts
+[submodule "metasploit/vpb"]
+	path = metasploit/vpb
+	url = https://github.com/v-p-b/MSF-Addons.git
+[submodule "nmap/skullspace"]
+	path = nmap/skullspace
+	url = https://github.com/skullspace/Nmap-Scripts.git
+[submodule "metasploit/kernelsmith"]
+	path = metasploit/kernelsmith
+	url = https://github.com/kernelsmith/msf-stuff.git
+[submodule "metasploit/carnal0wnage"]
+	path = metasploit/carnal0wnage
+	url = https://github.com/carnal0wnage/Metasploit-Code.git
+[submodule "metasploit/cloudherder"]
+	path = metasploit/cloudherder
+	url = https://github.com/BuffaloWill/cloud-herder
+[submodule "metasploit/metasponse"]
+	path = metasploit/metasponse
+	url = https://github.com/zhiwenuil/metasponse.git
+[submodule "cortana/Harmj0y"]
+	path = cortana/Harmj0y
+	url = https://github.com/HarmJ0y/cortana.git
+[submodule "cortana/rmudge"]
+	path = cortana/rmudge
+	url = https://github.com/rsmudge/cortana-scripts.git
