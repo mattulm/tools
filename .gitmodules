@@ -385,3 +385,9 @@
 [submodule "cortana/rmudge"]
 	path = cortana/rmudge
 	url = https://github.com/rsmudge/cortana-scripts.git
+[submodule "web/odz"]
+	path = web/odz
+	url = https://github.com/islamoc/odz.git
+[submodule "misc/PyExfil"]
+	path = misc/PyExfil
+	url = https://github.com/ytisf/PyExfil.git
