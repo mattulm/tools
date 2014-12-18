@@ -1,0 +1,29 @@
+SOLUTIONS
+=============
+
+For PHP developers who wish to prevent from php Error messages, there are simple ways.
+
+Method: 1 (SAFER) - Using variable check in global configuration file (e.g config.php)
+
+   define('IN_APP',1);
+	
+   Check its validity in subsequent caller files (e.g footer.php):
+   
+   [CODE]
+   defined('IN_APP') or die('Direct Access is NOT allowed!');
+   [/CODE]
+   
+Method: 2 - Using error_reporting(0);
+
+   If custom error reporting constant variable (i.e for development/production environemtn) is used,
+
+  [CODE]
+  defined('APP_ERR_LEVEL')? error_reporting(APP_ERR_LEVEL) : error_reporting(0);
+  [/CODE]
+   
+   A constant, APP_ERR_LEVEL, must have defined in config file. 
+  
+   Or unless the application is being run in localhost, error_reporting will be disabled:
+   
+   ($_SERVER['HTTP_HOST']=='localhost')?error_reporting(E_ALL):error_reporting(0);
+

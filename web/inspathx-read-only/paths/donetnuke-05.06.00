@@ -1,0 +1,12 @@
+# DotNetNuke 05.06.00
+# Date: 2011-01-13 00:57:19
+
+/Portals/_default/subhost.aspx
+/KeepAlive.aspx
+/Install/InstallWizard.aspx
+/Install/install.aspx
+/ErrorPage.aspx
+/DesktopModules/Admin/Banners/BannerClickThrough.aspx
+/Default.aspx
+/admin/Sales/paypalsubscription.aspx
+/admin/Sales/paypalipn.aspx

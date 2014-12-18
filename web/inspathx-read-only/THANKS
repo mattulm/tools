@@ -1,0 +1,15 @@
+Patrick Monnerat for his contribution, Client-side SSL certificate support
+
+Ryan Dewhurst (http://www.ethicalhack3r.co.uk) for his suggestion to cover all checks (empty array, null cookie) of http://www.owasp.org/index.php/Full_Path_Disclosure
+ --data, --param-array, -n/--null-session options.
+
+ 
+Brendan Coles (http://itsecuritysolutions.org/, http://whatweb.net/) for his suggestion that known web application paths should be bundled for convenience and time saving. I've done files with dozens of open-source web app known paths under 'paths' directory. You can do it for your desired CMS/application by -d and -g options. See EXAMPLES for more details. Submit latest path files to inspathx at yehg.net.
+
+
+Sebastien.damaye for his write-up about inspathx tutorial
+http://www.aldeid.com/index.php/Inspathx 
+
+
+And finally to developers community, their common coding practice, their belief on path disclosure as server side issue 
+that make this tool meaningful and usable for current plus future web apps

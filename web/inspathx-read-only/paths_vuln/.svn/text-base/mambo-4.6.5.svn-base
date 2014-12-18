@@ -1,0 +1,24 @@
+# 5:16 PM Wednesday, January 19, 2011
+/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/PSpellShell.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/PSpell.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/GoogleSpell.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/thumbs.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/images.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/manager.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editor.php
+/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editorFrame.php
+/includes/sef.php
+/includes/phpgettext/phpgettext.compat.php
+/includes/magpierss/rss_parse.php
+/includes/core.classes.php
+/includes/core.helpers.php
+/includes/cmtclasses.php
+/includes/class.ezpdf.php
+/components/com_content/content.class.php
+/CHANGELOG.php
+/administrator/popups/pollwindow.php
+/administrator/popups/modulewindow.php
+/administrator/popups/index3pop.php
+/administrator/popups/contentwindow.php
+/administrator/includes/pcl/pclzip.lib.php
+/administrator/components/com_installer/admin.installer.php

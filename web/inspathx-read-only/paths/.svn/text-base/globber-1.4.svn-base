@@ -1,0 +1,19 @@
+# globber-1.4
+# Date: 2011-01-18 03:12:51
+
+/templates/elegantbrit/template.php
+/plugins/tagcloud.php
+/plugins/latestcomments.php
+/plugins/feedreader.php
+/install.php
+/index.php
+/include/markdown.php
+/include/blog.class.php
+/include/Akismet.class.php
+/include/admin/rebuild.inc.php
+/include/admin/flushcache.inc.php
+/include/admin/edit.inc.php
+/include/admin/comments.inc.php
+/include/admin/articles.inc.php
+/config-example.inc.php
+/admin.php

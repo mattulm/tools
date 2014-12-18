@@ -1,0 +1,35 @@
+# inspathx # kunena_v1.6.3_b4344_2011-01-31 # 
+##
+# kunena Joomla component
+# Hompage: http://www.kunena.org/
+# Date: 2011-02-13
+##
+/COPYRIGHT.php
+/admin.kunena.php
+/uninstall.kunena.php
+/CHANGELOG.php
+/install.script.php
+/install/view.php
+/install/version.php
+/install/data/sampledata.php
+/install/upgrade/upgrade-1.6.0_old_mt12.php
+/install/upgrade/upgrade-1.6.0_polls.php
+/install/upgrade/upgrade-1.6.1_delfiles.php
+/install/upgrade/upgrade-1.6.0_attachments.php
+/install/upgrade/upgrade-1.6.0_configuration.php
+/install/upgrade/upgrade-1.0.8_favorites.php
+/install/upgrade/upgrade-1.6.0_timezone.php
+/install/controller.php
+/install/tmpl/default.php
+/install/tmpl/default_reqfail.php
+/install/tmpl/default_start.php
+/install/tmpl/default_install.php
+/install/tmpl/schema.php
+/install/system/kunena.php
+/install/schema.php
+/install/model.php
+/install.kunena.php
+/router.php
+/kunena.php
+/api.php
+

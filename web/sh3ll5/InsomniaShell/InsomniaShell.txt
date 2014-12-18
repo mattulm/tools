@@ -1,0 +1,59 @@
+___________________________________________________________________
+
+ Insomnia Security :: InsomniaShell.aspx
+___________________________________________________________________
+
+ Name: InsomniaShell.aspx
+ Released: 12 Feb 2008
+ Author: Brett Moore, Insomnia Security
+ Original Link: http://www.insomniasec.com/releases/tools
+___________________________________________________________________
+
+_______________
+ Description
+_______________
+
+InsomniaShell is a tool for use during penetration tests, when
+you have ability to upload or create an arbitrary .aspx page.
+
+This .aspx page is an example of using native calls through pinvoke
+to provide either a reverse shell or a bind shell. 
+
+It has the added advantage of searching through all accessible 
+processes looking for a SYSTEM or Administrator token to use for
+impersonation.
+
+If the provider page is running on a server with a local SQL Server
+instance, the shell includes functionality for a named pipe 
+impersonation attack. This requires knowledge of the sa password,
+and results in the theft of the token that the SQL server is 
+executing under.
+
+_______________
+ Details
+_______________
+
+Run it up on a Windows 2k3 server and fill in the blanks for a 
+shell connection.
+
+If an administrator has logged into the IIS instance recently 
+then it may be possible to steal an administrator token.
+
+To use the named pipe attack follow these steps.
+1) Enter the pipe name
+2) Click create named pipe
+3) Enter the sa credentials
+4) Click Make SQL request.
+
+The page should then refresh and show you the Tokens from the 
+SQL server instance.
+ 
+_______________
+ Legals
+_______________
+
+The information is provided for research and educational purposes
+only. Insomnia Security accepts no liability in any form whatsoever
+for any direct or indirect damages associated with the use of this
+information.
+

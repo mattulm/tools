@@ -1,0 +1,16 @@
+# cjdynamicpollv2
+# Date: 2011-01-18 19:09:29
+
+/submit_vote.php
+/poll_config.php
+/pollcount.php
+/poll.php
+/js_header.php
+/archive.php
+/admin/poll_functions.php
+/admin/misc_functions.php
+/admin/login.php
+/admin/index.php
+/admin/admin_stylesheet.php
+/admin/admin_index.php
+/admin/admin.php

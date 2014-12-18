@@ -1,0 +1,19 @@
+# inspathx # soablog-r20091215 #
+##
+# Homepage: http://code.google.com/p/soablog/
+# Date: 2011-02-12
+##
+/links.php
+/post.php
+/edit.php
+/about.php
+/inc/title.php
+/inc/comment.php
+/inc/db.php
+/riji.php
+/list.php
+/template/_footer.php
+/template/_header.php
+/archives.php
+/index.php
+

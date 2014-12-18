@@ -1,0 +1,6 @@
+# 5:07 PM Wednesday, January 19, 2011
+/modules/simpletest/tests/upgrade/drupal-6.upload.database.php
+/modules/simpletest/tests/upgrade/drupal-6.locale.database.php
+/modules/simpletest/tests/upgrade/drupal-6.filled.database.php
+/modules/simpletest/tests/upgrade/drupal-6.comments.database.php
+/modules/simpletest/tests/upgrade/drupal-6.bare.database.php

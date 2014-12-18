@@ -1,0 +1,18 @@
+# webinsta-file-man-0.1.4
+# Date: 2011-01-18 19:36:18
+
+/install.php
+/index.php
+/config.php
+/admin.php
+/admin/view.php
+/admin/upload.php
+/admin/logout.php
+/admin/login.php
+/admin/listcontent.php
+/admin/functions.php
+/admin/fbar.php
+/admin/edit.php
+/admin/dbar.php
+/admin/checkpass.php
+/admin/about.php

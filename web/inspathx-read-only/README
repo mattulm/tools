@@ -1,0 +1,71 @@
+Internal Path Discloser / Error Hunter
+  
+license: GPL 
+released date: 2010-09-28
+last update: 2011-10-02
+
+(c) Aung Khant, http://yehg.net               
+                                             
+YGN Ethical Hacker Group, Yangon, Myanmar
+
+Check the update via
+svn checkout http://inspathx.googlecode.com/svn/trunk/ inspathx   
+
+Send bugs, suggestions, contributions to inspath at yehg .net
+    
+How's it useful?
+
+Web application developers sometimes fail to add safe checks against authentications, file inclusion, which could lead to possible sensitive information disclosure when application URLs are directly requested. 
+Sometimes, it's a clue to File Inclusion vulnerability. 
+For open-source applications, source code can be downloaded and checked to find such information. 
+
+This script will do this job.
+First you have to download source archived file of your desired OSS.
+Second, extract it.
+Third, feed its path to inspathx.
+
+The inspath can take the following options:
+
+Required
+	-d with source directory (of application like /src/webapp/phpmyadmin)
+	-u with the target base URL (like http://localhost - not http://localhost/index.php)
+
+Optional	
+	-t with the number of threads concurrently to run (default is 10)
+	-l with the language [one of php,asp,aspx,jsp,cfm,all] (default is all)
+	-x with your desired extensions separated by comma(s) (default : php4,php5,php6,php,asp,aspx,jsp,jspx,cfm)
+    -k, --keycert <pemfile>          client key + cert PEM file	
+	-m/--method with http method (either get or post)
+	-q/--data with http data ("a=1&b=2")	
+	-h/--headers with http headers (format: "x-ping-back: %00\r\ncookie: %00)
+	
+	-p/--param-array flag that makes inpathx identify parameters (a=1&b=2) in target url and submit with arrayified parameters (a[]=1&b[]=2)
+	-n/--null-cookie flag to send session cookies with null value
+	-f/--follow flag to indicate whether you want inpathx to follow http redirection
+
+	Check out EXAMPLES for more options and usage 
+	 
+
+See EXAMPLES for more information.
+
+Read the related text: 
+	 http://yehg.net/lab/pr0js/view.php/path_disclosure_vulnerability.txt
+
+Alternatively use portable bash versions if you wish:
+http://www.pentesterscripting.com/discovery/web_requester
+http://www.pentesterscripting.com/exploitation/bash_web_parameter_fuzzer
+
+
+Contribute your ideas/suggestions on various web languages (currently supported PHP, ASP(X), JSP(X), CFM)
+
+
+
+
+
+
+
+
+
+
+
+

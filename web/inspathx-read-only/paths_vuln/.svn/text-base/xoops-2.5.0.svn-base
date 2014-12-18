@@ -1,0 +1,25 @@
+# 5:46 PM Wednesday, January 19, 2011
+/modules/system/xoops_version.php
+/modules/system/themes/zetadigme/zetadigme.php
+/modules/system/themes/thadmin/thadmin.php
+/modules/system/themes/legacy/legacy.php
+/modules/system/themes/default/menu.php
+/modules/system/themes/zetadigme/menu.php
+/modules/system/themes/default/default.php
+/modules/system/admin/maintenance/main.php
+/modules/profile/footer.php
+/modules/pm/class/message.php
+/mainfile.dist.php
+/Frameworks/textsanitizer/module.textsanitizer.php
+/Frameworks/art/object.php
+/Frameworks/art/functions.user.php
+/Frameworks/art/functions.locale.php
+/Frameworks/art/functions.php
+/class/xoopsformloader.php
+/class/xoopsform/formradio.php
+/class/xoopseditor/tinymce/formtinymce.php
+/class/xoopseditor/textarea/textarea.php
+/class/textsanitizer/youtube/youtube.php
+/class/smarty/Smarty_Compiler.class.php
+/class/smarty/plugins/modifier.date_format.php
+/class/cache/model.php

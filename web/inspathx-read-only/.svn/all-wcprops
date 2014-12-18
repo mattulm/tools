@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/92/trunk
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/89/trunk/README
+END
+EXAMPLES
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/89/trunk/EXAMPLES
+END
+inspathx.rb
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/92/trunk/inspathx.rb
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/29/trunk/LICENSE
+END
+pgen_dir_path.rb
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/20/trunk/pgen_dir_path.rb
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/29/trunk/TODO
+END
+pgen_file_list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/20/trunk/pgen_file_list.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/89/trunk/CHANGELOG
+END
+THANKS
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/89/trunk/THANKS
+END
+.DUMMY
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/47/trunk/.DUMMY
+END
+SOLUTION
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/86/trunk/SOLUTION
+END

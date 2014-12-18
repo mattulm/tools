@@ -1,0 +1,19 @@
+# phpFormGen-2.09
+# Date: 2011-01-18 19:28:50
+
+/templates/simple1.php
+/templates/raw.php
+/process3.php
+/process2.php
+/process.php
+/index.php
+/global.inc.php
+/forms/process.php
+/forms/global.inc.php
+/forms/admin/index.php
+/forms/admin/global.inc.php
+/forms/admin/delete_rec.php
+/forms/admin/delete_file_rec.php
+/forms/admin/config.inc.php
+/fields.php
+/copyfunc.php

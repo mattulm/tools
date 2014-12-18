@@ -1,0 +1,10 @@
+
+This folder lists a list of web applications with known path disclosure vulnerabilities.
+As most web application authors assume path disclosure as server level/configuration issue, 
+hopefully these disclosure will remain intact for future versions of their applications.
+
+Don't waste your time by reporting these issues to developers.
+They will reject your reports. 
+
+Use them as your reference in your pentest projects.
+

@@ -1,0 +1,19 @@
+# 4:17 PM Wednesday, January 19, 2011
+/modules/wysiwyg/view.php
+/modules/wysiwyg/delete.php
+/modules/wysiwyg/add.php
+/modules/wrapper/view.php
+/modules/wrapper/modify.php
+/modules/wrapper/add.php
+/modules/wrapper/delete.php
+/modules/menu_link/view.php
+/modules/form/delete.php
+/modules/form/add.php
+/modules/fckeditor/fckeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.php
+/modules/code/view.php
+/modules/code/modify.php
+/modules/code/delete.php
+/modules/code/add.php
+/framework/class.wbmailer.php
+/framework/class.wb.php
+/admin/media/parameters.php

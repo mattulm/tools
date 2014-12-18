@@ -1,0 +1,69 @@
+
+2011-10
+----------------
+Added client SSL certificate support. This will enable you to run inspathx against web application that requires client-side SSL certificate for authorized access.
+
+
+2011-03
+----------------
+
+Refined param array that supports any number of dimensions with -p option (i.e -p 1, -p 2, -p 3) - Thanks to Brendan Coles 
+
+Added dotnet 1.x ASPX Full Path Disclosure (tilde character  /~.aspx) - Thanks to Ryan Dewhurst
+
+Added dotnet xx ASPX Full Path Disclosure from Nikto (\ character /a\.aspx)
+
+Added --xp as alias --x-p
+
+[2011-03-23] stats => path definitions - 342 , path vuln definitions - 140
+
+
+2011-02
+----------------
+
+add a path disclosure pattern for asp/asp.net
+
+fix: 302 redirect
+
+fix: changed from Array method name count  to size for compatibility under 1.8.7 < 
+     ref: http://www.ruby-forum.com/topic/162578#868205
+	 Thanks to Andre Gironda for reporting this issue
+	 
+fixed bad uri exception when uri contains characters like space, [,], {, }, <, ` ..etc  [reported by Brendan Coles]
+
+added search feature (e.g. ruby inspathx -s zikula) 
+
+covered remaining checks (empty array, null cookie) in Full_Path_Disclosure (http://www.owasp.org/index.php/Full_Path_Disclosure) of OWASP Application Security Desk Reference (ASDR) Project (http://www.owasp.org/index.php/Category:OWASP_ASDR_Project)
+
+added support for generating path definition file and you can now use -d with path-definition file to check in addition to cms directory path
+
+added support for reading gzip/deflate compressed response from server
+
+added regexp support (use your own regexp rules to search in returned responses in addition to built-in regexp error messages)
+
+added null session cookie  support
+	--null-cookie [will auto null session for all languages ]
+	
+added custom headers  support
+	--headers "cookie: sid[%00]=1\r\nX-pingback:: %00"
+	
+added data (GET/POST)  support
+	--data (var=1&var=2)
+	
+added method (get by default)  support
+	--method post
+	
+added follow redirect support
+	--follow-redirect
+	
+added cold fusion language support; when feeded by large inputs, cold fusion apps tend to reveal source code disclosure if without boundary checks when used as IIS ISAPI extensions
+
+added --rm option to remove directory used to generate path list
+
+cleaned *-vuln-path.txt file content to make it ready for path definition file
+
+added support for [] , querystring in path definition file 
+
+fixed username and web root path extraction for both *nux and windows 
+
+added detection support for html_errors being set as off in php.ini

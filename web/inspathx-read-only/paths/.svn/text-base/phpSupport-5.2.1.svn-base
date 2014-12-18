@@ -1,0 +1,27 @@
+# phpSupport-5.2.1
+# Date: 2011-01-18 03:45:47
+
+/web.php
+/view_status.php
+/view_attachment.php
+/soa.php
+/reports.php
+/register.php
+/recoverpw.php
+/print.php
+/logout.php
+/login.php
+/list.php
+/lang/sp.php
+/lang/lt.php
+/lang/ln.php
+/lang/index.php
+/lang/en.php
+/lang/de.php
+/lang/de-recoded.php
+/index.php
+/functions.php
+/db.php
+/custom.php
+/config.php
+/admin/index.php

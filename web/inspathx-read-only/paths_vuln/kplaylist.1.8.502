@@ -1,0 +1,17 @@
+# Logfile created on 2011-01-21 23:53:26 +0800 by logger.rb/20321
+/getid3/getid3/write.id3v1.php
+/getid3/getid3/write.id3v2.php
+/getid3/getid3/write.apetag.php
+/getid3/getid3/module.tag.id3v2.php
+/getid3/getid3/module.audio.optimfrog.php
+/getid3/getid3/module.audio.ogg.php
+/getid3/getid3/module.audio.lpac.php
+/getid3/getid3/module.audio.la.php
+/getid3/getid3/module.audio.flac.php
+/getid3/getid3/module.audio-video.real.php
+/getid3/getid3/module.audio-video.quicktime.php
+/getid3/getid3/module.audio-video.riff.php
+/getid3/getid3/module.audio-video.mpeg.php
+/getid3/getid3/module.audio-video.asf.php
+/getid3/getid3/extension.cache.mysql.php
+/getid3/getid3/extension.cache.dbm.php

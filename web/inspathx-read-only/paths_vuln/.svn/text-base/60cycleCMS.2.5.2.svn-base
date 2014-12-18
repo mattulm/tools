@@ -1,0 +1,14 @@
+# Date: 2011-01-31 05:38:17
+
+/post.php
+/news.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer/HTMLDefinition.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer/CSSDefinition.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer/ConfigForm.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Lexer/PH5P.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Lexer/PEARSax3.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Language/classes/en-x-test.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Filter/YouTube.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Filter/ExtractStyleBlocks.php
+/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Exception.php
+/index.php

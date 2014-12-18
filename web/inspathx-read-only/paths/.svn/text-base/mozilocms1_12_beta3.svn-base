@@ -1,0 +1,28 @@
+# mozilocms1_12_beta3
+# Date: 2011-01-18 19:23:10
+
+/update/update.php
+/sonderzeichen/update.php
+/sonderzeichen/index.php
+/plugins/moziloPayPal/index.php
+/plugins/LASTCHANGE/index.php
+/plugins/Galerie/index.php
+/plugins/DEMOPLUGIN/index.php
+/index.php
+/cms/Syntax.php
+/cms/SpecialChars.php
+/cms/Smileys.php
+/cms/Search.php
+/cms/Properties.php
+/cms/Plugin.php
+/cms/Mail.php
+/cms/Language.php
+/cms/Image.php
+/cms/download.php
+/cms/DefaultConf.php
+/admin/string.php
+/admin/login.php
+/admin/index.php
+/admin/filesystem.php
+/admin/Crypt.php
+/admin/categories_array.php

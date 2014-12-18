@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/29/trunk/sample_logs
+END
+localhost_bbpress_.log
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/29/trunk/sample_logs/localhost_bbpress_.log
+END
+localhost_wp_.log
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/29/trunk/sample_logs/localhost_wp_.log
+END
+localhost_mambo_.log
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/29/trunk/sample_logs/localhost_mambo_.log
+END
+localhost_typo3_.log
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/29/trunk/sample_logs/localhost_typo3_.log
+END
+localhost_drupal7_.log
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/29/trunk/sample_logs/localhost_drupal7_.log
+END

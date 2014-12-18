@@ -1,0 +1,20 @@
+# inspathx # Arctic-Fox-CMS-v0.9.4 # 
+##
+# Homepage: http://sourceforge.net/projects/arcticfox/
+# Date: 2011-03-06 04:04:30
+##
+/phpinfo/index.php
+/functions.inc.php
+/config.inc.php
+/acp/logout.php
+/acp/acp.php
+/acp/session.php
+/acp/includes/editnav.inc.php
+/acp/includes/logout.inc.php
+/acp/includes/login.inc.php
+/acp/includes/newnav.inc.php
+/acp/includes/edit.inc.php
+/acp/includes/nav.inc.php
+/acp/index.php
+/index.php
+

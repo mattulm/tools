@@ -1,0 +1,96 @@
+COMMAND LINE USAGE
+
+=============================================================
+Path Discloser (a.k.a inspathx) / Error Hunter
+ (c) Aung Khant, aungkhant[at]yehg.net
+  YGN Ethical Hacker Group, Myanmar, http://yehg.net/
+
+svn co http://inspathx.googlecode.com/svn/trunk/ inspathx
+=============================================================
+
+Usage: inspathx [options]
+    -d, --dir /source/app            set source code directory/source path definition file of application 
+    -u, --url http://site.com/       set url [Required if -g option is not specified]
+    -k, --keycert <pemfile>          client key + cert PEM file	
+    -t, --threads 10                 set thread number(default: 10)
+    -l, --language php               set language [php,asp,aspx,jsp,jspx,cfm,all] (default all - means scan all)
+    -x, --extension php              set file extensions (php4,php5,...)  default regex: php4,php5,php6,php,asp,aspx,jsp,jspx,cfm
+    -m, --method TYPE                http method get/post (default: get)
+    -h, --headers HEADERS            add http header (eg. "cookie: sid[%00]=1\r\nX-pingback:: %00"
+    -q, --data DATA                  http get/post data (e.g "a=<script>&b=../../../")
+    -n, --null-cookie                add null session cookie (no need to specify cookie name).
+    -f, --follow                     follow http redirection
+    -p, --param-array                identify parameters in target url,make 'em array & request (--data value untouched    -r, --regexp REGEXP              specify your own regexp to search in returned responses (eg: "require\(([a-zA-Z.\/\.-]+)\)") [will combine with built-in regexp]
+    -g, --gen FILE                   read source directory (-d) & generate file list so next time you can feed this file path in -d option instead of source directory.
+        --rm                         remove source directory used to generate path file list.
+    -c, --comment STRING             comment for path definition file to be used with -g and -d options. date is automatically appended.
+        --x-p                        show only paths in console and write them to file with path_vuln.txt surfix. This does not contain target url portion.
+	-s, --search STRING              search path definition files in paths/ & paths_vuln/ directories.
+
+Example:
+ruby inspathx.rb -u http://localhost/wordpress 
+ruby inspathx.rb -u http://localhost/wordpress -p 1
+ruby inspathx.rb -d /sources/wordpress -u http://localhost/wordpress
+ruby inspathx.rb -d /sources/wordpress -g paths/wordpress-3.0.4
+ruby inspathx.rb -d paths/wordpress-3.0.4 -u http://localhost/wordpress
+ruby inspathx.rb -d c:/sources/wordpress -u http://localhost/wordpress -t 20 -l php
+ruby inspathx.rb -d /sources/jspnuke -u http://localhost/jspnuke -t 20 -l jsp -x jsp,jspx -n
+
+
+
+
+EXAMPLES
+
+I.
+
+Command:
+
+ruby inspathx.rb -d /sources/wordpress -u http://localhost/wp -t 20 -l php -x php -m 'POST' --param-array -n
+
+Explanation:
+
+The inpathx will take sources from /source/wordpress The --param-array option makes inpathx request the target url (-u) and try to extract all parameters (related to the target url). The -n option asks inspathx to grap cookies from the target url (-u) and submit with empty cookies.
+
+
+II.
+
+Command:
+
+ruby inspathx.rb -d /sources/wordpress -u http://localhost/wp -t 20 -l php -x php -m 'POST' --data 'test=1' -h "cookie: x=1;\r\naccept: %00"
+
+Explanation:
+
+The inspathx will do POST request with data specified via --data option with the header (-h) specified. 
+
+
+III
+
+Command:
+
+ruby inspathx.rb -d /sources/wordpress -g paths/wordpress-3.0.4 -c wordpress-3.0.4
+
+Explanation:
+
+The inspathx will read file listing in /sources/wordpress directory and generate a file,wordpress-3.0.4 with comment of wordpress-3.0.4 under 'paths' directory. Note that generated file has date and time inserted. You don't need to specify them manually.
+
+
+IV.
+
+Command:
+ruby inspathx.rb -d paths/wordpress-3.0.4 -u http://localhost/wp
+
+
+Explanation:
+The inspathx will read file listing from the file, wordpress-3.0.4, under 'paths' directory and make the request.
+
+
+V.
+
+Command:
+ruby inspathx.rb -d paths/wordpress-3.0.4 -u http://localhost/wp --x-p
+
+Explanation:
+This will create an additional file , localhost-wp.log-path_vuln.txt, which is qualified for path definition file to be put in path_vulns/ folder.  
+
+
+See http://www.aldeid.com/index.php/Inspathx  for more explanations illustrating with Damn Vulnerable Web Application (DVWA).

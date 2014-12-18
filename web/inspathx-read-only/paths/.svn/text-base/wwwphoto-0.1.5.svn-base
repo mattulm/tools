@@ -1,0 +1,47 @@
+# inspathx # wwwphoto-0.1.5 
+##
+# Date: 2011-01-29
+# Homepage: http://www.pburkhalter.net/wwwphoto.php
+##
+/preview.rpc.php
+/help.php
+/include/User.php
+/include/version.php
+/include/browsertest.php
+/include/queries.php
+/include/Image.php
+/include/Photo.php
+/include/Tag.php
+/include/login.php
+/include/unregister_GLOBALS.php
+/include/database.php
+/include/Password.php
+/include/phptest.php
+/include/scandir_req.php
+/include/JSON.php
+/include/Exif.php
+/include/footer.php
+/include/head.php
+/include/Option.php
+/admin.php
+/config/header.php
+/config/config.php
+/photos/index.php
+/deletetag.rpc.php
+/tags.rpc.php
+/admin-photos.php
+/navbar.rpc.php
+/edit.php
+/admin-options.php
+/admin-tags.php
+/admin-accounts.php
+/admin-thumbnails.php
+/admin-database.php
+/addtag.rpc.php
+/overview.rpc.php
+/modules/phototags.php
+/admin-cleanup.php
+/admin-menu.php
+/thumbnails/index.php
+/index.php
+/css/style.css.php

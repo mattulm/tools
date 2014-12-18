@@ -1,0 +1,7 @@
+# inspathx # hycuscms-1.0.3 
+##
+# Homepage: http://www.hycus.com/
+# Date: 2011-01-28
+# http://www.htbridge.ch/advisory/path_disclousure_in_hycus_cms.html
+##
+/templates/hycus_template/template.php

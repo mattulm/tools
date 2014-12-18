@@ -1,0 +1,22 @@
+
+Creators
+--------
+Alban Diquet
+Aaron Grattafiori
+
+
+Maintainers
+-----------
+Alban Diquet
+
+
+Contributors
+------------
+Tom Samstag
+Loic Simon
+Tom Ritter
+Joachim Strombergson
+Jakob Schlyter
+Eloi Vanderb�ken
+Rennie deGraaf
+Loic Jaquemet

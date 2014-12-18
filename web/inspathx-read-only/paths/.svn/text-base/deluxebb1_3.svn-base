@@ -1,0 +1,29 @@
+# deluxebb1_3
+# Date: 2011-01-18 19:10:47
+
+/topic.php
+/tools.php
+/settings/info.php
+/postmod.php
+/pm.php
+/newpost.php
+/misc.php
+/logs/cp.php
+/lang/Spanish.php
+/lang/Nederlands.php
+/lang/English.php
+/lang/Deutsch.php
+/lang/Dansk.php
+/lang/Chinese.php
+/lang/Arabic.php
+/install.php
+/index.php
+/header_html.php
+/header.php
+/forums.php
+/footer.php
+/cp.php
+/classes/securimage_files/securimage_show.php
+/classes/securimage.php
+/classes/mysql.php
+/admincp.php

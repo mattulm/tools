@@ -1,0 +1,9 @@
+# 11:46 PM Tuesday, January 18, 2011
+/nucleus/xmlrpc/api_nucleus.inc.php
+/nucleus/xmlrpc/api_mt.inc.php
+/nucleus/xmlrpc/api_metaweblog.inc.php
+/nucleus/xmlrpc/api_blogger.inc.php
+/nucleus/plugins/NP_Text.php
+/nucleus/plugins/NP_SkinFiles.php
+/nucleus/plugins/NP_SecurityEnforcer.php
+/nucleus/plugins/NP_Ping.php

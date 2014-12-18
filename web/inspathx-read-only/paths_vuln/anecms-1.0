@@ -1,0 +1,15 @@
+# Date: 2011-02-01 22:44:04
+
+/widgets/menu/index.php
+/widgets/login/index.php
+/system/pages/essential.php
+/system/ajax/savewidgetstatus.php
+/rss.php
+/modules/users/admin/index.php
+/modules/register/index.php
+/error.php
+/acp/pages/tpl.php
+/acp/pages/mod.php
+/acp/pages/dash.php
+/acp/pages/cfg.php
+/acp/inc/essential.php

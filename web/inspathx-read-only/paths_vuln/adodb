@@ -1,0 +1,42 @@
+# inspathx # ADODB #
+##
+# Date: 3:45 PM Monday, January 31, 2011
+# Homepage: http://adodb.sourceforge.net/
+##
+/adodb/tests/testsessions.php
+/adodb/tests/testpear.php
+/adodb/tests/testpaging.php
+/adodb/tests/testoci8cursor.php
+/adodb/tests/testoci8.php
+/adodb/tests/testdatabases.inc.php
+/adodb/tests/testcache.php
+/adodb/tests/test4.php
+/adodb/tests/test3.php
+/adodb/tests/test2.php
+/adodb/tests/test.php
+/adodb/tests/test-xmlschema.php
+/adodb/tests/test-php5.php
+/adodb/tests/test-active-record.php
+/adodb/tests/test-active-relations.php
+/adodb/tests/test-active-relationsx.php
+/adodb/tests/test-active-recs2.php
+/adodb/tests/test-datadict.php
+/adodb/tests/tmssql.php?do[]
+/adodb/tests/tmssql.php?do=tmssql
+/adodb/tests/tmssql.php?do=tpear
+/adodb/tests/benchmark.php
+/adodb/session/old/adodb-session.php
+/adodb/session/old/adodb-cryptsession.php
+/adodb/session/old/adodb-session-clob.php
+/adodb/session/adodb-encrypt-secret.php
+/adodb/session/adodb-compress-bzip2.php
+/adodb/pear/Auth/Container/ADOdb.php
+/adodb/drivers/adodb-sybase_ase.inc.php
+/adodb/drivers/adodb-pdo_pgsql.inc.php
+/adodb/drivers/adodb-pdo_mysql.inc.php
+/adodb/drivers/adodb-pdo_mssql.inc.php
+/adodb/drivers/adodb-pdo_oci.inc.php
+/adodb/drivers/adodb-pdo_sqlite.inc.php
+/adodb/datadict/datadict-firebird.inc.php
+/adodb/contrib/toxmlrpc.inc.php
+

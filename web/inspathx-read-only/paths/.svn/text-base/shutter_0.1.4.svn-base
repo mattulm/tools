@@ -1,0 +1,11 @@
+# shutter_0.1.4
+# Date: 2011-01-18 19:33:03
+
+/lib/xml.php
+/lib/photos.php
+/lib/json.php
+/lib/global.php
+/lib/exifr.php
+/lib/comments.php
+/lib/captcha.php
+/lib/admin.php

@@ -1,0 +1,21 @@
+# phpqrcode-2010100721_1.1.4
+# Date: 2011-01-18 19:29:37
+
+/tools/merged_header.php
+/tools/merged_config.php
+/tools/merge.php
+/qrtools.php
+/qrsplit.php
+/qrspec.php
+/qrrscode.php
+/qrmask.php
+/qrlib.php
+/qrinput.php
+/qrimage.php
+/qrencode.php
+/qrconst.php
+/qrconfig.php
+/qrbitstream.php
+/phpqrcode.php
+/index.php
+/bindings/tcpdf/qrcode.php

@@ -1,0 +1,11 @@
+# Logfile created on 2011-01-22 07:15:37 +0800 by logger.rb/20321
+/libs/smarty/Smarty_Compiler.class.php
+/libs/smarty/plugins/modifier.date_format.php
+/libs/intsmarty/intsmarty.class.php
+/libs/adodb/session/old/adodb-session-clob.php
+/libs/adodb/session/old/adodb-session.php
+/libs/adodb/session/old/adodb-cryptsession.php
+/libs/adodb/session/adodb-encrypt-secret.php
+/libs/adodb/session/adodb-compress-bzip2.php
+/libs/adodb/pear/Auth/Container/ADOdb.php
+/include/constants.php

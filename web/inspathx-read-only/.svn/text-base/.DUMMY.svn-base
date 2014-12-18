@@ -1,0 +1,6 @@
+# ** DUMMY FILE
+# This file is used when you don't specify -d option 
+# And it will search path disclosure pattern in your specified URL (-u)
+# 
+# Again, this is a feature suggested by Brendan Coles
+  

@@ -1,0 +1,53 @@
+# inspathx # BlogEngine.NET-2.0 # 
+##
+# Homepage: http://www.dotnetblogengine.net/
+# Date: 2011-03-06 04:27:54
+##
+/admin/Posts/Add_entry.aspx
+/admin/Posts/Posts.aspx
+/admin/Posts/Tags.aspx
+/admin/Posts/Categories.aspx
+/admin/WidgetEditor.aspx
+/admin/Pages/Pages.aspx
+/admin/Pages/EditPage.aspx
+/admin/Pages/RecaptchaLogViewer.aspx
+/admin/Donate.aspx
+/admin/Tracking/referrers.aspx
+/admin/Tracking/Pingbacks.aspx
+/admin/AjaxHelper.aspx
+/admin/Dashboard.aspx
+/admin/Comments/Pending.aspx
+/admin/Comments/Spam.aspx
+/admin/Comments/Approved.aspx
+/admin/Trash.aspx
+/admin/Settings/Feed.aspx
+/admin/Settings/HeadTrack.aspx
+/admin/Settings/Import.aspx
+/admin/Settings/Comments.aspx
+/admin/Settings/Rules.aspx
+/admin/Settings/Advanced.aspx
+/admin/Settings/PingServices.aspx
+/admin/Settings/Main.aspx
+/admin/Settings/Email.aspx
+/admin/Users/Roles.aspx
+/admin/Users/Users.aspx
+/admin/Users/Profile.aspx
+/admin/Users/Rights.aspx
+/admin/Extension Manager/default.aspx
+/admin/Widgets/Blogroll.aspx
+/admin/Widgets/Controls.aspx
+/api/TagMiniView.aspx
+/error.aspx
+/post.aspx
+/search.aspx
+/Account/change-password.aspx
+/Account/login.aspx
+/Account/change-password-success.aspx
+/Account/register.aspx
+/Account/password-retrieval.aspx
+/page.aspx
+/default.aspx
+/error404.aspx
+/archive.aspx
+/contact.aspx
+

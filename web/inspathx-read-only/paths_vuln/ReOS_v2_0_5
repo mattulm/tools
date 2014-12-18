@@ -1,0 +1,27 @@
+# inspathx # ReOS_v2_0_5
+##
+# Homepage: http://sourceforge.net/projects/reosrealestate/
+# Date: 2011-02-04
+##
+/padmin/blocks/vergal.php
+/padmin/jobs/mailing.php
+/padmin/jobs/import.php
+/padmin/jobs/manok.php
+/padmin/jobs/listsok.php
+/padmin/jobs/exp2inst.php
+/padmin/jobs/setpass.php
+/padmin/jobs/checklabels.php
+/padmin/jobs/loadlabels.php
+/padmin/jobs/labelsok.php
+/padmin/jobs/logreader.php
+/padmin/jobs/recall.php
+/padmin/jobs/automail.php
+/padmin/jobs/mysql2reos.php
+/padmin/jobs/loadlists.php
+/padmin/includes/class_pklist.php
+/padmin/includes/lists/adverts.php
+/padmin/includes/lists/xmlist.php
+/blocks/hipotec_esp.php
+/blocks/recom.php
+/blocks/visits - copia.php
+/blocks/cats.php

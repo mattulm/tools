@@ -1,0 +1,25 @@
+# Logfile created on 2011-01-19 20:21:45 +0800 by logger.rb/20321
+/template/inc_script/frontend_render/disabled/majonavi.php
+/template/inc_script/frontend_render/disabled/keywords.php
+/template/inc_script/frontend_render/disabled/h3_menu.php
+/template/inc_script/frontend_render/disabled/gallery.php
+/template/inc_script/frontend_render/disabled/fe_user.php
+/template/inc_script/frontend_render/disabled/email_subject.php
+/template/inc_script/frontend_init/disabled/trigger_test.php
+/template/inc_script/frontend_init/disabled/lang_redirect.php
+/include/inc_module/mod_graphical_text/inc_front/gt.func.inc.php
+/include/inc_lib/wysiwyg.editor.inc.php
+/include/inc_lib/message.sendjs.inc.php
+/include/inc_lib/general.inc.php
+/include/inc_front/content/cnt2.article.inc.php
+/include/inc_ext/PEAR/Spreadsheet/Excel/Writer.php
+/include/inc_ext/PEAR/Spreadsheet/Excel/Writer/Workbook.php
+/include/inc_ext/PEAR/Spreadsheet/Excel/Writer/Worksheet.php
+/include/inc_ext/PEAR/OLE/PPS.php
+/include/inc_ext/PEAR/OLE/PPS/Root.php
+/include/inc_ext/PEAR/OLE/PPS/File.php
+/include/inc_ext/PEAR/OLE/OLE.php
+/include/inc_ext/fckeditor/fckeditor.php
+/include/inc_ext/fckeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.php
+/include/inc_act/act_formmailer.php
+/fileinfo.php

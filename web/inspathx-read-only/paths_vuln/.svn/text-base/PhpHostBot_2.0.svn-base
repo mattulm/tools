@@ -1,0 +1,16 @@
+# PhpHostBot 2.0
+# http://www.itsecuritysolutions.org/2010-12-17_PhpHostBot_2.0_Information_Disclosure_vulnerabilities/
+# 2011-01-28
+/admin/create_acct.php
+/admin/show_subscriptions.php
+/admin/plans.php
+/admin/settings.php
+/admin/list_accts.php
+/admin/suspended_accts.php
+/library/authorize.php
+/library/create_acct.php
+/library/delete.php
+/library/session_save_path_help.php
+/library/suspend.php
+/order/list.php?accounttype[]
+/order/next.php

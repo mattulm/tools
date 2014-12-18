@@ -1,0 +1,17 @@
+# inspathx # vwar-1.5.0r15
+##
+# Homepage: http://vwar.de/
+# Date: 2011-02-12
+## 
+/includes/language/dutch.inc.php
+/includes/language/english.inc.php
+/includes/language/danish.inc.php
+/includes/language/french.inc.php
+/includes/language/hungarian.inc.php
+/includes/language/german.inc.php
+/includes/language/portuguese.inc.php
+/includes/language/spanish.inc.php
+/includes/language/italian.inc.php
+/war.php?page[]
+/war.php?sortby[]
+

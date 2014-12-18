@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+Web Recon Database maintained by YGN Ethical Hacker Group, http://yehg.net/
+v2013-09-02	
+
+Submit your contribution to tool at yehg.net
+
+____________________
+
+This database is utilized by Ultimate Web Recon application designed to assist in manual reconnaissance effort.
+The XML tag structure was designed to work with the application. Editing may render the application unusable. 
+
+link name	-  Name must be unique.
+
+compatible (yes|no)  - sites that are compatible with IE engine that the application uses
+
+ontextfield (string) - text field input ID or name of site page. Once the page is loaded, Query text value of the application will be copied into the site page text field input.  However, this feature is not reliable due to time out triggered by long loading time of multiple page elements like js, css, ...etc.
+			all - fill query string in all input text fields
+-->
+<links>
+	<category name="Info">
+		<link name="lastupdate" value="v2013-05-11-2222" cat="info" compatible="yes" ontextfield=""  />
+		<link name="compatible_program_version" value="hellion" cat="info" compatible="yes" ontextfield=""  />
+	</category>
+	
+	<!-- DNS -->	
+	<category name="DNS">
+		<link name="My IP 1" value="http://yehg.net/i/"  compatible="yes" ontextfield=""  />
+		<link name="My IP 2" value="http://www.maxmind.com/app/locate_my_ip" compatible="yes" ontextfield=""  />
+		<link name="IP Info" value="http://www.maxmind.com/app/locate_demo_ip?ips=%s"  compatible="yes" ontextfield=""  />
+		<link name="DNS Check" value="http://www.intodns.com/%s"  compatible="yes" ontextfield=""  />
+		<link name="DNS-Stuffs" value="http://www.dnsstuff.com/tools"  compatible="yes" ontextfield="all"  />	
+		<link name="Reverse DNS 1" value="http://viewdns.info/reversedns/?ip=%s"  compatible="yes" ontextfield=""  />	
+		<link name="Reverse DNS 2" value="http://hexillion.com/asp/samples/AspLookup.asp?addr=%s&amp;B1=Go"  compatible="yes" ontextfield=""  />		
+		<link name="Domain-tools.com" value="http://whois.domaintools.com/%s"  compatible="yes" ontextfield=""  />
+		<link name="Dig1" value="http://digwebinterface.com/?hostnames=%s&amp;type=ANY&amp;ns=resolver&amp;useresolver=8.8.8.8" compatible="yes" ontextfield=""  />
+		<link name="Dig2" value="http://dig.menandmice.com/cgi-bin/DoDig?host=8.8.8.8&amp;domain=%s&amp;type=A&amp;recur=on"  compatible="yes" ontextfield=""  />
+		<link name="Domain-Dossier" value="http://centralops.net/co/DomainDossier.aspx?__VIEWSTATE=&amp;addr=%s&amp;dom_whois=true&amp;dom_dns=true&amp;traceroute=true&amp;net_whois=true&amp;svc_scan=true&amp;x=23&amp;y=17"  compatible="yes" ontextfield=""  />
+		<link name="Hexillion Whois" value="http://hexillion.com/asp/samples/AutoWhois.vbs.asp?domain=%s&amp;submit=go"  compatible="yes" ontextfield=""  />
+		<link name="Server-sniff" value="http://yehg.net/lab/pr0js/misc/wsa/server-sniff.php?q=%s"  compatible="yes" ontextfield=""  />
+		<link name="Zone-info" value="http://pingability.com/zoneinfo.jsp?domain=%s"  compatible="yes" ontextfield=""  />
+		<link name="Network-tools" value="http://network-tools.com/default.asp?host=%s&amp;prog=express"  compatible="yes" ontextfield=""  />
+		<link name="Netcraft" value="http://searchdns.netcraft.com/?restriction=site+contains&amp;host=%s&amp;lookup=wait..&amp;position=limited"  compatible="yes" ontextfield=""  />
+		<link name="Dnssy" value="http://dnssy.com/report.php?q=%s"  compatible="yes" ontextfield=""  />
+		<link name="Dns blacklist" value="http://www.dnsbl.info/dnsbl-database-check.php?IP=%s&amp;Lookup+IP+Address.x=61&amp;Lookup+IP+Address.y=16&amp;Lookup+IP+Address=Lookup+IP+Address"  compatible="yes" ontextfield=""  />
+		<link name="Robtex" value="http://www.robtex.com/dns/%s"  compatible="yes" ontextfield=""  />
+		<link name="ViewDNS" value="http://viewdns.info/reverseip/?host=%s"  compatible="yes" ontextfield=""  />
+		<link name="Tracert" value="http://hexillion.com/asp/samples/AspAnalyzePath.asp?host=facebook.com&amp;points=10&amp;B1=Go"  compatible="yes" ontextfield=""  />
+
+		<link name="Network location lookup" value="http://www.yougetsignal.com/tools/network-location/?remoteAddress=%s"  compatible="yes" ontextfield=""  />
+		<link name="ReverseIP 1" value="http://www.yougetsignal.com/tools/web-sites-on-web-server/?remoteAddress=%s"  compatible="yes" ontextfield=""  />		
+		<link name="Reverse IP 2 (manual)" value="http://www.webtoolhub.com/tn561350-reverse-ip-domain-lookup.aspx"  compatible="yes" ontextfield=""  />
+		<link name="DNS Visualizer" value="http://dnsviz.net/d/%s/analyze/"  compatible="yes" ontextfield=""  />
+		<link name="TopLevel Domains Check 0" value="http://www.namestation.com/domain-search/allextensions?keyword=%s&amp;SearchType=AllExtensions&amp;sRequestedPage=1"  compatible="no" />
+		<link name="TopLevel Domains Check 1" value="http://www.onlydomains.com/domain/default/domainSearch?domain=%s&amp;tlds=Km_K_H_I_J_F_L_pty-ltd.Km_me_tel_pro_xxx_travel_name_pw_am_at_K.at_or.at_by_be_ba_bg_Km.hr_cz_dk_K.ee_ee_eu_eu.Km_fi_fr_re_wf_tf_pm_yt_de_de.Km_Km.de_gr_Km.gr_gr.Km_K.gl_Km.gl_gg_K.gg_hu_K.hu_hu.Km_is_ie_im_Km.im_plc.K.im_ltd.K.im_ac.im_I.im_H.im_K.im_K.il_I.il_it_je_K.je_lv_li_lt_lu_mk_Km.mk_Km.mt_I.mt_H.mt_nl_K.nl_mp_no_no.Km_K.no_pl_Km.pl_I.pl_H.pl_F.pl_J.pl_Km.pt_pt_md_ro_Km.ro_ru_ru.Km_xn--p1ai_Km.ru_H.ru_su_rs_in.rs_K.rs_sk_si_es_Km.es_I.es_nom.es_se_se.Km_se.H_ch_Km.tr_F.tr_tv.tr_J.tr_Km.ua_K.uk_I.uk_gb.Km_uk.Km_uk.H_gb.H_af_Km.af_asia_Km.au_H.au_I.au_asn.au_auz.J_auz.H_id.au_az_pp.az_int.az_H.az_I.az_Km.az_Km.bd_io_cn_Km.cn_H.cn_I.cn_cn.Km_A_xn--fiqs8s_xn--io0a7i_cx_cc_Km.fj_F.fj_J.fj_name.fj_H.fj_I.fj_pro.fj_hk_Km.hk_A.xn--j6w193g_E.xn--j6w193g_D.xn--j6w193g_xn--j6w193g_in_K.in_H.in_firm.in_gen.in_ind.in_I.in_K.id_web.id_my.id_F.id_ir_K.ir_jp_K.jp_ne.jp_or.jp_jpn.Km_jp.H_jo_Km.jo_kz_Km.kz_I.kz_ki_Km.ki_H.ki_I.ki_F.ki_J.ki_L.ki_phone.ki_la_Km.my_my_fm_mn_K.nz_H.nz_I.nz_gen.nz_ac.nz_maori.nz_school.nz_geek.nz_kiwi.nz_nu_nf_Km.nf_H.nf_J.nf_web.nf_pk_Km.pk_H.pk_I.pk_web.pk_F.pk_ps_Km.ps_H.ps_I.ps_ph_Km.ph_qa_xn--wgbl6a_ws_sa.Km_Km.sa_sg_Km.sg_I.sg_per.sg_edu.sg_Km.sb_H.sb_I.sb_kr_K.kr_ne.kr_or.kr_kr.Km_xn--3e0b707e_auz.F_Km.lk_I.lk_lk_tw_Km.tw_K.th_in.th_tl_tk_to_tm_tv_ae_ae.I_C_vn_Km.vn_H.vn_I.vn_as_ai_Km.ai_ag_K.ag_Km.ag_H.ag_I.ag_nom.ag_Km.ar_ar.Km_ac_bs_Km.bs_bz_Km.bz_H.bz_I.bz_K.bz_bo_Km.bo_Km.br_br.Km_H.br_ca_qc.Km_cl_Km.K_H.K_nom.K_K.cr_cr_Km.cu_cu_dm_K.dm_Km.do_do_ec_Km.ec_J.ec_H.ec_Km.sv_Km.gt_gt_gy_K.gy_Km.gy_ht_Km.ht_H.ht_I.ht_hn_Km.hn_Km.jm_Km.mx_mx_ms_Km.ni_K.ni_Km.pa_Km.py_pe_Km.pe_Km.pr_H.pr_I.pr_F.pr_pr_kn_Km.kn_lc_K.lc_Km.lc_vc_Km.vc_H.vc_I.vc_sx_gs_tt_Km.tt_F.tt_K.tt_north.am_south.am_us_us.Km_us.I_Km.uy_uy.Km_uy_K.ve_Km.ve_K.vi_Km.vi_cm_Km.cm_K.cm_H.cm_K.ke_or.ke_ly_Km.ly_mg_Km.mg_K.mg_H.mg_I.mg_mw_mu_na_K.na_Km.na_I.na_cg_rw_sh_st_sc_Km.sc_so_K.za_za.Km_cd_ug_K.ug"  compatible="yes" ontextfield=""  />	
+		<link name="TopLevel Domains Check 2" value="http://www.uwhois.com/cgi/multiask.cgi?Query=%s&amp;org=on&amp;net=on&amp;info=on&amp;com=on&amp;cn=on&amp;us=on&amp;uk=on&amp;ru=on&amp;ca=on&amp;fr=on&amp;br=on"  compatible="yes" ontextfield=""  />
+
+	</category>
+	
+	<!-- Availability -->
+	<category name="Availability">	
+		<link name="Uptime" value="http://uptime.netcraft.com/up/graph/?host=%s"  compatible="yes" ontextfield=""  />
+		<link name="Web Ping" value="http://host-tracker.com/check_page/?furl=%s&amp;bt=check-server-speed-80x15.png"  compatible="yes" ontextfield=""  />
+		<link name="ICMP Ping" value="http://just-ping.com/index.php?vh=%s"  compatible="yes" ontextfield=""  />			
+		<link name="PortScan" value="http://www.iplocation.net/tools/portscan.php?host=%s"  compatible="yes" ontextfield=""  />	
+	</category>
+
+	<!-- GHDB -->
+	<category name="GHDB">	
+		<link name="GHDB Home" value="http://www.exploit-db.com/google-dorks/?action=search&amp;ghdb_search_cat_id=0&amp;ghdb_search_text=%s" compatible="yes" ontextfield=""  />
+		<link name="site" value="https://www.google.com/search?q=site:%s"  compatible="yes" ontextfield=""  />
+		<link name="link" value="https://www.google.com/search?q=link:%s"  compatible="yes" ontextfield=""  />
+		<link name="cache" value="https://www.google.com/search?q=cache:%s&amp;sstrip=1"  compatible="yes" ontextfield=""  />
+		<link name="indexOf" value="https://www.google.com/search?q=intitle:%22Index%20of%22%20 site:%s"  compatible="yes" ontextfield=""  />
+			
+		<link name="wildcard" value="https://www.google.com/search?q=*%s*"  compatible="yes" ontextfield=""  />
+		<link name="secret" value="https://www.google.com/search?q=intext:(top secret | classified) filetype:doc site:%s"  compatible="yes" ontextfield=""  />
+		<link name="password1" value="https://www.google.com/search?q=password site:%s*"  compatible="yes" ontextfield=""  />	
+
+		<link name="password2" value='https://www.google.com/search?q=intext:("using password"|"forget password"|"reset password"|"Fatal error"|"Failed opening"|"information services"|"System Statistics"|"Powered by"|"curriculum vitae") site:%s'  compatible="yes" ontextfield=""  />
+
+		<link name="userinfo" value="https://www.google.com/search?q=intext:(registered|username|author|member|user|userid|passcode|pin|password|config|cfg|conf|help|desk|contact|Powered by|Copyright) site:%s"  compatible="yes" ontextfield=""  />
+
+		<link name="loginfo" value="https://www.google.com/search?q=intext:(login|logon|information|services|ASP.NET_SessionId|googlebot|stat|awstat|secret|token|Statistics|pdf|xls|doc|txt) site:%s"  compatible="yes" ontextfield=""  />
+		<link name="internal1" value="https://www.google.com/search?q=intext:(intranet|report|admin|administrator|security|temp|tmp|download|curriculum vitae|address|phone|fax|email|assessment) site:%s"  compatible="yes" ontextfield=""  />	
+		<link name="internal2" value="https://www.google.com/search?q=inurl:(user|authors|members|passcode|pin|pass|password|pwd|config|cfg|conf|help|desk|contact|intranet|report|admin|administrator) site:%s"  compatible="yes" ontextfield=""  />
+
+		<link name="leaked1" value='https://www.google.com/search?q=inurl:(login|logon|bot|googlebot|"server-status"|"server-stat"|stat|awstat|secret|token|downloads|download|pdf|xls|docs|doc|txt|security|temp|tmp|browse) site:%s'  compatible="yes" ontextfield=""  />
+
+		<link name="extentions" value="https://www.google.com/search?q=-ext:html -ext:htm -ext:shtml -ext:asp -ext:php -ext:aspx -ext:jsp site:%s"  compatible="yes" ontextfield=""  />		
+
+		<link name="related" value="https://www.google.com/search?q=related:%s"  compatible="yes" ontextfield=""  />
+		<link name="inurl" value="https://www.google.com/search?q=inurl:%s"  compatible="yes" ontextfield=""  />
+		<link name="intitle" value="https://www.google.com/search?q=intitle:%s"  compatible="yes" ontextfield=""  />
+		<link name="intext" value="https://www.google.com/search?q=intext:%s"  compatible="yes" ontextfield=""  />	
+		<link name="filetype" value="https://www.google.com/search?q=filetype:%s"  compatible="yes" ontextfield=""  />
+		<link name="pdf" value="https://www.google.com/search?q=filetype:pdf site:%s"  compatible="yes" ontextfield=""  />
+		<link name="xls" value="https://www.google.com/search?q=filetype:xls site:%s"  compatible="yes" ontextfield=""  />
+		<link name="xml" value="https://www.google.com/search?q=filetype:xml site:%s"  compatible="yes" ontextfield=""  />
+		<link name="doc" value="https://www.google.com/search?q=filetype:doc site:%s"  compatible="yes" ontextfield=""  />
+		<link name="mdb" value="https://www.google.com/search?q=filetype:mdb site:%s"  compatible="yes" ontextfield=""  />
+		<link name="log" value="https://www.google.com/search?q=filetype:log site:%s"  compatible="yes" ontextfield=""  />
+		<link name="bak" value="https://www.google.com/search?q=filetype:bak site:%s"  compatible="yes" ontextfield=""  />
+		<link name="conf" value="https://www.google.com/search?q=filetype:conf site:%s"  compatible="yes" ontextfield=""  />		
+		<link name="passwd" value="https://www.google.com/search?q=filetype:passwd site:%s"  compatible="yes" ontextfield=""  />
+		<link name="pwd" value="https://www.google.com/search?q=filetype:pwd site:%s"  compatible="yes" ontextfield=""  />
+
+	</category>
+	
+	
+	
+	
+	<!-- WEB -->
+	<category name="Web">	
+		<link name="Xssed" value="http://xssed.com/search?key=%s"  compatible="yes" ontextfield=""  />
+		<link name="Zone-H" value=""  compatible="yes" ontextfield=""  />	
+		<link name="Web-Incident Db" value="http://www.xiom.com/search/node/%s"  compatible="yes" ontextfield=""  />	
+		<link name="View-State" value="http://myeduware.com/Controls/ViewstateViewer/ViewstateView.aspx?viewstate=%s"  compatible="yes" ontextfield=""  />	
+		<link name="Web-Sniffer" value="http://web-sniffer.net/?url=%s&amp;uak=3"  compatible="yes" ontextfield=""  />	
+		<link name="Shodan" value="http://www.shodanhq.com/?q=%s"  compatible="yes" ontextfield=""  />	
+		<link name="SSL-Labs" value="https://www.ssllabs.com/ssldb/analyze.html?d=%s&amp;hideResults=on"  compatible="yes" ontextfield=""  />			
+		<link name="ASP.Net Baseline Scanner" value="https://asafaweb.com/Scan?Url=%s"  compatible="yes" ontextfield=""  />
+		<link name="ChangeDetection" value="http://search.freefind.com/find.html?id=19176448&amp;pageid=r&amp;mode=ALL&amp;n=0&amp;_charset_=UTF-8&amp;bcd=%C3%B7&amp;query=%s"  compatible="yes" ontextfield=""  />	
+		<link name="CONNECT /" value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=CONNECT+http://www.google.com/+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+		<link name="GET / " value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=GET+%2F+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+		<link name="HEAD /" value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=HEAD+%2F+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+		<link name="OPTIONS /" value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=OPTIONS+%2F+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+		<link name="PUT /" value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=PUT+%2Ftest+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+		<link name="DELETE /" value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=DELETE+%2Ftest+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+		<link name="TRACE /" value="http://hexillion.com/asp/samples/AspTcpQuery.asp?service=2&amp;server=%s&amp;query=TRACE+%2F+HTTP%2F1.0&amp;B1=Go"  compatible="yes" ontextfield=""  />
+	</category>	
+	
+	<!-- Malware -->
+	<category name="Malware">	
+		<link name="Norton" value="http://safeweb.norton.com/report/show?url=%s"  compatible="yes" ontextfield=""  />	
+		<link name="Google" value="http://safebrowsing.clients.google.com/safebrowsing/diagnostic?client=Firefox&amp;hl=en-US&amp;site=%s"  compatible="yes" ontextfield=""  />
+		<link name="McAfee" value="http://www.siteadvisor.com/sites/%s"  compatible="yes" ontextfield=""  />
+		<link name="BlueCoat" value="http://sitereview.bluecoat.com/sitereview.jsp?url=hacker.com"  compatible="yes" ontextfield=""  />
+
+		
+	</category>
+	
+	<!-- Encoders -->
+	<category name="Encoders">	
+		<link name="PCE" value="http://yehg.net/encoding/index1.php?outputtext=%s"  compatible="yes" ontextfield=""  />	
+		<link name="HackVector" value="https://hackvertor.co.uk/public"  compatible="yes" ontextfield="input"  />
+		<link name="Encode" value="http://yehg.net/lab/pr0js/misc/wsa/server-sniff.php?q=%s#enc"  compatible="yes" ontextfield=""  />
+		<link name="Decode" value="http://yehg.net/lab/pr0js/misc/wsa/server-sniff.php?q=%s#dec"  compatible="yes" ontextfield=""  />
+		<link name="Encrypt" value="http://yehg.net/lab/pr0js/misc/wsa/server-sniff.php?q=%s#encdec"  compatible="yes" ontextfield=""  />		
+		
+	</category>		
+	
+	<!-- Tools -->
+
+	<category name="Tools">
+		<link name="Metasploit Module" value="http://www.metasploit.com/modules/framework/search?utf8=%E2%9C%93&amp;osvdb=&amp;bid=&amp;text=%s&amp;cve=&amp;msb="  compatible="yes" ontextfield=""  />
+		<link name="Metasploit SVN" value="http://dev.metasploit.com/redmine/projects/framework/search?utf8=%E2%9C%93&amp;q=%s&amp;scope=all&amp;all_words=&amp;all_words=1&amp;titles_only=&amp;issues=1&amp;changesets=1&amp;wiki_pages=1&amp;submit=Submit"  compatible="yes" ontextfield=""  />
+		<link name="Metasploit GitHub" value="https://www.google.com/search?q=%s%20site:https://github.com/rapid7/metasploit-framework"  compatible="yes" ontextfield=""  />
+		<link name="Nessus" value="https://www.google.com/search?q=(intitle:%s OR intext:%s) site:www.nessus.org/plugins/"  compatible="yes" ontextfield=""  />
+		<link name="NeXpose" value="http://www.rapid7.com/VulnDbSearchServlet?query=%s&amp;search.x=0&amp;search.y=0"  compatible="yes" ontextfield=""  />		
+		<link name="OpenVAS" value="http://sec101.sourceforge.net/wsa/openvas.php?q=%s"  compatible="yes" ontextfield=""  />
+	</category>
+	
+	
+	<!-- EXPLOITS -->
+	<category name="Exploits">	
+		<link name="Googleit" value="https://www.google.com/search?q=%s (vulnerability or vulnerabilities) OR (exploits or security holes)"  compatible="yes" ontextfield=""  />	
+		<link name="Full Disclosure" value="https://www.google.com/search?q=%s site:seclists.org/fulldisclosure"  compatible="yes" ontextfield=""  />	
+		<link name="BugTraq" value="https://www.google.com/search?q=%s site:seclists.org/bugtraq"  compatible="yes" ontextfield=""  />	
+		<link name="Exploit-DB" value="http://www.exploit-db.com/search/?action=search&amp;filter_page=1&amp;filter_description=%s&amp;filter_author=&amp;filter_platform=0&amp;filter_type=0&amp;filter_port=&amp;filter_osvdb=&amp;filter_cve="  compatible="yes" ontextfield=""  />	
+		<link name="PacketStormSecurity" value="http://www2.packetstormsecurity.org/cgi-bin/search/search.cgi?searchvalue=%s&amp;type=archives"  compatible="yes" ontextfield=""  />	
+		<link name="securityfocus" value="http://search.securityfocus.com/swsearch?metaname=alldoc&amp;query=%s"  compatible="yes" ontextfield=""  />	
+		<link name="OSVDB" value="http://osvdb.org/search/search?search[vuln_title]=%s&amp;amp;search[text_type]=titles&amp;amp;search[s_date]=&amp;amp;search[e_date]=&amp;amp;search[refid]=&amp;amp;search[referencetypes]=&amp;amp;search[vendors]=&amp;amp;kthx=search"  compatible="yes" ontextfield=""  />	
+		<link name="bugzilla" value="https://bugzilla.mozilla.org/buglist.cgi?quicksearch=%s"  compatible="yes" ontextfield=""  />	
+		<link name="vulnscan" value="http://vulnerabilityscanning.com/search.htm?searchtext=%s&amp;search=Search"  compatible="yes" ontextfield=""  />	
+		<link name="db-vuln" value="http://www.teamshatter.com/threat-finder/?risk=Any&amp;category=Any&amp;database=Any&amp;cve=&amp;keywords=%s"  compatible="yes" ontextfield=""  />	
+
+	</category>
+	<!-- CRACK -->
+	<category name="Crack">	
+		<link name="DefaultPasswd" value="https://www.google.com/search?q=%s site:http://www.phenoelit-us.org/dpl/dpl.html"  compatible="yes" ontextfield=""  />	
+		<link name="CrackStation" value="http://crackstation.net/" compatible="yes" ontextfield="hashes"  />	
+		<link name="OnlineHashCrack" value="http://www.onlinehashcrack.com/" compatible="yes" ontextfield="hashToSearch"  />
+		<link name="cmd5" value="http://www.cmd5.org/" compatible="yes" ontextfield="ctl00_ContentPlaceHolder1_TextBoxInput"  />		
+		<link name="LANMAN" value="http://www.securitystats.com/tools/hashcrack.php?inputhash=%s&amp;type=LANMAN&amp;Submit=Submit"  compatible="no" reason="site N.A" />	
+		<link name="NT" value="http://www.securitystats.com/tools/hashcrack.php?inputhash=%s&amp;type=NT&amp;Submit=Submit"  compatible="no" reason="site N.A" />
+		<link name="MD5" value="http://md5.rednoize.com/?s=md5&amp;q=%s"  compatible="yes" ontextfield=""  />
+		<link name="SHA" value="http://md5.rednoize.com/?s=sha1&amp;q=%s"  compatible="yes" ontextfield=""  />
+	</category>	
+		
+	<!-- COMPANY -->
+	<category name="Company">	
+		<link name="Company-EDGAR" value="http://www.sec.gov/cgi-bin/browse-edgar?company=%s&amp;match=contains&amp;CIK=&amp;filenum=&amp;State=&amp;Country=&amp;SIC=&amp;owner=exclude&amp;Find=Find+Companies&amp;action=getcompany"  compatible="yes" ontextfield=""  />
+		<link name="Company-UK" value="http://wck2.companieshouse.gov.uk/8ea562beb5f8456e3c18615e77c1a54c/companysearch?cname=%s&amp;cnumb=&amp;stype=A&amp;live=on&amp;cosearch.x=37&amp;cosearch.y=11&amp;cosearch=1"  compatible="yes" ontextfield=""  />
+		<link name="Company-SG" value="https://www.psi.gov.sg/NASApp/tmf/TMFServlet?app=MYBIZFILE-DIR-ENTITY&amp;version=&amp;launch=N&amp;S=&amp;D=&amp;AN=INBX&amp;searchText=%s&amp;searchBy=name"  compatible="yes" ontextfield=""  />
+		<link name="BBB Rating" value="http://www.bbb.org/us/bbb-accredited-businesses/name/%s/bbb-accredited/"  compatible="yes" ontextfield=""  />
+		<link name="LinkedIN-Company" value="https://www.linkedin.com/csearch/results?type=companies&amp;keywords=%s&amp;pplSearchOrigin=GLHD&amp;pageKey=fps_results"  compatible="yes" ontextfield=""  />
+	</category>	
+
+
+
+    
+	
+	<!-- PEOPLE -->
+	<category name="People">		
+		<link name="Zaba" value="http://www.zabasearch.com/query1_process.php?sname=%s&amp;state=ALL&amp;name_style=1&amp;main=1"  compatible="yes" ontextfield=""  />
+		<link name="Intelius" value="http://www.intelius.com/searching.php?ReportType=1&amp;formname=name&amp;qf=&amp;qmi=&amp;qn=%s&amp;qcs=&amp;focusfirst=1"  compatible="yes" ontextfield=""  />
+		<link name="Spam Phone Number Lookup" value="http://whocallsme.com/Phone-Number.aspx/%s"  compatible="yes" ontextfield=""  />
+		<link name="Facebook" value="https://www.facebook.com/search.php?q=%s&amp;init=ffs"  compatible="yes" ontextfield=""  />
+		<link name="LinkedIN-People" value="https://www.linkedin.com/search/fpsearch?type=people&amp;keywords=%s&amp;pplSearchOrigin=GLHD&amp;pageKey=member-home&amp;search=Search"  compatible="yes" ontextfield=""  />
+		<link name="VerifyEmail1" value="http://centralops.net/co/EmailDossier.aspx?email=%s"  compatible="yes" ontextfield=""  />
+		<link name="VerifyEmail2" value="http://my-addr.com/free-email-verification-tool/verify-email-address/reverse-email-lookup/verify_email.php?mail=%s"  compatible="yes" ontextfield=""  />
+	</category>	
+
+	
+	<!-- XREF -->
+	<category name="X-Ref">	
+		<link name="OWASP" value="https://www.google.com/search?q=(intitle:%s OR intext:%s) site:www.owasp.org/index.php"  compatible="yes" ontextfield=""  />
+		<link name="WASC" value="https://www.google.com/search?q=site:projects.webappsec.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="CVE" value="https://www.google.com/search?q=site:web.nvd.nist.gov (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="CVE2" value="http://cvedetails.com/product-search.php?vendor_id=0&amp;search=%s&amp;application=1&amp;operatingsystem=1&amp;hardware=1" compatible="yes" ontextfield=""  />
+		<link name="CWE" value="https://www.google.com/search?q=site:cwe.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="CAPEC" value="https://www.google.com/search?q=site:capec.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="CCE" value="https://www.google.com/search?q=site:cce.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="CPE" value="https://www.google.com/search?q=site:cpe.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="OVAL" value="https://www.google.com/search?q=site:oval.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="MAEC" value="https://www.google.com/search?q=site:maec.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="XCCDF" value="https://www.google.com/search?q=site:scap.nist.gov/specifications/xccdf/ (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="SCAP" value="https://www.google.com/search?q=site:scap.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />		
+		<link name="CEE" value="https://www.google.com/search?q=site:cee.mitre.org (intitle:%s OR intext:%s)"  compatible="yes" ontextfield=""  />
+		<link name="CERT_SecureCoding" value="https://www.securecoding.cert.org/confluence/dosearchsite.action?queryString=%s"  compatible="yes" ontextfield=""  />
+	    
+	</category>		
+	
+	<!-- Meta Data -->
+	<category name="MetaData">	
+		<link name="ExtractMetaData" value="http://www.extractmetadata.com/"  compatible="yes" ontextfield=""  />
+		<link name="Exif Viewer" value="http://regex.info/exif.cgi?imgurl=%s"  compatible="yes" ontextfield=""  />
+		<link name="ReverseImageSearch" value="http://www.tineye.com/parse/load?url=%s"  compatible="yes" ontextfield=""  />		
+	</category>
+	
+	<!-- Resources -->
+	<category name="Resources">	
+		<link name="SecurityToolsWatch" value="http://www.security-database.com/toolswatch/spip.php?page=recherche&amp;recherche=%s"  compatible="yes" ontextfield=""  />
+		<link name="HackerWebDir" value="http://yehg.net/hwd/index.php?id=s&amp;q=%s"  compatible="yes" ontextfield=""  />	
+		<link name="CyberInsecure News" value="http://cyberinsecure.com/?s=%s"  compatible="yes" ontextfield=""  />
+		<link name="Wiki" value="http://en.wikipedia.org/wiki/Special:Search?search=%s"  compatible="yes" ontextfield=""  />		
+		<link name="TopLevel Domain Check" value="http://www.uwhois.com/domains.html"  compatible="yes" ontextfield=""  />
+		<link name="Exif Viewer" value="http://regex.info/exif.cgi?imgurl=%s"  compatible="yes" ontextfield=""  />
+		<link name="ReverseImageSearch" value="http://www.tineye.com/parse/load?url=%s"  compatible="yes" ontextfield=""  />		
+	</category>
+	
+</links>

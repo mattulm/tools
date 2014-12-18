@@ -1,0 +1,9 @@
+# Logfile created on 2011-01-20 02:04:19 +0800 by logger.rb/20321
+/lib/tpl/index.php
+/lib/tpl/default/mediamanager.php
+/lib/plugins/plugin/classes/ap_update.class.php
+/lib/plugins/plugin/classes/ap_info.class.php
+/lib/plugins/plugin/classes/ap_enable.class.php
+/lib/plugins/plugin/classes/ap_download.class.php
+/lib/plugins/plugin/classes/ap_delete.class.php
+/lib/plugins/config/settings/extra.class.php

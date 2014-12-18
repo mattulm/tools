@@ -1,0 +1,15 @@
+# aws-dms-1.0-beta-10
+# Date: 2011-01-18 19:08:48
+
+/xmlserver.php
+/temp.php
+/serverSettings.php
+/index.php
+/includes/Zend_Dom_Query_Css2Xpath.inc.php
+/includes/Browser.inc.php
+/includes/awsxmsutils.php
+/includes/awsXML.inc.php
+/includes/awsHTML.inc.php
+/includes/awsCommonXML.inc.php
+/designer.php
+/defaults.php

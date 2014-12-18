@@ -1,0 +1,35 @@
+# cftp-r80
+# Date: 2011-01-18 19:09:25
+
+/users.php
+/userform.php
+/upload/index.php
+/templates/session_check.php
+/templates/default/vars.php
+/templates/default/template.php
+/process.php
+/options.php
+/logo.php
+/install/index.php
+/install/database.php
+/index.php
+/includes/vars.php
+/includes/userlevel_check.php
+/includes/timezones.php
+/includes/thumb.php
+/includes/sys.vars.php
+/includes/site.options.php
+/includes/js/js.validations.php
+/includes/includes.php
+/includes/functions.php
+/includes/form_validation_class.php
+/includes/db_class.php
+/home.php
+/header.php
+/footer.php
+/fileupload.php
+/emails/newuser.php
+/emails/newfile.php
+/emails/newclient.php
+/clients.php
+/clientform.php

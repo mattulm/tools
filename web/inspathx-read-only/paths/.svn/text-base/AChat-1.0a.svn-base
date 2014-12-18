@@ -1,0 +1,26 @@
+# AChat-1.0a
+# Date: 2011-01-18 19:07:08
+
+/returning_user.php
+/prefs3.php
+/prefs2.php
+/prefs.php
+/poster.php
+/options.php
+/new_user.php
+/logout.php
+/login.php
+/index.php
+/include/vitals.inc.php
+/include/html/login_header.inc.php
+/include/html/login_footer.inc.php
+/include/defaults.inc.php
+/history.php
+/help.php
+/filterHistory.php
+/display.php
+/delete.php
+/chat.php
+/bing.php
+/adminLogin.php
+/admin.php

@@ -1,0 +1,243 @@
+# Logfile created on 2010-09-22 17:59:47 +0800 by logger.rb/20321
+I, [2010-09-22 17:59:47 pid:#9284]  INFO -- : TargetURL: http://localhost/mambo/
+I, [2010-09-22 17:59:47 pid:#9284]  INFO -- : Date:  17:59:47 09-22-2010
+
+
+I, [2010-09-22 17:59:51 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/PSpellShell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/PSpellShell.php</b> on line <b>9</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:51 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/PSpell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/PSpell.php</b> on line <b>9</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:51 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/GoogleSpell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/plugins/spellchecker/classes/GoogleSpell.php</b> on line <b>9</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:54 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editor.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editor.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editor.php</b> on line <b>4</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:54 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/images.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/images.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/images.php</b> on line <b>4</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:54 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editorFrame.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editorFrame.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/editorFrame.php</b> on line <b>4</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:54 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/manager.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/manager.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/manager.php</b> on line <b>4</b><br />
+[/html_source]
+
+
+I, [2010-09-22 17:59:54 pid:#9284]  INFO -- : [*] http://localhost/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/thumbs.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/thumbs.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/victim/public_html/mambomambots/editors/mostlyce/jscripts/tiny_mce/auth_check.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/mambots/editors/mostlyce/jscripts/tiny_mce/imagemanager/thumbs.php</b> on line <b>4</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:04 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/phpgettext/phpgettext.compat.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Cannot redeclare _() in <b>/home/victim/public_html/mambo/includes/phpgettext/phpgettext.compat.php</b> on line <b>21</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:05 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/sef.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'mamboCore' not found in <b>/home/victim/public_html/mambo/includes/sef.php</b> on line <b>409</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:08 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/magpierss/rss_parse.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require_once(MAGPIE_DIRrss_utils.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/includes/magpierss/rss_parse.php</b> on line <b>26</b><br />
+<br />
+<b>Fatal error</b>:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'MAGPIE_DIRrss_utils.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/includes/magpierss/rss_parse.php</b> on line <b>26</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:08 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/core.classes.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'mosDBTable' not found in <b>/home/victim/public_html/mambo/includes/core.classes.php</b> on line <b>857</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:08 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/core.helpers.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'mamboCore' not found in <b>/home/victim/public_html/mambo/includes/core.helpers.php</b> on line <b>915</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:11 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/cmtclasses.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'mosDBTable' not found in <b>/home/victim/public_html/mambo/includes/cmtclasses.php</b> on line <b>131</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:11 pid:#9284]  INFO -- : [*] http://localhost/mambo/includes/class.ezpdf.php
+
+[html_source]
+<br />
+<b>Warning</b>:  include_once(includes/class.pdf.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/mambo/includes/class.ezpdf.php</b> on line <b>3</b><br />
+<br />
+<b>Warning</b>:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'includes/class.pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/mambo/includes/class.ezpdf.php</b> on line <b>3</b><br />
+<br />
+<b>Fatal error</b>:  Class 'Cpdf' not found in <b>/home/victim/public_html/mambo/includes/class.ezpdf.php</b> on line <b>5</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:16 pid:#9284]  INFO -- : [*] http://localhost/mambo/components/com_content/content.class.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'mosDBTable' not found in <b>/home/victim/public_html/mambo/components/com_content/content.class.php</b> on line <b>16</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:20 pid:#9284]  INFO -- : [*] http://localhost/mambo/administrator/popups/contentwindow.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function mosGetParam() in <b>/home/victim/public_html/mambo/administrator/popups/contentwindow.php</b> on line <b>16</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:20 pid:#9284]  INFO -- : [*] http://localhost/mambo/administrator/popups/index3pop.php
+
+[html_source]
+<?xml version="1.0"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> - Administration [Mambo]</title>
+<link rel="stylesheet" href="templates/<br />
+<b>Fatal error</b>:  Call to a member function getTemplate() on a non-object in <b>/home/victim/public_html/mambo/administrator/popups/index3pop.php</b> on line <b>6</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:20 pid:#9284]  INFO -- : [*] http://localhost/mambo/CHANGELOG.php
+
+[html_source]
+<br />
+<b>Parse error</b>:  syntax error, unexpected T_STRING in <b>/home/victim/public_html/mambo/CHANGELOG.php</b> on line <b>2758</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:20 pid:#9284]  INFO -- : [*] http://localhost/mambo/administrator/popups/modulewindow.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function mosGetParam() in <b>/home/victim/public_html/mambo/administrator/popups/modulewindow.php</b> on line <b>16</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:21 pid:#9284]  INFO -- : [*] http://localhost/mambo/administrator/popups/pollwindow.php
+
+[html_source]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Poll Preview</title>
+	<meta http-equiv="Content-Type" content="text/html; _ISO" />
+	<link rel="stylesheet" href="../../templates//css/template_css.css" type="text/css">
+</head>
+
+<body>
+<form>
+<table align="center" width="90%" cellspacing="2" cellpadding="2" border="0" >
+	<tr>
+	    <td class="moduleheading" colspan="2"></td>
+	</tr>
+	<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>/home/victim/public_html/mambo/administrator/popups/pollwindow.php</b> on line <b>50</b><br />
+	<tr>
+	    <td valign="middle" height="50" colspan="2" align="center"><input type="button" name="submit" value="Vote">&nbsp;&nbsp;<input type="button" name="result" value="Results"></td>
+	</tr>
+	<tr>
+	    <td align="center" colspan="2"><a href="#" onClick="window.close()">Close</a></td>
+	</tr>
+</table>
+</form>
+
+</body>
+</html>
+
+[/html_source]
+
+
+I, [2010-09-22 18:00:27 pid:#9284]  INFO -- : [*] http://localhost/mambo/administrator/includes/pcl/pclzip.lib.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'mamboCore' not found in <b>/home/victim/public_html/mambo/administrator/includes/pcl/pclzip.lib.php</b> on line <b>59</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:00:56 pid:#9284]  INFO -- : [*] http://localhost/mambo/administrator/components/com_installer/admin.installer.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function T_() in <b>/home/victim/public_html/mambo/administrator/components/com_installer/admin.installer.php</b> on line <b>15</b><br />
+[/html_source]
+
+
+I, [2010-09-22 18:01:04 pid:#9284]  INFO -- : ! Username detected = ["victim"]
+I, [2010-09-22 18:01:04 pid:#9284]  INFO -- : ! Server path extracted = ["/home/victim/public_html/"]
+I, [2010-09-22 18:01:04 pid:#9284]  INFO -- : Vulnerable url(s) = 23
+I, [2010-09-22 18:01:04 pid:#9284]  INFO -- : Total requests = 468
+I, [2010-09-22 18:01:04 pid:#9284]  INFO -- : Generated by inspath, path disclosure finder tool
+I, [2010-09-22 18:01:04 pid:#9284]  INFO -- : by Aung Khant, http://yehg.net/lab
+
+

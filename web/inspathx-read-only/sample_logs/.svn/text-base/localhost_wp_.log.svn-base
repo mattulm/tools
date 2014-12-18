@@ -1,0 +1,782 @@
+# Logfile created on 2010-09-28 01:06:49 +0800 by logger.rb/20321
+I, [2010-09-28 01:06:49 pid:#3448]  INFO -- : TargetURL: http://localhost/wp/
+I, [2010-09-28 01:06:49 pid:#3448]  INFO -- : Date:  01:06:49 09-28-2010
+
+
+I, [2010-09-28 01:06:51 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-settings.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(ABSPATHwp-includes/load.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-settings.php</b> on line <b>19</b><br />
+<br />
+<b>Warning</b>:  require(ABSPATHwp-includes/load.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-settings.php</b> on line <b>19</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHwp-includes/load.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/wp/wp-settings.php</b> on line <b>19</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/wp-db.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function is_multisite() in <b>/home/victim/public_html/wp/wp-includes/wp-db.php</b> on line <b>505</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/vars.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function is_admin() in <b>/home/victim/public_html/wp/wp-includes/vars.php</b> on line <b>16</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/user.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-includes/user.php</b> on line <b>70</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/update.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/update.php</b> on line <b>337</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:55 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/theme.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/theme.php</b> on line <b>1137</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:55 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/theme-compat/sidebar.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/theme-compat/sidebar.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:56 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/theme-compat/header.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/theme-compat/header.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:56 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/theme-compat/comments.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/theme-compat/comments.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:56 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/theme-compat/comments-popup.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/theme-compat/comments-popup.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:58 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/template-loader.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function is_robots() in <b>/home/victim/public_html/wp/wp-includes/template-loader.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:58 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/taxonomy.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/taxonomy.php</b> on line <b>65</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:59 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/rss.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/rss.php</b> on line <b>18</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:59 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/rss-functions.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/rss-functions.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:59 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/shortcodes.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-includes/shortcodes.php</b> on line <b>296</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:06:59 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/script-loader.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(ABSPATHWPINC/class.wp-dependencies.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-includes/script-loader.php</b> on line <b>25</b><br />
+<br />
+<b>Warning</b>:  require(ABSPATHWPINC/class.wp-dependencies.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-includes/script-loader.php</b> on line <b>25</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/wp/wp-includes/script-loader.php</b> on line <b>25</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:01 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/registration-functions.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/registration-functions.php</b> on line <b>7</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:01 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/post.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/post.php</b> on line <b>139</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:03 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/nav-menu-template.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'Walker' not found in <b>/home/victim/public_html/wp/wp-includes/nav-menu-template.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:03 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/ms-settings.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require(ABSPATHWPINC/ms-load.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-includes/ms-settings.php</b> on line <b>18</b><br />
+<br />
+<b>Warning</b>:  require(ABSPATHWPINC/ms-load.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-includes/ms-settings.php</b> on line <b>18</b><br />
+<br />
+<b>Fatal error</b>:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/ms-load.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/wp/wp-includes/ms-settings.php</b> on line <b>18</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:03 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/ms-functions.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/ms-functions.php</b> on line <b>1340</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:04 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/ms-default-filters.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-includes/ms-default-filters.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:05 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/ms-default-constants.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/ms-default-constants.php</b> on line <b>138</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:05 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/media.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_shortcode() in <b>/home/victim/public_html/wp/wp-includes/media.php</b> on line <b>701</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:06 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/kses.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/kses.php</b> on line <b>1361</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:06 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/PSpellShell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/PSpellShell.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:09 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/PSpell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/PSpell.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:09 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/GoogleSpell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/GoogleSpell.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:09 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/EnchantSpell.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'SpellChecker' not found in <b>/home/victim/public_html/wp/wp-includes/js/tinymce/plugins/spellchecker/classes/EnchantSpell.php</b> on line <b>12</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:10 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/general-template.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/general-template.php</b> on line <b>1273</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:10 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/feed-rss.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function feed_content_type() in <b>/home/victim/public_html/wp/wp-includes/feed-rss.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:10 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/feed-rss2-comments.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function feed_content_type() in <b>/home/victim/public_html/wp/wp-includes/feed-rss2-comments.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:10 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/feed-rdf.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function feed_content_type() in <b>/home/victim/public_html/wp/wp-includes/feed-rdf.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:10 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/default-widgets.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Widget' not found in <b>/home/victim/public_html/wp/wp-includes/default-widgets.php</b> on line <b>15</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:11 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/feed-rss2.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function feed_content_type() in <b>/home/victim/public_html/wp/wp-includes/feed-rss2.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:11 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/feed-atom-comments.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function feed_content_type() in <b>/home/victim/public_html/wp/wp-includes/feed-atom-comments.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:11 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/feed-atom.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function feed_content_type() in <b>/home/victim/public_html/wp/wp-includes/feed-atom.php</b> on line <b>8</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:11 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/default-filters.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-includes/default-filters.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:11 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/js/tinymce/langs/wp-langs.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function __() in <b>/home/victim/public_html/wp/wp-includes/js/tinymce/langs/wp-langs.php</b> on line <b>26</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:12 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/default-embeds.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function wp_embed_register_handler() in <b>/home/victim/public_html/wp/wp-includes/default-embeds.php</b> on line <b>33</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:13 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/comment-template.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'Walker' not found in <b>/home/victim/public_html/wp/wp-includes/comment-template.php</b> on line <b>1219</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:13 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/class.wp-styles.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Dependencies' not found in <b>/home/victim/public_html/wp/wp-includes/class.wp-styles.php</b> on line <b>19</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:13 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/class.wp-scripts.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Dependencies' not found in <b>/home/victim/public_html/wp/wp-includes/class.wp-scripts.php</b> on line <b>19</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:13 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/class-snoopy.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-includes/class-snoopy.php</b> on line <b>6</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:17 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/tag.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/tag.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:20 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/page.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/page.php</b> on line <b>15</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:20 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/class-feed.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require_once(ABSPATHWPINC/class-simplepie.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-includes/class-feed.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/class-simplepie.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/wp/wp-includes/class-feed.php</b> on line <b>4</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:21 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/single.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/single.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:26 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-includes/canonical.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-includes/canonical.php</b> on line <b>411</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:26 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/sidebar.php
+
+[html_source]
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<br />
+<b>Fatal error</b>:  Call to undefined function dynamic_sidebar() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/sidebar.php</b> on line <b>20</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:26 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/loop.php
+
+[html_source]
+
+
+<br />
+<b>Fatal error</b>:  Call to undefined function have_posts() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/loop.php</b> on line <b>31</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:26 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/sidebar-footer.php
+
+[html_source]
+
+<br />
+<b>Fatal error</b>:  Call to undefined function is_active_sidebar() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/sidebar-footer.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:26 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/onecolumn-page.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/onecolumn-page.php</b> on line <b>15</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:26 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/search.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/search.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/index.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/index.php</b> on line <b>16</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/header.php
+
+[html_source]
+<!DOCTYPE html>
+<html <br />
+<b>Fatal error</b>:  Call to undefined function language_attributes() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/header.php</b> on line <b>12</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/functions.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/functions.php</b> on line <b>51</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/footer.php
+
+[html_source]
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+<br />
+<b>Fatal error</b>:  Call to undefined function get_sidebar() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/footer.php</b> on line <b>22</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/author.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/author.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/category.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/category.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/attachment.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/attachment.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:30 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/404.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/404.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:31 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/archive.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function get_header() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/archive.php</b> on line <b>15</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:31 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/themes/twentyten/comments.php
+
+[html_source]
+
+			<div id="comments">
+<br />
+<b>Fatal error</b>:  Call to undefined function post_password_required() in <b>/home/victim/public_html/wp/wp-content/themes/twentyten/comments.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:31 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/plugins/akismet/akismet.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-content/plugins/akismet/akismet.php</b> on line <b>32</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:31 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-content/plugins/hello.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-content/plugins/hello.php</b> on line <b>60</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:33 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/upgrade-functions.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-admin/upgrade-functions.php</b> on line <b>11</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:38 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/options-head.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function wp_reset_vars() in <b>/home/victim/public_html/wp/wp-admin/options-head.php</b> on line <b>12</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:41 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/menu-header.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function apply_filters() in <b>/home/victim/public_html/wp/wp-admin/menu-header.php</b> on line <b>21</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:41 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/menu.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function wp_count_comments() in <b>/home/victim/public_html/wp/wp-admin/menu.php</b> on line <b>25</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:46 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/upgrade.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require_once(ABSPATHwp-admin/includes/admin.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-admin/includes/upgrade.php</b> on line <b>16</b><br />
+<br />
+<b>Fatal error</b>:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHwp-admin/includes/admin.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/wp/wp-admin/includes/upgrade.php</b> on line <b>16</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:46 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/update.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-admin/includes/update.php</b> on line <b>116</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:46 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/theme-install.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-admin/includes/theme-install.php</b> on line <b>91</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/template.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'Walker' not found in <b>/home/victim/public_html/wp/wp-admin/includes/template.php</b> on line <b>184</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/plugin.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-admin/includes/plugin.php</b> on line <b>1529</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/plugin-install.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-admin/includes/plugin-install.php</b> on line <b>86</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/nav-menu.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'Walker_Nav_Menu' not found in <b>/home/victim/public_html/wp/wp-admin/includes/nav-menu.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/user.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-admin/includes/user.php</b> on line <b>822</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/ms.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-admin/includes/ms.php</b> on line <b>44</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:47 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/misc.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_action() in <b>/home/victim/public_html/wp/wp-admin/includes/misc.php</b> on line <b>211</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:50 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/media.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function add_filter() in <b>/home/victim/public_html/wp/wp-admin/includes/media.php</b> on line <b>57</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:50 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/file.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function __() in <b>/home/victim/public_html/wp/wp-admin/includes/file.php</b> on line <b>11</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:50 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/comment.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function is_admin() in <b>/home/victim/public_html/wp/wp-admin/includes/comment.php</b> on line <b>162</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:50 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/continents-cities.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function __() in <b>/home/victim/public_html/wp/wp-admin/includes/continents-cities.php</b> on line <b>7</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:51 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/class-wp-filesystem-ssh2.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Filesystem_Base' not found in <b>/home/victim/public_html/wp/wp-admin/includes/class-wp-filesystem-ssh2.php</b> on line <b>43</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:51 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/class-wp-filesystem-ftpext.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Filesystem_Base' not found in <b>/home/victim/public_html/wp/wp-admin/includes/class-wp-filesystem-ftpext.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:51 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/class-wp-filesystem-ftpsockets.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Filesystem_Base' not found in <b>/home/victim/public_html/wp/wp-admin/includes/class-wp-filesystem-ftpsockets.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:51 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/class-wp-filesystem-direct.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'WP_Filesystem_Base' not found in <b>/home/victim/public_html/wp/wp-admin/includes/class-wp-filesystem-direct.php</b> on line <b>17</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/class-ftp-sockets.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'ftp_base' not found in <b>/home/victim/public_html/wp/wp-admin/includes/class-ftp-sockets.php</b> on line <b>28</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/class-ftp-pure.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Class 'ftp_base' not found in <b>/home/victim/public_html/wp/wp-admin/includes/class-ftp-pure.php</b> on line <b>28</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:53 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/includes/admin.php
+
+[html_source]
+<br />
+<b>Warning</b>:  require_once(ABSPATHwp-admin/includes/bookmark.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in <b>/home/victim/public_html/wp/wp-admin/includes/admin.php</b> on line <b>10</b><br />
+<br />
+<b>Fatal error</b>:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHwp-admin/includes/bookmark.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in <b>/home/victim/public_html/wp/wp-admin/includes/admin.php</b> on line <b>10</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:57 pid:#3448]  INFO -- : [*] http://localhost/wp/wp-admin/admin-functions.php
+
+[html_source]
+<br />
+<b>Fatal error</b>:  Call to undefined function _deprecated_file() in <b>/home/victim/public_html/wp/wp-admin/admin-functions.php</b> on line <b>12</b><br />
+[/html_source]
+
+
+I, [2010-09-28 01:07:58 pid:#3448]  INFO -- : ! Username detected = ["victim"]
+I, [2010-09-28 01:07:58 pid:#3448]  INFO -- : ! Server path extracted = ["/home/victim/public_html/"]
+I, [2010-09-28 01:07:58 pid:#3448]  INFO -- : Vulnerable url(s) = 92
+I, [2010-09-28 01:07:58 pid:#3448]  INFO -- : Total requests = 292
+I, [2010-09-28 01:07:58 pid:#3448]  INFO -- : Generated by inspath, path disclosure finder tool
+I, [2010-09-28 01:07:58 pid:#3448]  INFO -- : by Aung Khant, http://yehg.net/lab
+
+

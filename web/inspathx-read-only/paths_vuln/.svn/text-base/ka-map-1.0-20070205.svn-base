@@ -1,0 +1,9 @@
+# inspathx # ka-map-1.0-20070205 #
+##
+# Homepage: http://ka-map.maptools.org/
+# Date: 2011-01-28 05:42:57
+##
+/test.php
+/legend.php
+/XMLOverlay/overlay.php
+/XMLOverlay/xmlgetline.php
