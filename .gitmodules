@@ -391,3 +391,18 @@
 [submodule "misc/PyExfil"]
 	path = misc/PyExfil
 	url = https://github.com/ytisf/PyExfil.git
+[submodule "web/dirtshell"]
+	path = web/dirtshell
+	url = https://github.com/superkojiman/dirtshell.git
+[submodule "wifi/bigdeauth"]
+	path = wifi/bigdeauth
+	url = https://github.com/superkojiman/mass_deauth.git
+[submodule "wifi/snuff"]
+	path = wifi/snuff
+	url = https://github.com/superkojiman/snuff.git
+[submodule "wifi/peepshow"]
+	path = wifi/peepshow
+	url = https://github.com/superkojiman/peepshow.git
+[submodule "web/rfishell"]
+	path = web/rfishell
+	url = https://github.com/superkojiman/rfishell.git
