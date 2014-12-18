@@ -406,3 +406,6 @@
 [submodule "web/rfishell"]
 	path = web/rfishell
 	url = https://github.com/superkojiman/rfishell.git
+[submodule "dsss"]
+	path = dsss
+	url = https://github.com/stamparm/DSSS.git
