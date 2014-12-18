@@ -406,6 +406,9 @@
 [submodule "web/rfishell"]
 	path = web/rfishell
 	url = https://github.com/superkojiman/rfishell.git
-[submodule "dsss"]
-	path = dsss
-	url = https://github.com/stamparm/DSSS.git
+[submodule "web/xssmap"]
+	path = web/xssmap
+	url = https://github.com/rverton/xssmap.git
+[submodule "web/xsslint"]
+	path = web/xsslint
+	url = https://github.com/jenseng/xsslint.git
