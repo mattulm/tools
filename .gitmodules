@@ -439,3 +439,6 @@
 [submodule "exploits/ronin"]
 	path = exploits/ronin
 	url = https://github.com/ronin-ruby/ronin.git
+[submodule "web/bypasswaf"]
+	path = web/bypasswaf
+	url = https://github.com/codewatchorg/bypasswaf.git
