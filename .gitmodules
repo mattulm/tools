@@ -412,3 +412,30 @@
 [submodule "web/xsslint"]
 	path = web/xsslint
 	url = https://github.com/jenseng/xsslint.git
+[submodule "network/tunna"]
+	path = network/tunna
+	url = https://github.com/SECFORCE/Tunna.git
+[submodule "network/snmp-brute"]
+	path = network/snmp-brute
+	url = https://github.com/SECFORCE/SNMP-Brute.git
+[submodule "network/sparta"]
+	path = network/sparta
+	url = https://github.com/SECFORCE/sparta.git
+[submodule "exploits/pwntools"]
+	path = exploits/pwntools
+	url = https://github.com/Gallopsled/pwntools.git
+[submodule "web/nosql"]
+	path = web/nosql
+	url = https://github.com/torque59/Nosql-Exploitation-Framework.git
+[submodule "web/staticDomXssScanner"]
+	path = web/staticDomXssScanner
+	url = https://github.com/ajinabraham/Static-DOM-XSS-Scanner.git
+[submodule "profile/gitrob"]
+	path = profile/gitrob
+	url = https://github.com/michenriksen/gitrob.git
+[submodule "web/jsqli"]
+	path = web/jsqli
+	url = https://github.com/ron190/jsql-injection.git
+[submodule "exploits/ronin"]
+	path = exploits/ronin
+	url = https://github.com/ronin-ruby/ronin.git
