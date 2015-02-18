@@ -442,3 +442,12 @@
 [submodule "web/bypasswaf"]
 	path = web/bypasswaf
 	url = https://github.com/codewatchorg/bypasswaf.git
+[submodule "enum/ridenum"]
+	path = enum/ridenum
+	url = https://github.com/trustedsec/ridenum.git
+[submodule "exploits/unicorn"]
+	path = exploits/unicorn
+	url = https://github.com/trustedsec/unicorn.git
+[submodule "exploits/meterssh"]
+	path = exploits/meterssh
+	url = https://github.com/trustedsec/meterssh.git

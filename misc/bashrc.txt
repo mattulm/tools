@@ -1,0 +1,78 @@
+##root
+
+export PS1='\h:\w\$ '
+umask 027
+
+# You may uncomment the following lines if you want `ls' to be colorized:
+# export LS_OPTIONS='--color=auto'
+# eval "`dircolors`"
+ alias ls='ls $LS_OPTIONS'
+ alias ll='ls $LS_OPTIONS -l'
+ alias l='ls $LS_OPTIONS -lA'
+#
+# Some more alias to avoid making mistakes:
+ alias rm='rm -i'
+ alias cp='cp -i'
+ alias mv='mv -i'
+
+              ######################
+              #####Darstellung:#####
+              ######################
+
+
+C1="\[\033[0;30m\]" # Black
+C3="\[\033[0;31m\]" # Red
+C5="\[\033[0;32m\]" # Green
+C7="\[\033[0;33m\]" # Brown
+C8="\[\033[0;33m\]" # Yellow
+C9="\[\033[0;34m\]" # Blue
+C14="\[\033[0;36m\]" # Light
+C16="\[\033[0;37m\]" # White
+P="\[\033[0m\]" # Neutre
+
+TTY="`tty`"
+export TTY="${TTY##*[Va-zA-Z]}"
+
+export PS1="$C3\t $C3\h $C3\w $C3[$C3\u$C3]"
+
+
+##user
+
+              ######################
+              #####Darstellung:#####
+              ######################
+xset b 0
+
+C1="\[\033[0;30m\]" # Black
+C3="\[\033[0;31m\]" # Red
+C5="\[\033[0;32m\]" # Green
+C7="\[\033[0;33m\]" # Brown
+C8="\[\033[0;33m\]" # Yellow
+C9="\[\033[0;34m\]" # Blue
+C14="\[\033[0;36m\]" # Light
+C16="\[\033[0;37m\]" # White
+P="\[\033[0m\]" # Neutre
+
+TTY="`tty`"
+export TTY="${TTY##*[Va-zA-Z]}"
+
+export PS1="$C3\t $C7\h $C5\w $C9[$C9\u$C9] $P"
+
+case $TERM in
+   xterm*)
+     PS1="\[\033]0;\u@\h[${TTY}]:\w\007\]${PS1}"
+   ;;
+esac
+
+export LANG=de_DE.ISO-8859-15
+
+umask 007
+
+if [ -x /usr/games/fortune ]; then
+        /usr/games/fortune
+fi
+
+if [ -x /usr/bin/xbindkeys ]; then
+        xbindkeys -f ~/.xbindkeys_config/speed_c/xbindtest
+fi
+
