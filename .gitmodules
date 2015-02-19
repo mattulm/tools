@@ -742,3 +742,6 @@
 [submodule "nmap/vicendominguez"]
 	path = nmap/vicendominguez
 	url = https://github.com/vicendominguez/http-open-proxy-anon.git
+[submodule "pwlists/LDAPbrute"]
+	path = pwlists/LDAPbrute
+	url = https://github.com/droope/ldap-brute.git
