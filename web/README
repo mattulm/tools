@@ -1,0 +1,161 @@
+
+ LiLith v0.6a: http forms scanner/injector
+ by <michael@code.ae>
+
+                       "She has come from the shadows of the dreamworld"
+                                                      -inkubus sukkubus
+
+ Copyright (c) 2003-2005 Michael Hendrickx <michael@code.ae>
+ 
+ 
+ Introduction:
+ -------------
+ 
+ LiLith is a tool for auditing dynamic websites and web applications, to
+ improve their security, so please do not abuse this software and always
+ get permission in 'scanning' a target system.
+ 
+ This software works as an ordinary webspider, but rather in storing the
+ file, it analyses the HTML output and tries to inject  characters  that
+ can have a special meaning for an underlying platform.  Furthermore, it
+ tries to tamper web variables - implying to get error messages.
+ 
+ Errors  found in web applications -often- pose a misunderstood security
+ hole.  Having your website firewalled and protected with IDS/IPS mostly
+ doesn't help much to your application security. As often quoted before;
+ security is only as strong as it's weakest link.
+ 
+ While I am  aware that this tool can be used for actions of a malicious
+ nature, i discourage any "unethical hacking" using this tool.
+
+ 
+ How to use:
+ -----------
+ 
+ LiLith v0.6a is written in perl 5 and only needs perl with some modules
+ that often come with perl by default. If any error arises upon starting
+ the program, please install following modules:
+ 
+ - HTTP::Request
+ - LWP::UserAgent
+ 
+ Lilith can be run from any posix or Microsoft Windows machine, such  as
+ following example (on Linux 2.4.x):
+ 
+   $ perl lilith.pl
+ 
+ When lilith.pl is run without an argument , a short usage menu explains
+ how parameters need to be passed.  The most default way of running this
+ tool is just with a host argument, such as following example:
+ 
+   $ perl lilith.pl www.server.com
+   
+ This will start "spidering" the web pages hosted at www.server.com  and
+ will inject several characters in places where possible, such as <form>
+ tags that will accept one or more <input>'s, or variables in the URL.
+ 
+ Of course, LiLith has many options to "tune" your spidering process and
+ to increase verbosity on screen and logging output. The several options
+ are explained in the next section "LiLith options".
+ 
+ 
+ LiLith options
+ --------------
+ 
+ This section explains options that can be used with LiLith:
+ 
+   -d <dir>     : Directory where the spidering should start. If you are
+                  running a website where a webapplication is located at
+		  a certain directory (eg: /ebank/), then this directory
+		  can be specified.  *Note*: any links that jump back to 
+		  the homepage will not be followed , any external links
+		  (hyperlinks going to other websites) will not be saved
+		  and audited.  If the target is specified with a direc-
+		  tory (eg: "www.target.com/myapp/"), then the directory
+		  will be parsed.
+		  
+   -a <agent>   : User-agent that is displayed with every request.   The
+                  default user-agent is set to "LiLith v0.6a", but  this
+		  can be changed. The argument for this parameter can be
+		  nummeric and get a agent from the list (which is  seen
+		  when issuing -a 0) or a alphanummeric string that will
+		  be used as the user-agent. This can be handy in audits
+		  when set to for example: "Security Scan <date>".   The
+		  list of 'normal' browsers is to  ensure  compatibility
+		  with browser-specific (eg: IE) applications.
+		 
+   -u <un:pw>   : If the target web application  is protected with basic
+                  authentication then credentials (username and password
+		  respectively)   can   be   set   here.   For  example: 
+		  -u "michael:secret123".
+		  
+   -p <proxy>   : If you can only  access the target  web application by
+                  going through a proxy, this can be specified here. The
+		  format should be in the <ip/hostname:port> format. Eg:
+		  -p "proxy.isp.com:8080".
+    
+   -U <un:pw>   : If the proxy, specified with the -p argument, requires
+                  authentication, then it can be set here. It adapts the
+		  same format as basic authentication.
+ 
+   -T <delay>   : If defined , then LiLith will wait <delay> seconds  in
+                  between sending two requests.  This argument should be
+		  of a nummeric nature, eg: "-T 2" will make LiLith wait
+		  for two (2) seconds between each request.
+		  
+   -f <file>    : LiLith will log all requests, responses with  relevant
+                  timestamps.  This can come in handy when comparing any
+		  IDS logs against  the LiLith logfile.   The  specified 
+		  logfile should be a writeable file, and all data  will
+		  be stored in a readable ASCII file.
+		  
+   -c           : Ignore any cookies presented by the host [default off]
+                  that are used by the application.  Often these contain
+		  data that should be remembered (eg:  language, session
+		  identifier).
+		  
+   -g           : (*g*o on) Do not stop when an error is found.  Default
+                  behaviour will skip the current  variable and go on to
+		  the next form/page without  trying any more  "poison".
+		  This is to avoid that you will get dozens of errors at
+		  the same field, all having SQL warnings that '$x' (the 
+		  injected poison) is not a valid, for example, integer.
+		  To test the application with all "poison values", then
+		  enable this option.
+   
+   
+   
+ 
+ F.A.Q:
+ ------
+ 
+ Q: I get following error: blablablabala
+ A: Please update your perl modules.  This can be done through CPAN:
+ 
+   $ perl -MCPAN -eshell
+   cpan> install HTTP::Request
+   
+ Q: LiLith seems to hang when I scan a website.
+ A: It is crawling through links and injection.  Probably if you fire up
+    a sniffer you will see the traffic. If however the program does hang
+    please let me  know  about it.  Some of the recursive functions were
+    written late at night, so there is a possibility. :)
+
+    From Lilith v0.5c and above, the scanning  engine has been made more
+    thouroughly, and spiders through many links, injecting a significant
+    amount of data, therefor it can appear to be slow and 'hang'.
+    
+ Q: I think I found a bug, what do I do?
+ A: This is more than possible , please contact me using the information
+    on top of this README file.
+
+ Q: I have a vulnerable site, but Lilith doesn't recognize it.. 
+ A: Please send the concerned target  site , and what triggers it , or a
+    dump of the error message.  The  error message  is not recognized by 
+    LiLith.
+
+ Q: I didn't see LiLith0.5.. why the jump from 0.4 to 0.6?
+ A: 0.5x was a development version, and tested by a very limited set of
+    testers.  0.6 is the fully functional result of the 0.5 series.
+
+

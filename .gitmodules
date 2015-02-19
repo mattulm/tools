@@ -451,3 +451,294 @@
 [submodule "exploits/meterssh"]
 	path = exploits/meterssh
 	url = https://github.com/trustedsec/meterssh.git
+[submodule "web/hackpad"]
+	path = web/hackpad
+	url = https://github.com/michenriksen/hackpad.git
+[submodule "enum/gitrob"]
+	path = enum/gitrob
+	url = https://github.com/michenriksen/gitrob.git
+[submodule "web/easywins"]
+	path = web/easywins
+	url = https://github.com/michenriksen/easywins.git
+[submodule "web/webappurls"]
+	path = web/webappurls
+	url = https://github.com/pwnwiki/webappurls.git
+[submodule "web/webappdefaultsdb"]
+	path = web/webappdefaultsdb
+	url = https://github.com/pwnwiki/webappdefaultsdb.git
+[submodule "exploits/w3TotalFail"]
+	path = exploits/w3TotalFail
+	url = https://github.com/zx2c4/w3-total-fail.git
+[submodule "exploits/wsTotalCacheExploit"]
+	path = exploits/wsTotalCacheExploit
+	url = https://github.com/FireFart/W3TotalCacheExploit.git
+[submodule "nmap/screengrab"]
+	path = nmap/screengrab
+	url = https://github.com/mainframed/NMAP.git
+[submodule "nmap/ea"]
+	path = nmap/ea
+	url = https://github.com/ea/nmap-scripts.git
+[submodule "nmap/cldrn"]
+	path = nmap/cldrn
+	url = https://github.com/cldrn/nmap-nse-scripts.git
+[submodule "misc/scripts"]
+	path = misc/scripts
+	url = https://github.com/cldrn/pentesting.git
+[submodule "metasploit/cldrn"]
+	path = metasploit/cldrn
+	url = https://github.com/cldrn/metasploit-modules.git
+[submodule "nmap/SpiderLabs"]
+	path = nmap/SpiderLabs
+	url = https://github.com/SpiderLabs/Nmap-Tools.git
+[submodule "nmap/ilv"]
+	path = nmap/ilv
+	url = https://github.com/ilv/Nmap.git
+[submodule "nmap/nmapLFI"]
+	path = nmap/nmapLFI
+	url = https://github.com/c0d3r4ck/NmapNSE.git
+[submodule "nmap/Phackertarget"]
+	path = nmap/Phackertarget
+	url = https://github.com/peter-hackertarget/nmap-nse-scripts.git
+[submodule "nmap/takeshixx"]
+	path = nmap/takeshixx
+	url = https://github.com/takeshixx/ssl-heartbleed.nse.git
+[submodule "nmap/azet"]
+	path = nmap/azet
+	url = https://github.com/azet/nmap-heartbleed.git
+[submodule "nmap/tiago4orion"]
+	path = nmap/tiago4orion
+	url = https://github.com/tiago4orion/nmap-scripts.git
+[submodule "misc/hackstuff"]
+	path = misc/hackstuff
+	url = https://github.com/tiago4orion/hack-stuff.git
+[submodule "nmap/b4ldrScripts"]
+	path = nmap/b4ldrScripts
+	url = https://github.com/b4ldr/nse-scripts.git
+[submodule "nmap/fatfinger"]
+	path = nmap/fatfinger
+	url = https://github.com/nccgroup/fat-finger.git
+[submodule "web/cschijack"]
+	path = web/cschijack
+	url = https://github.com/nccgroup/CrossSiteContentHijacking.git
+[submodule "network/CiscoSNMPSlap"]
+	path = network/CiscoSNMPSlap
+	url = https://github.com/nccgroup/Cisco-SNMP-Slap.git
+[submodule "network/CiscoSNMPenum"]
+	path = network/CiscoSNMPenum
+	url = https://github.com/nccgroup/cisco-SNMP-enumeration.git
+[submodule "web/dotNETORaclePadding"]
+	path = web/dotNETORaclePadding
+	url = https://github.com/nccgroup/dotnetpaddingoracle.git
+[submodule "network/SSHUserEnum"]
+	path = network/SSHUserEnum
+	url = https://github.com/nccgroup/ssh_user_enum.git
+[submodule "web/creep"]
+	path = web/creep
+	url = https://github.com/nccgroup/creep-web-app-scanner.git
+[submodule "metasploit/msfAVevade"]
+	path = metasploit/msfAVevade
+	url = https://github.com/nccgroup/metasploitavevasion.git
+[submodule "web/webFEET"]
+	path = web/webFEET
+	url = https://github.com/nccgroup/WebFEET.git
+[submodule "nmap/sincoder"]
+	path = nmap/sincoder
+	url = https://github.com/sincoder/nmap_scripts.git
+[submodule "network/s"]
+	path = network/s
+	url = https://github.com/sincoder/s.git
+[submodule "network/RDPcrack"]
+	path = network/RDPcrack
+	url = https://github.com/sincoder/rdp_crk.git
+[submodule "web/PHPsqlmap"]
+	path = web/PHPsqlmap
+	url = https://github.com/sincoder/php_sqlmap.git
+[submodule "exploits/UPX"]
+	path = exploits/UPX
+	url = https://github.com/sincoder/upx.git
+[submodule "exploits/addPEsection"]
+	path = exploits/addPEsection
+	url = https://github.com/sincoder/add_pe_section.git
+[submodule "network/ICMPshell"]
+	path = network/ICMPshell
+	url = https://github.com/sincoder/icmp_shell.git
+[submodule "network/sinarp"]
+	path = network/sinarp
+	url = https://github.com/sincoder/sinarp.git
+[submodule "exploits/gh0st"]
+	path = exploits/gh0st
+	url = https://github.com/sincoder/gh0st.git
+[submodule "network/HTTPuppload"]
+	path = network/HTTPuppload
+	url = https://github.com/sincoder/http_upload.git
+[submodule "network/HTTPupload"]
+	path = network/HTTPupload
+	url = https://github.com/sincoder/http_upload.git
+[submodule "nmap/VNCauth"]
+	path = nmap/VNCauth
+	url = https://github.com/nosteve/vnc-auth.git
+[submodule "nmap/s4n7h0"]
+	path = nmap/s4n7h0
+	url = https://github.com/s4n7h0/NSE.git
+[submodule "offensiveCoder"]
+	path = offensiveCoder
+	url = https://github.com/offensivecoder/nmap-nse-scripts.git
+[submodule "nmap/offensiveCoder"]
+	path = nmap/offensiveCoder
+	url = https://github.com/offensivecoder/nmap-nse-scripts.git
+[submodule "nmap/SSLenum"]
+	path = nmap/SSLenum
+	url = https://github.com/bojanisc/nmap-scripts.git
+[submodule "nmap/michenriksen"]
+	path = nmap/michenriksen
+	url = https://github.com/michenriksen/nmap-scripts.git
+[submodule "wifi/lootbooty"]
+	path = wifi/lootbooty
+	url = https://github.com/Torinson/lootbooty.git
+[submodule "nmap/screenshot"]
+	path = nmap/screenshot
+	url = https://github.com/state-machine/nmap-scripts.git
+[submodule "nmap/dotnick"]
+	path = nmap/dotnick
+	url = https://github.com/dotnick/nmap-scripts.git
+[submodule "web/webshellportlet"]
+	path = web/webshellportlet
+	url = https://github.com/kost/webshell-portlet.git
+[submodule "exploits/shellcodeexec"]
+	path = exploits/shellcodeexec
+	url = https://github.com/kost/shellcodeexec.git
+[submodule "nmap/sjhilt"]
+	path = nmap/sjhilt
+	url = https://github.com/sjhilt/Nmap-NSEs.git
+[submodule "nmap/DorksNMAP"]
+	path = nmap/DorksNMAP
+	url = https://github.com/t3sl4/DorksNmap.git
+[submodule "nmap/NSploit"]
+	path = nmap/NSploit
+	url = https://github.com/bonsaiviking/Nsploit.git
+[submodule "metasploit/MubixPostExploit"]
+	path = metasploit/MubixPostExploit
+	url = https://github.com/mubix/post-exploitation.git
+[submodule "nmap/d33tah"]
+	path = nmap/d33tah
+	url = https://github.com/d33tah/nmap-ptunnel-discovery.git
+[submodule "nmap/XPloitSearch"]
+	path = nmap/XPloitSearch
+	url = https://github.com/originx/Nmap-xploitSearch.git
+[submodule "nmap/3vi1john"]
+	path = nmap/3vi1john
+	url = https://github.com/3vi1john/nmap-nse-scripts.git
+[submodule "nmap/iagox86"]
+	path = nmap/iagox86
+	url = https://github.com/iagox86/nmap-exif-spider.git
+[submodule "nmap/maetrics"]
+	path = nmap/maetrics
+	url = https://github.com/maetrics/nmap-scripts.git
+[submodule "nmap/herebepanda"]
+	path = nmap/herebepanda
+	url = https://github.com/herebepanda/nmap-nse.git
+[submodule "nmap/unreal"]
+	path = nmap/unreal
+	url = https://github.com/xpn/backdoor-unrealIRCd-nmap-scanner.git
+[submodule "network/VSNmap"]
+	path = network/VSNmap
+	url = https://github.com/verbalsaint/VSNmap.git
+[submodule "nmap/dukebarman"]
+	path = nmap/dukebarman
+	url = https://github.com/dukebarman/luanmap.git
+[submodule "nmap/4armed"]
+	path = nmap/4armed
+	url = https://github.com/4ARMED/nmap-nse-scripts.git
+[submodule "nmap/deanjerkovich"]
+	path = nmap/deanjerkovich
+	url = https://github.com/deanjerkovich/nmap-nse-scripts.git
+[submodule "web/malarkey"]
+	path = web/malarkey
+	url = https://github.com/deanjerkovich/malarkey.git
+[submodule "nmap/cirrusj"]
+	path = nmap/cirrusj
+	url = https://github.com/cirrusj/nmap-dns-brute.git
+[submodule "web/wafBypasser"]
+	path = web/wafBypasser
+	url = https://github.com/owtf/wafbypasser.git
+[submodule "nmap/abrdiaz"]
+	path = nmap/abrdiaz
+	url = https://github.com/abrdiaz/nse.git
+[submodule "network/PortScanner"]
+	path = network/PortScanner
+	url = https://github.com/jaymmodi/PortScanner.git
+[submodule "nmap/afxdub"]
+	path = nmap/afxdub
+	url = https://github.com/afxdub/http-screenshot-html.git
+[submodule "network/snmp-discover"]
+	path = network/snmp-discover
+	url = https://github.com/ricedu/snmp-discover-script.git
+[submodule "nmap/IRCuncloak"]
+	path = nmap/IRCuncloak
+	url = https://github.com/decal/irc-uncloak-nse.git
+[submodule "nmap/edauksis"]
+	path = nmap/edauksis
+	url = https://github.com/Edauksis/get-printer-mac-nse.git
+[submodule "nmap/trolldbois"]
+	path = nmap/trolldbois
+	url = https://github.com/trolldbois/http-brute-random-uuid-param.git
+[submodule "network/trolldbois"]
+	path = network/trolldbois
+	url = https://github.com/trolldbois/NetworkTools.git
+[submodule "network/MrTchuss"]
+	path = network/MrTchuss
+	url = https://github.com/MrTchuss/NetworkTools.git
+[submodule "exploits/scl"]
+	path = exploits/scl
+	url = https://github.com/MrTchuss/scl.git
+[submodule "network/ZackAttack"]
+	path = network/ZackAttack
+	url = https://github.com/urbanesec/ZackAttack.git
+[submodule "nmap/sussurro"]
+	path = nmap/sussurro
+	url = https://github.com/sussurro/nsploit.git
+[submodule "network/BannerScanner"]
+	path = network/BannerScanner
+	url = https://github.com/spaceB0x/BannerScanner.git
+[submodule "nmap/xen01"]
+	path = nmap/xen01
+	url = https://github.com/xen0l/nse-scripts.git
+[submodule "nmap/Penguin2600"]
+	path = nmap/Penguin2600
+	url = https://github.com/Penguin2600/Minecraft-NSE.git
+[submodule "nmap/rochax"]
+	path = nmap/rochax
+	url = https://github.com/rochax/NSEE.git
+[submodule "misc/rochax"]
+	path = misc/rochax
+	url = https://github.com/rochax/pentest_scripts.git
+[submodule "misc/milo2012"]
+	path = misc/milo2012
+	url = https://github.com/milo2012/pentest_scripts.git
+[submodule "web/Webrecon"]
+	path = web/Webrecon
+	url = https://github.com/offwidth/Webrecon.git
+[submodule "nmap/CaledoniaProject"]
+	path = nmap/CaledoniaProject
+	url = https://github.com/CaledoniaProject/nse-scripts.git
+[submodule "exploits/ExploitRemotingService"]
+	path = exploits/ExploitRemotingService
+	url = https://github.com/CaledoniaProject/ExploitRemotingService.git
+[submodule "network/rdpscan"]
+	path = network/rdpscan
+	url = https://github.com/CaledoniaProject/rdpscan.git
+[submodule "nmap/xorbyte"]
+	path = nmap/xorbyte
+	url = https://github.com/xorbyte/nse-scripts.git
+[submodule "nmap/mainframed"]
+	path = nmap/mainframed
+	url = https://github.com/mainframed/NMAP.git
+[submodule "nmap/cr3-nmap"]
+	path = nmap/cr3-nmap
+	url = https://github.com/internetofallthethings/cr3-nmap.git
+[submodule "nmap/davidshaw"]
+	path = nmap/davidshaw
+	url = https://github.com/davidshaw/toorcon2010.git
+[submodule "nmap/vicendominguez"]
+	path = nmap/vicendominguez
+	url = https://github.com/vicendominguez/http-open-proxy-anon.git
