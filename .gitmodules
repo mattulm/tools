@@ -745,3 +745,126 @@
 [submodule "pwlists/LDAPbrute"]
 	path = pwlists/LDAPbrute
 	url = https://github.com/droope/ldap-brute.git
+[submodule "enum/vlnc"]
+	path = enum/vlnc
+	url = https://github.com/vlnc/enumeration.git
+[submodule "misc/tunna"]
+	path = misc/tunna
+	url = https://github.com/SECFORCE/Tunna.git
+[submodule "enum/enumerator"]
+	path = enum/enumerator
+	url = https://github.com/overflowsecurity/enumerator.git
+[submodule "pwlists/maleus"]
+	path = pwlists/maleus
+	url = https://github.com/Maleus/SecLists.git
+[submodule "pwlists/danielmiessler"]
+	path = pwlists/danielmiessler
+	url = https://github.com/danielmiessler/SecLists.git
+[submodule "pwlists/scythe"]
+	path = pwlists/scythe
+	url = https://github.com/ChrisJohnRiley/Scythe.git
+[submodule "enum/subbrute"]
+	path = enum/subbrute
+	url = https://github.com/TheRook/subbrute.git
+[submodule "web/riXSS"]
+	path = web/riXSS
+	url = https://github.com/RicterZ/riXSS.git
+[submodule "exploits/PadBuster"]
+	path = exploits/PadBuster
+	url = https://github.com/GDSSecurity/PadBuster.git
+[submodule "exploits/LinuxESuggester"]
+	path = exploits/LinuxESuggester
+	url = https://github.com/PenturaLabs/Linux_Exploit_Suggester.git
+[submodule "exploits/g0tr00t"]
+	path = exploits/g0tr00t
+	url = https://github.com/RicterZ/g0tr00t.git
+[submodule "network/ftpcrack"]
+	path = network/ftpcrack
+	url = https://github.com/d4rkcat/ftpcrack.git
+[submodule "network/adminfinder"]
+	path = network/adminfinder
+	url = https://github.com/d4rkcat/adminfinder.git
+[submodule "exploits/g0tb33f"]
+	path = exploits/g0tb33f
+	url = https://github.com/d4rkcat/g0tbeef.git
+[submodule "web/v3n0m"]
+	path = web/v3n0m
+	url = https://github.com/d4rkcat/v3n0m.git
+[submodule "exploits/stackflow"]
+	path = exploits/stackflow
+	url = https://github.com/d4rkcat/stackflow.git
+[submodule "web/recon"]
+	path = web/recon
+	url = https://github.com/d4rkcat/recon.git
+[submodule "exploits/pykek"]
+	path = exploits/pykek
+	url = https://github.com/bidord/pykek.git
+[submodule "web/xss2shell"]
+	path = web/xss2shell
+	url = https://github.com/Prochainezo/xss2shell.git
+[submodule "web/XssScanner"]
+	path = web/XssScanner
+	url = https://github.com/flyr4nk/XssScaner.git
+[submodule "web/form-checker"]
+	path = web/form-checker
+	url = https://github.com/Kondou-ger/form-checker.git
+[submodule "web/BCable"]
+	path = web/BCable
+	url = https://github.com/BCable/vulndetector.git
+[submodule "web/param-analyze"]
+	path = web/param-analyze
+	url = https://github.com/matthewdfuller/param-analyze.git
+[submodule "web/xss-screencapture"]
+	path = web/xss-screencapture
+	url = https://github.com/matthewdfuller/xss-screencapture.git
+[submodule "web/intellifuzz-xss"]
+	path = web/intellifuzz-xss
+	url = https://github.com/matthewdfuller/intellifuzz-xss.git
+[submodule "web/web-scan-spider"]
+	path = web/web-scan-spider
+	url = https://github.com/anthonywei/web-scan-spider.git
+[submodule "web/basic-xss-spider"]
+	path = web/basic-xss-spider
+	url = https://github.com/DanMcInerney/basic-xss-spider.git
+[submodule "web/SinXSS"]
+	path = web/SinXSS
+	url = https://github.com/sintrb/SinXSS.git
+[submodule "web/xss-admin"]
+	path = web/xss-admin
+	url = https://github.com/infosec-au/xss-admin.git
+[submodule "web/CherryXSS"]
+	path = web/CherryXSS
+	url = https://github.com/infosec-au/CherryXSS.git
+[submodule "web/webappsecTK"]
+	path = web/webappsecTK
+	url = https://github.com/infosec-au/webappsec-toolkit.git
+[submodule "web/betterXSS"]
+	path = web/betterXSS
+	url = https://github.com/thatpentestguy/betterXSS.git
+[submodule "profile/PG"]
+	path = profile/PG
+	url = https://github.com/thatpentestguy/peter_gabriel.git
+[submodule "web/xsstools"]
+	path = web/xsstools
+	url = https://github.com/kevin1993s/xsstools.git
+[submodule "exploits/MITMf"]
+	path = exploits/MITMf
+	url = https://github.com/byt3bl33d3r/MITMf.git
+[submodule "exploits/MITMf-opt-plugins"]
+	path = exploits/MITMf-opt-plugins
+	url = https://github.com/byt3bl33d3r/MITMf-opt-plugins.git
+[submodule "misc/cmd2PS"]
+	path = misc/cmd2PS
+	url = https://github.com/byt3bl33d3r/cmd2powershell.git
+[submodule "web/XSSFinder"]
+	path = web/XSSFinder
+	url = https://github.com/r-dmv/XSSFinder.git
+[submodule "web/AutoXSSFinder"]
+	path = web/AutoXSSFinder
+	url = https://github.com/shadsidd/Automated-XSS-Finder.git
+[submodule "web/WExploitPayloads"]
+	path = web/WExploitPayloads
+	url = https://github.com/sandrogauci/Webapp-Exploit-Payloads.git
+[submodule "metasploit/hasherezade"]
+	path = metasploit/hasherezade
+	url = https://github.com/hasherezade/metasploit_modules.git
