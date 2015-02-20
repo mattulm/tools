@@ -1,0 +1,565 @@
+<VulnDB lang="php">
+<Vulnerability>
+    <Name>header</Name>
+    <Info>
+      <Severity>Medium</Severity>
+      <Description>
+        This function can be used to launch http response splitting and xss attacks. 
+        If arguments are derived from user input, make sure they are properly formatted and 
+        contain no unexpected characters or extra data.
+      </Description>
+    </Info>
+  </Vulnerability>
+
+<Vulnerability>
+    <Name>setcookie</Name>
+    <Info>
+      <Severity>Medium</Severity>
+      <Description>
+        This function can be used to launch http response splitting and xss attacks. 
+        If arguments are derived from user input, make sure they are properly formatted and 
+        contain no unexpected characters or extra data.
+      </Description>
+    </Info>
+  </Vulnerability>
+
+<Vulnerability>
+    <Name>mysql_query</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        check for sql injection
+      </Description>
+    </Info>
+  </Vulnerability>
+
+
+<Vulnerability>
+    <Name>import_request_variables</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        this function can be a security hazard
+      </Description>
+    </Info>
+  </Vulnerability>
+
+<Vulnerability>
+    <Name>extract</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        this function can be a security hazard
+      </Description>
+    </Info>
+  </Vulnerability>
+
+
+
+<Vulnerability>
+    <Name>preg_replace</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        This function with the /e modifier in argument 1 can be used to run php code in the argument 2
+        Make sure that a remote user cannot inject the modifier and use preg_quote() to escape
+        argument passed to argument 2.
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>file_exists</Name>
+    <Info>
+      <Severity>Medium</Severity>
+      <Description>
+        from php5 this functions supports ftp wrappers
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>include</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        check for arbitrary remote/local inclusion
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>include_once</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        check for arbitrary remote/local inclusion
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>require_once</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        check for arbitrary remote/local inclusion
+      </Description>
+    </Info>
+  </Vulnerability>
+
+ <Vulnerability>
+    <Name>ip2long</Name>
+    <Info>
+      <Severity>Low</Severity>
+      <Description>
+        if used to validate ip adressess this function can be circumvented to return a valide network address
+        read: http://retrogod.altervista.org/php_ip2long.htm
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>require</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        check for arbitrary remote/local inclusion
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>urldecode</Name>
+    <Info>
+      <Severity>Low</Severity>
+      <Description>
+      this function can be used to bypass magic_quotes_gpc, ex: u can pass ' unescaped through the '%2527' trick
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>base64_decode</Name>
+    <Info>
+      <Severity>Low</Severity>
+      <Description>
+      this function can be used to bypass magic_quotes_gpc
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_numeric</Name>
+    <Info>
+      <Severity>Low</Severity>
+      <Description>
+      this function can be used to bypass some anti-sqli via hex or bin
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>iconv</Name>
+    <Info>
+      <Severity>Low</Severity>
+      <Description>
+      this function can be truncat when encount unrecognize char
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>unset</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        see:
+        http://www.hardened-php.net/hphp/zend_hash_del_key_or_index_vulnerability.html
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>unserialize</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        see http://www.hardened-php.net/advisory_012004.42.html,
+        also this function can be used to bypass magic quotes
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>html_entity_decode</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        see: http://www.securityfocus.com/bid/17296
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>tempnam</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        see http://does-not-exist.org/mail-archives/bugtraq/msg13561.html
+      </Description>
+    </Info>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>mail</Name>
+    <Info>
+      <Severity>High</Severity>
+      <Description>
+        Arguments 1, 2, 4 and 5 of this function may be passed to an external 
+        program. (Usually sendmail). Under Windows, they will be passed to a
+        remote email server. If these values are derived from user input, make
+        sure they are properly formatted and contain no unexpected characters or
+        extra data.
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>getallheaders</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>bzread</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>fgets</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>fgetss</Name>
+    <Input/>
+  </Vulnerability>
+
+
+  <Vulnerability>
+    <Name>getenv</Name>
+    <Input/>
+  </Vulnerability>
+    
+  <Vulnerability>
+    <Name>file</Name>
+    <RaceUse>1</RaceUse>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>fscanf</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>gzfile</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>gzgetc</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>gzgets</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>gzread</Name>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>gzgetss</Name>
+    <Input/>
+  </Vulnerability>
+
+
+  <Vulnerability>
+    <Name>read</Name>
+    <Input/>
+  </Vulnerability>
+
+
+
+  <Vulnerability>
+    <Name>gzopen</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>eval</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem> 
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>highlight_file</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>show_source</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>leak</Name>
+    <Info>
+      <Severity>Medium</Severity>
+      <Description>This function literally leaks memory. Are you sure you meant to use this?</Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>chroot</Name>
+    <Info>
+      <Severity>Low</Severity>
+      <Description>Reminder: Do not forget to chdir() to an appropriate directory before calling chroot()</Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>fsockopen</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>Medium</Severity>
+    </InputProblem>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>pfsockopen</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>Medium</Severity>
+    </InputProblem>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>posix_getlogin</Name>
+    <Info>
+      <Description> The results of this call are easy to forge.</Description>
+      <Severity>Medium</Severity>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>posix_ttyname</Name>
+    <Info>
+      <Description>
+      The results are easy for an attacker to forge, and not reliable.
+      </Description>
+    </Info>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>system</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>passthru</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+  </Vulnerability>
+<Vulnerability>
+
+    <Name>shell_exec</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+  </Vulnerability>
+  
+  <Vulnerability>
+    <Name>fopen</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>bzopen</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>popen</Name>
+    <InputProblem>
+      <Arg>1</Arg>
+      <Severity>High</Severity>
+    </InputProblem>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>posix_mkfifo</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>opendir</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>exec</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+
+  <Vulnerability>
+    <Name>basename</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>chmod</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>chown</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>dirname</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>link</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>mkdir</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>readfile</Name>
+    <RaceUse>1</RaceUse>
+    <Input/>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>rename</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>rmdir</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>symlink</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>unlink</Name>
+    <RaceUse>1</RaceUse>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>filegroup</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>fileowner</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>fileperms</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_dir</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_executable</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_file</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_link</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_readable</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_writable</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>is_writeable</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>stat</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+
+  <Vulnerability>
+    <Name>lstat</Name>
+    <RaceCheck>1</RaceCheck>
+  </Vulnerability>
+</VulnDB>
+
+
+
+
