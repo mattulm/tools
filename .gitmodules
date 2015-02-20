@@ -868,3 +868,39 @@
 [submodule "metasploit/hasherezade"]
 	path = metasploit/hasherezade
 	url = https://github.com/hasherezade/metasploit_modules.git
+[submodule "web/dsfs"]
+	path = web/dsfs
+	url = https://github.com/stamparm/DSFS.git
+[submodule "web/dsjs"]
+	path = web/dsjs
+	url = https://github.com/stamparm/DSJS.git
+[submodule "web/jack"]
+	path = web/jack
+	url = https://github.com/sensepost/jack.git
+[submodule "web/CMSmap"]
+	path = web/CMSmap
+	url = https://github.com/Dionach/CMSmap.git
+[submodule "web/wordstress"]
+	path = web/wordstress
+	url = https://github.com/thesp0nge/wordstress.git
+[submodule "profile/arlandria"]
+	path = profile/arlandria
+	url = https://github.com/kussic/arlandria.git
+[submodule "misc/PyFuzz"]
+	path = misc/PyFuzz
+	url = https://github.com/lightos/PyFuzz.git
+[submodule "web/NoSQLMap"]
+	path = web/NoSQLMap
+	url = https://github.com/tcstool/NoSQLMap.git
+[submodule "web/csrft"]
+	path = web/csrft
+	url = https://github.com/PaulSec/CSRFT.git
+[submodule "misc/hashtag"]
+	path = misc/hashtag
+	url = https://github.com/SmeegeSec/HashTag.git
+[submodule "exploits/reflectiveDLL"]
+	path = exploits/reflectiveDLL
+	url = https://github.com/stephenfewer/ReflectiveDLLInjection.git
+[submodule "network/routerpwn"]
+	path = network/routerpwn
+	url = https://github.com/hkm/routerpwn.com.git
