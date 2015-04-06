@@ -907,3 +907,6 @@
 [submodule "exploits/web-bundle"]
 	path = exploits/web-bundle
 	url = https://github.com/haxorplatform/web-bundle.git
+[submodule "web/bundle"]
+	path = web/bundle
+	url = https://github.com/haxorplatform/web-bundle.git
