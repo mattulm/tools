@@ -910,3 +910,6 @@
 [submodule "web/bundle"]
 	path = web/bundle
 	url = https://github.com/haxorplatform/web-bundle.git
+[submodule "web/commix"]
+	path = web/commix
+	url = https://github.com/stasinopoulos/commix.git
