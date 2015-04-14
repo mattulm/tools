@@ -913,3 +913,6 @@
 [submodule "web/commix"]
 	path = web/commix
 	url = https://github.com/stasinopoulos/commix.git
+[submodule "network/smbtrap"]
+	path = network/smbtrap
+	url = https://github.com/CylanceSPEAR/SMBTrap.git
