@@ -246,7 +246,7 @@
 	url = https://github.com/nullbind/Powershellery.git
 [submodule "web/wpsploit"]
 	path = web/wpsploit
-	url = https://github.com/0pc0deFR/wordpress-sploit-framework.git
+	url = https://github.com/espreto/wpsploit.git
 [submodule "web/Hood3dRob1n"]
 	path = web/Hood3dRob1n
 	url = https://github.com/Hood3dRob1n/SQLi.git
@@ -916,3 +916,6 @@
 [submodule "network/smbtrap"]
 	path = network/smbtrap
 	url = https://github.com/CylanceSPEAR/SMBTrap.git
+[submodule "web/absinthe"]
+	path = web/absinthe
+	url = https://github.com/HandsomeCam/Absinthe.git
