@@ -919,3 +919,15 @@
 [submodule "web/absinthe"]
 	path = web/absinthe
 	url = https://github.com/HandsomeCam/Absinthe.git
+[submodule "web/liffy"]
+	path = web/liffy
+	url = https://github.com/rotlogix/liffy.git
+[submodule "web/ByWaf"]
+	path = web/ByWaf
+	url = https://github.com/depasonico/OWASP-ByWaf.git
+[submodule "web/wordbrutepress"]
+	path = web/wordbrutepress
+	url = https://github.com/claudioviviani/wordbrutepress.git
+[submodule "web/arachni"]
+	path = web/arachni
+	url = https://github.com/Arachni/arachni.git
