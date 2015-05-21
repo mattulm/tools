@@ -931,3 +931,6 @@
 [submodule "web/arachni"]
 	path = web/arachni
 	url = https://github.com/Arachni/arachni.git
+[submodule "web/hostmap"]
+	path = web/hostmap
+	url = https://github.com/jekil/hostmap.git
