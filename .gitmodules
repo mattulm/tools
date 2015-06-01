@@ -934,3 +934,27 @@
 [submodule "web/hostmap"]
 	path = web/hostmap
 	url = https://github.com/jekil/hostmap.git
+[submodule "network/thicknet"]
+	path = network/thicknet
+	url = https://github.com/SpiderLabs/thicknet.git
+[submodule "web/waf_tester"]
+	path = web/waf_tester
+	url = https://github.com/denizcevik/waf_tester.git
+[submodule "nmap/rdp_bruter"]
+	path = nmap/rdp_bruter
+	url = https://github.com/denizcevik/rdpgwbf.git
+[submodule "enum/dnsenum"]
+	path = enum/dnsenum
+	url = https://github.com/sincoder/dnsenum.git
+[submodule "web/sqlmap"]
+	path = web/sqlmap
+	url = https://github.com/sqlmapproject/sqlmap.git
+[submodule "misc/gitlist"]
+	path = misc/gitlist
+	url = https://github.com/macubergeek/gitlist.git
+[submodule "exploits/veil"]
+	path = exploits/veil
+	url = https://github.com/Veil-Framework/Veil-Evasion.git
+[submodule "web/xssya2"]
+	path = web/xssya2
+	url = https://github.com/yehia-mamdouh/XSSYA-V-2.0.git
