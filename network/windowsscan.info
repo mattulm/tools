@@ -1,0 +1,7 @@
+1. Create files called ports.txt and ips.txt by piping ports and ips into the files on the compromised machine:
+	echo 22>>ports.txt
+	echo 192.168.1.1>>ips.txt
+
+2. for /F "tokens=*" %j in (ips.txt) do @for /F "tokens=*" %i in (ports.txt) do @((echo open %j %i)&(echo quit)) | ftp 2>&1 | find "host" && @echo %i is open on %j >> results.txt
+
+

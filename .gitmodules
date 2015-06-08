@@ -958,3 +958,9 @@
 [submodule "web/xssya2"]
 	path = web/xssya2
 	url = https://github.com/yehia-mamdouh/XSSYA-V-2.0.git
+[submodule "web/v3n0mScanner"]
+	path = web/v3n0mScanner
+	url = https://github.com/d4rkcat/v3n0m.git
+[submodule "enum/dnsbrute"]
+	path = enum/dnsbrute
+	url = https://github.com/d4rkcat/dnsbrute.git
