@@ -1,0 +1,64 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+*                                                            *
+**************************************************************
+*            -[ Instructions for GPS support ]-              *
+**************************************************************
+
+GPS (Global Positioning System) can be used in wellenreiter using gpsd.
+gpsd is a daemon that provides the data gathered from the gps receiver
+on the serial port via an ordinary tcp socket.  We use gpsd because lots
+of other gps related project use it, and we can support all the devices
+that gpsd supports without changes in the programming.
+
+********************************************
+* 1. *  Download and compile gpsd          *
+********************************************
+
+	You can download gpsd at: http://freshmeat.net/projects/gpsd/
+	That's not the direct download link because there are some
+	important comments on the freshmeat site.  You will have some
+	problems on newer systems when you want to compile gpsd....but
+	dont worry its a simple prob (read the comments on the freshmeat
+	page). Basically you need to replace <sys/time.h> with <time.h>.
+
+********************************************
+* 3. *  Run GPSD / GPS                     *
+********************************************
+
+	Run gpsd now.  You have to know which baud rate must be set
+	for your gps receiver and which device it is connect to.
+	Mine is conneted to /dev/ttyS0 and runs at 4800 baud, so I
+	have to enter 'gpsd -p /dev/ttyS0 -s 4800'.  Now simply run the
+	command 'gps' (part of the gpsd package).  If gps is working you
+	will now see a window about how many satellites are running.
+	Personally, I do this before every startup of wellenreiter,
+	so I'm sure the gps is working.
+
+********************************************
+* 4. *  Run Wellenreiter and scan with GPS *
+********************************************
+
+	You can now run Wellenreiter as usuall.  Don't forget to start 
+	gpsd first, otherwise Wellenreiter will immediately quit. Now
+	when you run a scan in wellenreiter, the latitude, longitude,
+	and speed in mph will be added to the nets detected.
+	
+
+############################################
+#           GPS Troubleshooting            #
+############################################
+
+If wellenreiter has empty or zero long/latitudes, check if gpsd is
+running and see if the gps program works.  If either one is not working,
+don't blame me; if the gps program does work properly, then you can
+contact me :-).
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+**************************************************************

@@ -964,3 +964,6 @@
 [submodule "enum/dnsbrute"]
 	path = enum/dnsbrute
 	url = https://github.com/d4rkcat/dnsbrute.git
+[submodule "web/jawfish"]
+	path = web/jawfish
+	url = https://github.com/gingeleski/jawfish.git

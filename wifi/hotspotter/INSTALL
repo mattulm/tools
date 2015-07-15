@@ -1,0 +1,23 @@
+hotspotter - INSTALL
+
+What you need:
+	- wireless card with prism2 or prism54/gt chipset
+	- hostap or prism54 pcmcia drivers
+	  (Must support iwconfig dev mode monitor/master)
+	  Get it here:
+		http://prism54.org
+	 	http://airsnort.shmoo.com/orinocoinfo.html
+	- libpcap (with wireless support)
+	- wireless extension (normaly built-in kernel)
+
+How to compile:
+	- cd to the "src" directory and type "make"
+	  (You should have now a binary named hotspotter)
+
+How to install:
+	- copy the binary to a location where you will find it.
+	- copy HOTSPOTLIST to a location where you want it,
+	  or build your own essid matchlist. (Send me a copy)
+
+How to run it:
+	See the README on usage details and background information

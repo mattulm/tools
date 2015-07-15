@@ -17,7 +17,7 @@ for ssl in -ssl2 -tls1; do
 			echo -n $cipher - $bits bits ....
 		fi
 
-		if $ossl s_client $ssl -cipher $cipher -connect $1 < sslthing.tmp 2>$1 | grep "New > /dev/null; then
+		if $ossl s_client $ssl -cipher $cipher -connect $1 < sslthing.tmp 2>$1 | grep "New" > /dev/null; then
 			if [ $2 ]; then
 				echo OK
 			else
@@ -32,20 +32,5 @@ for ssl in -ssl2 -tls1; do
 	done | grep -v error
 
 done
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

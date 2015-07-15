@@ -1,0 +1,163 @@
+Hotspotter v0.4
+
+Max Moser <mmo [-at-] remote-exploit.org>
+Joshua Wright <jwright [-at-] hasborg.com>
+
+http://www.remote-exploit.org
+
+Licensed under the GPL
+
+1. History
+2. Hotspotter Introduction
+3. Why a tool like this
+4. Installation
+5. Usage
+6. Further Usage/Ideas
+7. Additional Comments
+8. Greetz
+
+1. History:
+-----------
+During a wireless assessment for a customer some time ago, I discovered a
+strange characteristic of the Microsoft Windows XP wireless client. It was
+possible to bring the client from a secure EAP/TLS network to an insecure one
+without any warnings from the operating system.  I discovered this was due to
+the configuration of multiple wireless profiles. One profile was established
+for the EAP/TLS network, and a second for the "ANY" network, using an empty
+network name (SSID).  
+
+To evaluate this configuration, I established my own access point using the
+same SSID as the EAP/TLS network, without the privacy bit set (no encryption).
+Due to the configuration of the Windows XP client, I was able to force the
+client to switch to my network with a single deauthenticate frame; at which
+point the client reconnected to my "rogue" access point. The victim station did
+not receive a warning from the operating system to indicate they left their
+production network, only a small indicator for temporary wireless signal.
+
+With this attack, I was able to force a client to leave their secure wireless
+network and reconnect to my rogue network, albeit at a loss of network
+connectivity.  This allowed me to evaluate the host-based security of the
+victim host, without the protection of the EAP/TLS network.
+
+This behaviour seems to be fixed in Windows XP Service Pack 1.  I was unable to
+locate any documentation in the Microsoft Knowledge Base that indicated the
+resolution of this flaw, but there is a remaining vulnerability that can also
+be exploited based configured wireless profiles.
+
+A Windows XP client will probe for all the preferred network names listed in
+the wireless client configuration during startup, powersave-wakeup and when the
+driver reports signal loss for the current network name.  Many coporate
+wireless users configure Windows XP with a business profile (secure network
+profile) and several other network names including commercial hotspots and home
+networks (insecure network profiles).  Due to this configuration, it is
+possible to force a client to disclose the list of configured profiles, and
+then establish a connection to a rogue network using one of the preferred
+network names.  Depending on the configuration of the wireless client, the
+client will display a bubble message indicating it has joined a different
+wireless network name.
+
+Once the associates to the rogue network, it is possible to interact with the
+client directly.  This may include port scanning the victim, exploiting
+Windows-based vulnerabilities or simulating an otherwise "real" network using
+faked services and intercepted DNS queries.
+
+Note that the Apple OS X client exhibits similar behaviour, although it has not
+been thoroughly tested at this time.
+
+
+2. Hotspotter Introduction
+--------------------------
+Hotspotter was written to exploit this weakness in the Windows XP operating
+system.  Hotspotter passively monitors the network for probe request frames to
+identify the preferred networks of Windows XP clients, and will compare it to a
+supplied list of common hotspot network names.  If the probed network name
+matches a common hotspot name, Hotspotter will act as an access point to allow
+the client to authenticate and associate.  Once associated, Hotspotter can be
+configured to run a command, possibly a script to kick off a DHCP daemon and
+other scanning against the new victim.
+
+
+3. Why a tool like this?
+------------------------
+The "secure" configuration of wireless networks cannot be accomplished without
+focusing on securing the wireless client operating system with personal
+firewalls and other protection mechanisms.  Organizations should not assume
+their wireless networks are secure simply because they are using strong
+authentication and encryption.  This vulnerability affects any known
+authentication measure and encryption protocol including PEAP, LEAP, EAP/TLS,
+TTLS, WEP, TKIP and others.
+
+
+4. Installation
+---------------
+See the INSTALL file for the complete installation instructions.  This version
+of Hotspotter relies on HostAP or the Prism54 drivers for Linux at this time.
+
+
+5. Usage
+--------
+- Insert your card into the pcmcia slot
+- Fire up Hotspotter with "hotspotter -h"
+
+root@box:~/hotspotter# ./hotspotter -h
+
+Welcome to the hotspot faker src/hotspotter v0.3
+(c) 2004 Max Moser / mmo[-at-]remote-exploit.org
+----------------------------------------------------------
+This tool takes a list of known hotspot network names (one per line) and
+passively listens for probe requests. When a Windows XP client probes for a
+matching network name, hotspotter can act as an access point to accept the
+following authentication and association from the victim client (prompt by
+default, -a to accept the first client request).  The -e option allows you to
+provide a command to be executed after switching on the access point mode.
+The -r option allows you to provide a command to be executed just before
+switching on the access point mode (such as a deauth client command).
+Only prism54 and hostap drivers are supported at this time.
+
+Usage: src/hotspotter [options]
+	-i <iface>       :   interface name
+	-f <essidlist>   :   file of ESSID's to match
+	-a               :   accept first request (no prompt)
+	-e <"command">   :   post-AP mode command
+	-r <"command">   :   pre-AP mode command
+
+root@box:~/hotspotter#
+
+
+When executing the pre-AP mode and post-AP mode commands, Hotspotter will set
+the following environment variables that can be used in shell scripts or as
+command-line arguments:
+
+HS_STAMAC - MAC address of the station sending the probe request
+HS_DSTMAC - Destination address of probe request (usually ff:ff:ff:ff:ff:ff)
+HS_BSSID  - BSSID in probe request (usually ff:ff:ff:ff:ff:ff)
+HS_ESSID  - ESSID includes in probe request (matches supplied essidlist entry)
+
+
+6. Further Usage/Ideas
+----------------------
+- This attack can be accelerated by sending clients a deauthenticate frame to
+  force them to probe for configured network names.
+- If you can establish a connection to the secure network (through compromised
+  authentication credentials or other means), you can use this attack to
+  establish a man-in-the-middle attack.
+- Use the -e feature of Hotspotter to run a script to launch a DHCP service and
+  then begin a vulnerability assessment scan on the target to discover
+  vulnerabilities.
+- A second wireless card can be used in conjunction with Hostpotter as the
+  "attacking" interface designated in the executed script.
+- If you wish to target a specific ESSID, limit your hotspot essid listing to
+  just the target ESSID.
+
+
+7. Additional Comments
+----------------------
+If you have interesting scripts for different hotspotter or other tools for
+Linux that are useful, please send me a copy. I am currently just started my
+dhcpd during my tests or configuring a second wlan card.
+
+8. Greetz
+---------
+Just like to thank all the people which contiuosly hit me to realize my ideas.
+My wife and my kids for the massive amount of patience :-).
+Greetings go out to all the geeks, which did not stop releasing just because it is not popular anymore. Specially drkubaki, mjm, abaddon, fx, icer,thc, teso and all the other cool people i've missed.

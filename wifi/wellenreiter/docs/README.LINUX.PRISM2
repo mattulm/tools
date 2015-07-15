@@ -1,0 +1,70 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+*                                                            *
+**************************************************************
+*       -[ Instructions for PRISM2 based cards ]-            *
+**************************************************************
+
+The Prism2 based cards are very widespread in the market, and are very
+cheap.  You have to use a specific driver version for this card,
+otherwise the rfmon mode will not support PF_PACKET mode, and
+wellenreiter won't run.  I did not have a big problem with this driver,
+but I haven't tested it very well.  Mac address changing was not
+possible for me.  Associating from within the scanner window is also
+not that easy, but it works for now. 
+To use it with wellenreiter do the following:
+
+	1. Get the correct driver (older wlan-ng driver DOES NOT work!)
+	   from:
+
+		ftp://ftp.linux-wlan.org/pub/linux-wlan-ng/linux-wlan-ng-0.1.14-pre2.tar.gz
+
+	   Again, older wlan-ng drivers DO NOT WORK!!
+	
+	2. Install the driver, I did not had any problems with that.
+	
+	3. Verify that your libpcap and tcpdump versions are compatible 
+	   with 802.11b packets.  Normally I prefer to download the current
+	   versions from http://www.tcpdump.org
+	   See Wellenreiter FAQ: 'What this message mean: "Warning: arptype
+				   801 not supported by libpcap -
+				   falling back to cooked socket"'.
+
+	4. Get the Net::Pcap perl module from http://www.cpan.org.
+	   See Wellenreiter FAQ: "Whats the error: Can't locate
+				   Net/Pcap.pm in @INC".
+
+	5. Test your driver, etc.
+	   See Wellenreiter FAQ  "General test procedure for rfmon mode".
+
+********************************************
+* How to bring it into rfmon mode manualy: *
+********************************************
+
+When you are sure that you have the correct drivers installed you can
+enter the following command as root:
+
+	/sbin/wlanctl-ng wlan0 lnxreq_wlansniff channel=6 prismheader=false keepwepflags=false enable=true
+
+You may want to change the channel to another, and you might have another
+name than wlan0 for your card.  Verify rfmon mode using ifconfig -a.
+If your monitoring mode is ok you should see something like this:
+
+	'Link encap:UNSPEC  HWaddr 00-03-4D-A7-55-F2-00-00-00-00-00-00-00-00-00-00'
+
+If you see something more like this:
+
+				'Link encap:Ethernet  HWaddr 00:04:43:A7:0C:F4'
+
+your card is not in rfmon mode, so recheck your driver installation,
+especially the version.
+
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+**************************************************************

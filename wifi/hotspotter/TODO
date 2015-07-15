@@ -1,0 +1,23 @@
+18-Sep-2004 -- jwright
+
+The pre-AP mode command would be a good time to send a deauth to the target
+station, forcing them to seek another AP for their association.  Something
+like:
+
+./hotspotter -i wlan0 -f ssidlist -a -r \
+  '/bin/sh -c file2air -i wlan0 -f deauth.bin -d $HS_STAMAC -b $HS_BSSID'
+
+Or a small shell script that does the same thing, maybe with some error
+checking.
+
+In order to do this, we need to know the BSSID of the network that the client
+is associated with.  Since a probe request is sent to the broadcast destination
+address and the broadcast BSSID, we can't get this information from that frame.
+As such, the HS_BSSID and HS_DSTMAC are pretty useless.
+
+Should check each frame for From DS bit and type/subtype data, and create a
+hash including the source address and BSSID.  Then, when we get a probe
+request from a station, lookup the corresponding BSSID from the hash, and set
+the HS_BSSID address appropriately.
+
+

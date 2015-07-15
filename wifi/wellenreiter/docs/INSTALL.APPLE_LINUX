@@ -1,0 +1,72 @@
+#### This document was provided by Corey Donohoe<atmos@atmos.org> ####
+#### Thanks a lot for submitting that documentation			  ####
+
+Sniffing 802.11b on an apple ibook2 with Debian/GNU Linux PPC
+
+I built/used all of this running Debian stable. September 17th 2002.  I used
+kernel version 2.4.19 from ftp.kernel.org/pub/linux/kernel/v2.4/  My first
+attempts at this failed due to firmware issues, so I've rewritten my how-to
+with a new patch to the orinoco drivers that makes the firmware issue
+non-existent.
+
+A. Get Wellenreiter 
+    I.  Download Wellenreiter(http://www.remote-exploit.org/)
+    II.  Read the files
+	a. docs/FAQ
+	b. docs/INSTALL.LINUX
+	c. docs/README.LINUX.LUCENTorHERMES
+    III.  Reread them.
+
+B. Get the debs you need.
+    I.  sudo apt-get install wireless-tools libgtk-perl tcpdump libpcap-dev
+    libpcap0 libnet-pcap-perl bison ethereal flex
+    II.  Nuke your libpcap libraries debian just installed for you
+	sudo rm -rf /usr/lib/libpcap.so*
+    III.  Everything currenly linked off of libpcap will break, but only for
+    a few minutes. 
+
+C. Get current libpcap/tcpdump installed
+    I.  Get the dailies for both from
+	a. http://www.libpcap.org/daily/libpcap-current.tar.gz
+	b. http://www.tcpdump.org/daily/tcpdump-current.tar.gz
+    II.  untar libpcap, cd into the directory
+	a. ./configure --prefix=/usr; make; sudo make install
+    III.  libpcap doesn't seem to make shared libraries by default.  
+	a. So create your own since all the modules are built
+	libtool --mode=link gcc -shared *.o -o libpcap.so -version-info 0:6:2
+	b. Manually install our new shared library.
+	sudo cp libpcap.so /usr/lib/
+	cd /usr/lib
+	sudo ln -s libpcap.so libpcap.so.0
+	sudo ln -s libpcap.so libpcap.so.0.6.2
+	sudo ldconfig
+    IV. untar tcpdump, cd into the directory
+	a. ./configure --prefix=/usr; make; sudo make install
+	b. test tcpdump to see what kinda output it's giving you 
+	    tcpdump --help 
+	c. Should yield something to the effect of
+	tcpdump version current-cvs.tcpdump.org.2002.07.30
+	libpcap version current-cvs.libpcap.org.2002.07.30
+
+D. Patching your kernel.
+    I. Grab ftp://ftp.kernel.org/pub/linux/kernel/v2.4/linux-2.4.19.tar.gz
+    II. Untar it to /usr/src/
+    III.  Download the orinoco patches.  
+    http://64.192.107.53/files/orinoco-2.4.19-airport.diff
+    IV. (cd /usr/src/linux-2.4.19/net/drivers/wireless; \
+	patch -p0 < /path/to/orinoco-2.4.19-airport.diff)
+    V. Rebuild your kernel, install it, reboot(don't forget ybin!).
+    VI. test your driver when you reboot issue the command
+	iwpriv ethX monitor 2 11
+	a. If it doesn't complain, continue on.  Otherwise, start the kernel
+	    patching process again =(		
+
+F. Running Wellenreiter
+    I.  Run it from the directory you originally unntarred.
+    sudo perl Wellenreiter.pl
+    II.  Click start and see what happens. Networks pop up for me.  =)
+
+version 0.1 - August 9th, 2002 - Corey Donohoe<atmos@atmos.org> MEM-B11
+version 0.2 - September 17th, 2002 - Corey Donohoe<atmos@atmos.org> DunnHall
+version 0.3 - October 20th, 2002 - Corey Donohoe<atmos@atmos.org> Home
+version 0.4 - April 17th, 2003 Max Moser<mmo@remote-exploit.org> Home

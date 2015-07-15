@@ -1,0 +1,77 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+*                                                            *
+**************************************************************
+*    -[ Instructions for Cisco / Aironet cards ]-            *
+**************************************************************
+
+The Cisco aironet cards are very well tested in combination with
+Wellenreiter.  In fact, most of the development is done based on aironet
+cards. This card/driver provides some nifty advanced features like
+on-the-fly change of mac address.
+
+****************************************
+* Installing a working driver version: *
+****************************************
+
+To get cisco / aironet cards to work, you have to do some stuff.
+
+	1. Get the driver files from:
+	  http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/airo-linux/airo-linux/kernel/airo.c?rev=1.34 
+ 	  http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/airo-linux/airo-linux/kernel/airo_cs.c?rev=1.4 
+ 	  http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/airo-linux/airo-linux/kernel/airo.h?rev=1.7
+
+ 	  Copy these to your pcmcia source tree or the kernel tree,
+	  where the oringinal airo.c is located.
+
+ 	  !!! Don't use the newest driver files, they don't work correctly !!!	
+ 
+	2. Read the README and install/update your driver with the driver
+	  you downloaded.
+
+	3. Verify the lipcap and tcpdump versions on your machine are
+	  compatible with 802.11b packets.  Normally I prefer to download
+	  the current versions from http://www.tcpdump.org
+	  See Wellenreiter FAQ: 'What this message mean: "Warning: arptype
+	  				801 not supported by libpcap -
+					falling back to cooked socket"'
+	
+	4. Get the Net::Pcap module for perl from http://www.cpan.org.
+	  See Wellenreiter FAQ:  "Whats the error: Can't locate
+					Net/Pcap.pm in @INC"
+	
+	5. Test your driver etc.
+	  See Wellenreiter FAQ:  "How can i test if my card works in
+	  				rfmon mode."
+
+
+#############################################
+# How to bring it into rfmon mode manually: #
+#############################################
+
+When you are sure that you have the correct drivers installed you can enter
+the following two commands as root:
+	
+	echo "Mode: r" > /proc/driver/aironet/eth1/Config 
+	echo "Mode: y" > /proc/driver/aironet/eth1/Config
+
+You may have to replace eth1 with a different interface name. 
+Verify rfmon mode is working using ifconfig -a. If your monitoring mode is ok
+you should see something like this:
+
+	'Link encap:UNSPEC  HWaddr 00-03-4D-A7-55-F2-00-00-00-00-00-00-00-00-00-00'
+
+If instead you see something like this:
+
+	'Link encap:Ethernet  HWaddr 00:04:43:A7:0C:F4'
+
+your card is not in rfmon mode - recheck your driver installation.
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+**************************************************************

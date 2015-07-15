@@ -1,0 +1,231 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+*      Thanks to ZENO for providing most of this text        *
+**************************************************************
+*               -[ Installation Instructions ]-              *
+**************************************************************
+
+Hardware:
+
+- A computer that will run linux and has PCMCIA.  This document does
+not cover PCI->PCMCIA adapters and Cardbus bridges.  It is assumed
+that PCMCIA support is built in (such as with a notebook computer).
+
+- PCMCIA Wireless Card.  Only one is needed, but you can work with
+two if you like to use one for scanning and one for joining nets.
+
+  One or more of these cards:
+	Lucent Orinoco Card (or similar hermes chipset based cards)
+	Cisco 350 Series client adapter (340 as well?)
+	Prism2/2.5 Chip based cards (Supported by the wlan-ng drivers)
+
+Software:
+
+Packages needed: 	
+Pcmcia-cs 3.1.33:	http://pcmcia-cs.sourceforge.net
+Gtk-Perl:		http://www.gtkperl.org/download.html
+Net-Pcap:		http://search.cpan.org/search?mode=module&query=net%3A%3Apcap
+Libpcap:	 	http://www.libpcap.org/daily/libpcap-current.tar.gz 
+Tcpdump:	 	http://www.tcpdump.org/daily/tcpdump-current.tar.gz
+Wellenreiter:		http://www.remote-exploit.org
+
+If you want to use Cisco/Aironet cards you should get the drivers from
+THESE URLs ONLY!!!:
+	http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/airo-linux/airo-linux/kernel/airo.c?rev=1.34
+	http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/airo-linux/airo-linux/kernel/airo_cs.c?rev=1.4
+	http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/airo-linux/airo-linux/kernel/airo.h?rev=1.7
+
+If you want to use Orinoco cards you have to get these patches:
+	Orinoco packet monitor patch (orinoco-09b-packet-1.diff)
+		http://airsnort.shmoo.com/orinocoinfo.html
+	Hermes.conf
+		http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/hermes.conf
+
+If you want to use Prism2/2.5 based cards you need to get this driver:
+	ftp://ftp.linux-wlan.org/pub/linux-wlan-ng/linux-wlan-ng-0.1.14-pre2.tar.gz
+
+
+Installation:
+
+	Install Linux, including development software, kernel
+	development and utilities packages.
+
+	Two methods for PCMCIA card services are covered:
+
+ 1. In-kernel PCMCIA services:
+    This should not be used with prism cards! This means that the kernel
+    is built with CONFIG_NET_RADIO=y.  If you are using Redhat 7.2 or
+    above, PCMCIA is built into the system.
+
+    You can also enable this in other distributions by recompiling the
+    kernel with the proper options set (not covered in this document).
+
+	1.1 Untar pcmcia-cs (Recommend putting it in /usr/src):
+		tar xzvf pcmcia-cs-3.1.33.tar.gz
+
+	1.2 Change to its directory:
+		cd pcmcia-cs-3.1.33
+
+	1.3 Configure the package. This is necessary so that you can
+	compile the modules with the correct options.
+		./Configure
+
+    If you want to use Orinoco cards:
+
+	1.4 This is a good time to apply the orinoco patch.
+	Copy the patch file to this directory, then:
+		patch p0 < orinoco-09b-packet-1.diff
+
+    If you want to use Cisco aironet cards:
+
+	1.4 Go into the wireless directory:
+		cd wireless
+	Copy the aironet driver files to this directory, overwriting
+	airo.c and airo_cs.c.  You may need to edit airo.c at this
+	point, so that it will compile.  Edit line 68, changing as
+	follows:
+
+		Original: 	remove:   __devexit_p(airo_pci_remove),
+		New:		remove:   __devexit(airo_pci_remove),
+
+    This is for all types of cards:
+
+	1.5 Compile the modules using this command (while still in
+	the pcmcia-cs-3.1.33/wireless directory):
+		make
+
+	Note: You may see some errors during this, but as long as it
+	keeps going, it is fine, as they are only warnings. If
+	everything compiles properly, you will now have a bunch of
+	files like airo.o, airo_cs.o, orinoco.o, etc. These are the
+	executable modules you will need to use. Now you have the
+	modules you need, and all you need to do is copy them to the
+	right locations so your card services will use them. 
+
+	1.6 Copy the modules to your modules directory like this
+	(overwriting existing files):
+									 
+    For Cisco cards you need to copy the following ones:
+		cp u airo.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia
+		cp u airo_cs.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia
+
+    For lucent ones you need those:
+		cp u hermes.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia
+		cp u orinoco.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia
+		cp u orinoco_cs.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia
+
+	1.7 Now you must create symlinks to these modules from two
+	other places (overwriting existing files), like:
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/airo.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/kernel/drivers/net/pcmcia/airo.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/airo_cs.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/pcmcia/airo_cs.ol
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/hermes.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/pcmcia/hermes.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/orincoco.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/pcmcia/orinoco.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/orinoco_cs.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/pcmcia/orinoco_cs.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/airo.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/wireless/airo.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/airo_cs.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/wireless/airo_cs.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/hermes.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/wireless/hermes.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/orinoco.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/wireless/orinoco.o
+		ln sbf /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/pcmcia/orinoco_cs.o /lib/modules/(Your kernel version numbers e.g. 2.4.7-10)/ kernel/drivers/net/wireless/orinoco_cs.o
+
+ 2. PCMCIA-CS card services by Gregory Hinds:
+	These are services external to the kernel, which provide
+	PCMCIA support for linux.  Start by using pcmcia-cs to compile
+	the modules you will be using for the card.  If you are using 
+	pcmcia-cs as your card services do the following steps:
+
+	2.1 Untar pcmcia-cs (Recommend putting it in /usr/src):
+		tar xzvf pcmcia-cs-3.1.33.tar.gz
+	2.2 Change to its directory:
+		cd pcmcia-cs-3.1.33
+	2.3 Configure the package. This is necessary so that you can
+	compile the modules with the correct options:
+		./Configure
+
+    If you want to use Orinoco cards:
+	2.4 This is a good time to apply the orinoco patch. Copy the
+	patch file to this directory and use this command:
+		patch p0 < orinoco-09b-packet-1.diff
+
+    If you want to use Cisco aironet cards:
+	2.4 Go into the wireless directory:
+		cd wireless
+	Copy the aironet driver files to this directory, overwriting
+	airo.c and airo_cs.c.  You may need to edit airo.c at this
+	point, so that it will compile.  Edit line 68, changing:
+		Original: 	remove:   __devexit_p(airo_pci_remove),
+		New:		remove:   __devexit(airo_pci_remove),
+
+    This is for all types of cards:
+	2.5 Compile the modules using this command
+	(while still in the pcmcia-cs-3.1.33/wireless directory):
+		make
+
+	Note: You may see some errors during this, but as long as it
+	keeps going, it is fine, as they are only warnings. 
+
+	2.6 Install pcmcia-cs using the command:
+		make install
+
+    If you want to use Orinoco cards:
+	2.7 Edit hermes.conf to take out all references to Intersil
+	drivers. Take out these lines:
+		# Third class of device : other Intersil clones
+		card "Intersil PRISM2 11 Mbps Wireless Adapter"
+		manfid 0x0156, 0x0002
+		bind "orinoco_cs"
+
+	2.8 Copy hermes.conf to /etc/pcmcia:
+		cp hermes.conf /etc/pcmcia
+
+    This is for all types of cards:
+	2.9 Reboot
+	
+	3.0 Now you can test to make sure the card will go into
+	promiscuous mode, by doing this:
+
+    For a Cisco 350/340 card (replace ethX with the proper device name):
+		echo Mode: r >> /proc/driver/aironet/ethX/Config
+		echo Mode: y >> /proc/driver/aironet/ethX/Config
+
+	It should now be in rfmon mode (promiscuous mode).
+	Check to see by issuing:
+		ifconfig -a
+
+	Output should look like: 
+		eth1	Link encap:UNSPEC	Hwaddr 00-03-4D-A7-55-F2-00-00-00-00-00-00-00-00-00-00
+	(Be sure it has the trailing zeros in the MAC address)
+
+    For a Lucent/Orinoco card:
+		iwpriv ethX monitor 2 11
+
+	It should now be in rfmon mode (promiscuous mode).
+	Check to see by issuing:
+		ifconfig -a
+
+	Output should look like: 
+		eth1	Link encap:UNSPEC	Hwaddr 00-03-4D-A7-55-F2-00-00-00-00-00-00-00-00-00-00
+	(Be sure it has the trailing zeros in the MAC address)
+
+	4.0 Install the rest of the packages:
+		Gtk-perl: Follow instructions included in the package.
+		  ( perl Makefile.pl then make then make install )
+		Libpcap: Follow instructions included in the package.
+		  ( ./configure then make then make install )
+		Tcpdump: Follow instructions included in the package.
+		  ( ./configure then make then make install )
+		Net::Pcap: Follow instructions included in the package.
+		  ( perl Makefile.PL then make then make install )
+
+	5.0 Now you can run Wellenreiter with the command:
+		perl Wellenreiter.pl
+
+	6.0 Have fun!
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+**************************************************************

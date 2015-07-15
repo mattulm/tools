@@ -1,0 +1,22 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  irc.freenode.net              *
+*                                                            *
+**************************************************************
+*                       -[ CHANGELOG ]-                      *
+**************************************************************
+
+# Started a new changelog since V1.8
+
+V1.9 
+Added the Userguide in the docs diretory, thnx JC
+Raised the packetcapture lenght from 400 to 65535 wich should not
+truncate anymore.
+Still adding some smaller fixes. Added a patch for better
+detection of prism2 based PCI and usb cards. Thnx for the fix of
+one of our users. I dont remember the name, sorry
+Choose card window fixed.
+IBSS/ESS text in window is now correct, sorry for that.
+

@@ -1,0 +1,225 @@
+
+Channel: 7
+ISAH: 0
+ISAP: 1
+WEP: 1
+beaconinterval: 0064
+bssmac: 0009b7555555
+cap_flag_CHANNEL_AGILITY: 0
+cap_flag_IS_POLLABLE: 0
+cap_flag_PBCC: 0
+cap_flag_POLLREQUEST: 0
+cap_flag_SHORT_PREAMBLE: 1
+destmac: ffffffffffff
+duration: 0000
+essid: 23df67h
+essid_len: 7
+flag_fragments: 0
+flag_from_ds: 0
+flag_more_data: 0
+flag_order: 0
+flag_pwrmgt: 0
+flag_retrans: 0
+flag_to_ds: 0
+flag_wep: 0
+frame_type: 
+isaccesspoint: 1
+lat: 45.50664466666667
+long: 6.70751164666667
+netnode: Gtk::CTreeNode=HASH(0x85ad12c)
+objnode: Gtk::CTreeNode=HASH(0x85ad15c)
+sendmac: 0009b7555555
+sequence_ctl: 444
+speed: 33.8
+time: Wed Oct 16 12:58:01 CEST 2002
+timestamp: 00002033e4a91aa9
+type_text: Beacon frame
+
+Arp_comment1: 165.1.0.42 requesting 165.1.2.204
+Arp_comment2: 165.1.0.30 requesting 165.1.0.20
+Arp_comment3: 165.1.0.30 requesting 165.1.2.254
+Arp_last_used: 3
+DHCPserverIdentifier_Ip_1: 165.1.0.30
+Dhcp_comment: Dhcp ACK
+Your_ip_addr: 0.0.0.0
+dnsServerList_Ip_1: 165.1.0.2
+dnsServerList_Ip_2: 165.1.0.3
+domainName: blah.net
+routerList_Ip_1: 165.1.0.1
+subnetMask_Ip_1: 0.0.0.0
+Channel: 3
+ISAH: 0
+ISAP: 1
+WEP: 0
+beaconinterval: 0064
+bssmac: 0060DD9232e6
+cap_flag_CHANNEL_AGILITY: 0
+cap_flag_IS_POLLABLE: 0
+cap_flag_PBCC: 0
+cap_flag_POLLREQUEST: 0
+cap_flag_SHORT_PREAMBLE: 0
+destmac: ffffffffffff
+duration: 0000
+essid: b485su394
+essid_len: 9
+flag_fragments: 0
+flag_from_ds: 0
+flag_more_data: 0
+flag_order: 0
+flag_pwrmgt: 0
+flag_retrans: 0
+flag_to_ds: 0
+flag_wep: 0
+frame_type: 
+isaccesspoint: 1
+lat: 47.6789733333333
+long: 9.51538533333333
+netnode: Gtk::CTreeNode=HASH(0x85ad474)
+objnode: Gtk::CTreeNode=HASH(0x85ad4a4)
+sendmac: 0060DD9232e6
+sequence_ctl: 3792
+speed: 21.5
+time: Wed Oct 16 12:59:04 CEST 2002
+timestamp: 0000501e90a3435f
+type_text: Beacon frame
+
+Channel: 6
+ISAH: 0
+ISAP: 1
+WEP: 0
+beaconinterval: 0064
+bssmac: 0030DEADBEEF
+cap_flag_CHANNEL_AGILITY: 0
+cap_flag_IS_POLLABLE: 0
+cap_flag_PBCC: 0
+cap_flag_POLLREQUEST: 0
+cap_flag_SHORT_PREAMBLE: 0
+destmac: ffffffffffff
+duration: 0000
+essid: Wireless
+essid_len: 8
+flag_fragments: 0
+flag_from_ds: 0
+flag_more_data: 0
+flag_order: 0
+flag_pwrmgt: 0
+flag_retrans: 0
+flag_to_ds: 0
+flag_wep: 0
+frame_type: 
+isaccesspoint: 1
+lat: 42.45748
+long: 9.7170563333333
+netnode: Gtk::CTreeNode=HASH(0x85ae494)
+objnode: Gtk::CTreeNode=HASH(0x85ae4c4)
+sendmac: 0030DEADBEEF
+sequence_ctl: 322
+speed: 05.8
+time: Wed Oct 16 12:59:21 CEST 2002
+timestamp: 00001090f2102785
+type_text: Beacon frame
+
+Channel: 6
+ISAH: 0
+ISAP: 1
+WEP: 0
+beaconinterval: 0064
+bssmac: 0030ab0ae7cc
+cap_flag_CHANNEL_AGILITY: 0
+cap_flag_IS_POLLABLE: 0
+cap_flag_PBCC: 0
+cap_flag_POLLREQUEST: 0
+cap_flag_SHORT_PREAMBLE: 0
+destmac: ffffffffffff
+duration: 0000
+essid: 101
+essid_len: 3
+flag_fragments: 0
+flag_from_ds: 0
+flag_more_data: 0
+flag_order: 0
+flag_pwrmgt: 0
+flag_retrans: 0
+flag_to_ds: 0
+flag_wep: 0
+frame_type: 
+isaccesspoint: 1
+lat: 41.49332
+long: 9.44171033333333
+objnode: Gtk::CTreeNode=HASH(0x85af0ac)
+sendmac: 0030ab0ae7cc
+sequence_ctl: 467
+speed: 00.0
+time: Wed Oct 16 12:59:28 CEST 2002
+timestamp: 000010bb35c22aa5
+type_text: Beacon frame
+
+Channel: 11
+ISAH: 1
+ISAP: 1
+WEP: 1
+beaconinterval: 0064
+bssmac: 0055aaf5fa07
+cap_flag_CHANNEL_AGILITY: 0
+cap_flag_IS_POLLABLE: 0
+cap_flag_PBCC: 0
+cap_flag_POLLREQUEST: 0
+cap_flag_SHORT_PREAMBLE: 1
+destmac: ffffffffffff
+duration: 0000
+essid: 3com
+essid_len: 4
+flag_fragments: 0
+flag_from_ds: 0
+flag_more_data: 0
+flag_order: 0
+flag_pwrmgt: 0
+flag_retrans: 0
+flag_to_ds: 0
+flag_wep: 0
+frame_type: 
+isaccesspoint: 1
+lat: 57.457583333333
+long: 9.55640333333333
+netnode: Gtk::CTreeNode=HASH(0x870e424)
+objnode: Gtk::CTreeNode=HASH(0x870e454)
+sendmac: 0055aaf5fa07
+sequence_ctl: 1580
+speed: 19.8
+time: Wed Oct 16 13:01:06 CEST 2002
+timestamp: 0000d0585e96a0f4
+type_text: Beacon frame
+
+Channel: 1
+ISAH: 0
+ISAP: 1
+WEP: 1
+beaconinterval: 0064
+bssmac: 004096555555
+cap_flag_CHANNEL_AGILITY: 0
+cap_flag_IS_POLLABLE: 0
+cap_flag_PBCC: 0
+cap_flag_POLLREQUEST: 0
+cap_flag_SHORT_PREAMBLE: 1
+destmac: ffffffffffff
+duration: 0000
+essid: stop
+essid_len: 4
+flag_fragments: 0
+flag_from_ds: 0
+flag_more_data: 0
+flag_order: 0
+flag_pwrmgt: 0
+flag_retrans: 0
+flag_to_ds: 0
+flag_wep: 0
+frame_type: 
+isaccesspoint: 1
+netnode: Gtk::CTreeNode=HASH(0x87339b0)
+objnode: Gtk::CTreeNode=HASH(0x8737f70)
+sendmac: 004096555555
+sequence_ctl: 213
+time: Mon Oct 02 10:58:05 CET 2002
+timestamp: 000000029b6a22e1
+type_text: Beacon frame
+

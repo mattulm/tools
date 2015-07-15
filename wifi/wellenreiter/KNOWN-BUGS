@@ -1,0 +1,18 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  irc.freenode.net              *
+*                                                            *
+**************************************************************
+*                      -[ KNOWN-BUGS ]-                      *
+**************************************************************
+
+When you insert two cisco cards at the same time, it won't
+work, this is bacasue of the wifi interface stuff. Don't had
+the time for that, but it is not important.
+
+Greetings
+
+Max
+

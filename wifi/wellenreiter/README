@@ -1,0 +1,87 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  irc.freenode.net              *
+*                                                            *
+**************************************************************
+*                       -[ MAIN README ]-                    *
+**************************************************************
+
+Documentation:
+	Check out the userguide in the docs directory
+
+About Wellenreiter:
+	Wellenreiter is a gtkperl program that makes the discovery and auditing
+	of 802.11b wireless networks as easy as possible. For discovery of the 
+	accesspoints / networks / ad-hoc cards, Wellenreiter has an amazingly 
+	easy to use scanner window, which searches for any accesspoint within 
+        the range of the scanning device.  It detects and differentiates essid 
+	broadcasting and non-broadcasting wireless networks. The manufacturer 
+	is detected by the device's MAC address. WEP and BSS / IBSS detection 
+	is also implemented. Detecting essid's of non-broadcasting networks is 
+	possible and gps support is also built in (Requires gpsd). 
+	Wellenreiter is the first Wireless scanner that does not need to be 
+	configured anymore. Its amazing autodetection takes care about taking
+	the correct cardtype and using the right comands. Lucent/Orinocco, Cisco
+	and Prism2/2.5 (WLAN-NG drivers) based Cards are supported now. 
+	NO, hosap drivers actualy don't work in this version, stay tuned for that.
+
+	The Networks with a red symbol are "non-essid-broadcasting" ones.  This
+	means the accesspoint does not send out the essid network name for
+	security reasons.  Non-broadcasting networks can be only detected by
+	using the raw-sniffing mode.  Green symbols are shown for a broadcasting
+	network.
+
+	The distinction between WEP/cleartext sending accesspoints is indicated
+	by the word "ON" or "OFF" and a little open or closed lock icon. 
+	
+	AD-Hoc stations (BSS) have different icons than real accesspoints (IBSS).
+
+	Channels that are holding new objects are colored red until you select it.
+
+	The pkt indicator on the right side of the listview alternates between the 
+	two characters "+" and "*". When it alternates, this accesspoint is sending
+	traffic. So its a traffic indication.
+
+	If you click on an object in the treeview you will get the detail window. 
+	This window refresh after a while. Keep it open to see arp and dhcp traffic.
+
+	Use the logwindow to take care of all your findings and the trafficwindow
+	to see what packets are coming in.
+
+	Oh...one word about saving....it automaticly saves a dump and a savefile to your 
+	homedrive. 
+
+Where to get:
+	Get the official version and status at: http://www.remote-exploit.org
+	Get the actual cvs version from sourceforge.org                      
+
+Authors:
+	Max Moser :		mmo@remote-exploit.org
+	Steffen Kewitz :	steffen@remote-exploit.org
+	Martin J. Muench :	mjm@remote-exploit.org	 
+
+Features:
+	Supported Platforms:
+		-Linux
+
+	Supported Cards:
+		-Cisco based cards
+		-Lucent based cards
+		-Prism2 based cards (Wlan-ng drivers only)
+
+	See the specific README'S for further information. 
+
+Greetings to:
+	Dunja, Kerberos, Nicole, Dario, Marc Ruef, Jesse, #wellenreiter on
+	openprojects.net, Ryke, DukeCS, Ingo Scholz, IBM T21, Gürkan, Markus,
+	Agent Schmied, Jürg Äbi, anyone else that supports the project in any
+	way. 
+
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  irc.freenode.net              *
+**************************************************************

@@ -1,0 +1,164 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+*                                                            *
+**************************************************************
+*                            -[ FAQ ]-                       *
+**************************************************************
+
+**********************************************
+*  'Is my card supported / What do i need'   *
+**********************************************
+
+Basically all 3 major card types are supported now: Prism2,
+Hermes/Lucent and Cisco.  You will need specific drivers or patches.
+See the corresponding README (eg. for Cisco cards under linux, look
+at README.LINUX.CISCO).
+
+*******************************************************
+*  'Scanner window only shows...waiting for packets'  *
+*******************************************************
+
+Problem:
+	After pressing the start button in the scanner window,
+	the status bar shows 'waiting for packets' but nothing
+	happens (or you just want to see if the rfmon mode works
+	correctly).
+	
+Solution:
+	Most of the time this happens when your libpcap cannot provide
+	the 802.11b raw packets.  This can happen for multiple reasons.
+	You may have used the wrong driver, or you don't have the right
+	command to bring the card into monitoring mode.
+
+	For finding out what the problem is, do the following:
+		1. Be sure that you have the correct driver.
+		   (see the corresponding README)
+		2. Bring your card into rfmon mode manually.
+		   (see the corresponding card's README)
+		3. Verify the rfmon mode using ifconfig -a. 
+		   If your monitoring mode is ok you should see
+		   something like this:
+
+			'Link encap:UNSPEC  HWaddr 00-03-4D-A7-55-F2-00-00-00-00-00-00-00-00-00-00'
+		   If you see something more like this:
+
+			'Link encap:Ethernet  HWaddr 00:04:43:A7:0C:F4'
+
+		   Go back to point 1 and follow the guide again, because
+		   your card is not in rfmon mode.
+		4. When point 3 is ok you should enter:
+
+			'ifconfig interfacename up'
+
+		   (Replace interfacename with the propper name, eg. eth1)
+
+			'tcpdump -i interface'
+
+		   If tcpdump now shows you some lines like:
+
+				'15:22:51.659691 [|802.11]' 
+
+		   all is good, and wellenreiter should also work fine.
+
+	Give it try again, or maybe try to reconfigure wellenreiter
+	using 'perl Makefile.pl'.  If still not working, either tcpdump
+	or your libpcap is absent or is too old.  See the FAQ entry
+			'arptype 801 not supported by libpcap'
+
+
+********************************************
+*  'arptype 801 not supported by libpcap'  *
+********************************************
+
+Problem:
+	When I start the scanner window I get this error on the console:
+		"Warning: arptype 801 not supported by libpcap -
+		 falling back to cooked socket"
+	
+Solution:
+	Your installed libpcap is too old.  Get a new one from
+	http://www.tcpdump.org.  Also get a new tcpdump (compile
+	libpcap first, then tcpdump).  Don't forget to remove
+	your old libpcap first, or add the proper directory to the
+	configure scripts when compiling the programs  (eg. if your
+	old lipcap is in /usr/lib, you should run configure from
+	libpcap / tcpdump like: './configure -prefix=/usr'.
+	But again, removing the old version is easier.
+
+
+***********************************
+*  'p is not of type pcap_tPtr '  *
+***********************************
+
+Problem:
+	Every time I hit start in the scanner, I get this: 
+             sh: -c: line 2: syntax error: unexpected end of file 
+             p is not of type pcap_tPtr at Wellenreiter.pl line 
+
+Solution:
+	Either you have missconfigured the interfaces in the
+	'perl Makefile.pl' process (so re-run it), or your card
+	is not working, please see the 'General test procedure for
+	rfmon mode' section to debug your problem. 
+             
+
+****************************************
+*  'Can't locate Net/Pcap.pm in @INC'  *
+****************************************
+
+Problem:
+	When I run 'perl Wellenreiter.pl' I get the following error
+	(the paths could differ):
+
+		Can't locate Net/Pcap.pm in @INC (@INC contains:
+		/usr/lib/perl5/5.6.1/i386-linux /usr/lib/perl5/5.6.1 /usr/lib/perl5/5.6.1
+		/usr/lib/perl5/site_perl/5.6.1/i386-linux /usr/lib/perl5/site_perl/5.6.1
+		/usr/lib/perl5/site_perl .) at Wellenreiter.pl line 86.
+		BEGIN failed --compilation aborted at Wellenreiter.pl line 86
+
+Solution: 
+	Perl cannot find the required Net::Pcap module in its search
+	path (@INC is the searchpath).  Install the Net::Pcap module.
+	You can get it from http://search.cpan.org and compile it, 
+	or get it directly from MCPAN using the following commands:
+
+		'perl -MCPAN -e shell'
+		  (You may have to configure some things if you have
+		    never used MCPAN before.)
+		'force install Net::Pcap'
+		  (The force is needed because test #7 sometimes fails
+		    in newer environments.)
+		'exit'
+
+*************************************************************
+*  'Packets in scanner are counting up but no nets visible' *
+*************************************************************
+
+Problem:
+	When you start the scanner/sniffer, you will see on the
+	status bar the number of received packets is increasing,
+	but no networks are displayed.
+	
+Solution:
+	In the most cases your card is not in rfmon mode, so you are
+	sniffing standard ethernet packets instead of 802.11b packets.
+	Please verify your installation and check that rfmon mode
+	works.  See other points in the faq about that.
+
+*****************************************************
+*   	 'OSX version available or planned ?' 	  *
+*****************************************************
+
+	At the moment we cannot do an OSX version, because I don't
+	know how to bring the cards into rfmon mode under OSX.
+	If you can provide information about that, we will port it. 
+
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+**************************************************************

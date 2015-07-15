@@ -1,0 +1,74 @@
+**************************************************************
+* Wellenreiter - advanced 802.11b audit tool - Wellenreiter  *
+**************************************************************
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+*                                                            *
+**************************************************************
+*       -[ Instructions for Hermes based cards ]-            *
+**************************************************************
+
+The Lucent/Hermes based cards are very widespread in the market, too,
+but are more expensive than Prism2 based cards.  These cards don't
+produce "crap packets" like the Prism2, so i believe Cisco and Lucent
+cards are well worth the money.  You have to patch your driver for
+this card, otherwise rfmon mode will not support PF_PACKET mode.
+
+****************************************
+*  Patching your Lucent/Hermes driver  *
+****************************************
+
+	1. Get the PF_PACKET patch from:
+
+		http://airsnort.shmoo.com/orinocoinfo.html
+
+		It's important to get the newest!
+
+	2. Install the patched driver.
+	
+	3. Verify that your libpcap and tcpdump versions are compatible
+	   with 802.11b packets.  Normally I prefer to download the
+	   current versions from http://www.tcpdump.org
+	   See Wellenreiter FAQ: 'What this message mean: "Warning: arptype
+				   801 not supported by libpcap -
+				   falling back to cooked socket"'.
+
+	4. Get the Net::Pcap perl module from http://www.cpan.org.
+	   See Wellenreiter FAQ: "Whats the error: Can't locate
+				   Net/Pcap.pm in @INC".
+	
+	5. Test your driver, etc.
+	   See Wellenreiter FAQ  "General test procedure for rfmon mode".
+
+	6. We're told that some Lucent user had strange problems, and
+	   when downgrading the firware, all works.  Please give us the
+	   kernel, /pcmcia, /firmware and patch level of your combinations.
+
+*******************************************
+* How to put it into rfmon mode manually: *
+*******************************************
+
+When you are sure that you have the correct drivers installed you can
+enter the following command as root:
+
+	iwpriv eth1 monitor 2 11
+
+You may need to replace eth1 with your corresponding interface name,
+and 11 is the channel you want to sniff, change it as you desire.
+Verify rfmon mode using ifconfig -a. If your monitoring mode is ok you
+should see something like this:
+
+	'Link encap:UNSPEC  HWaddr 00-03-4D-A7-55-F2-00-00-00-00-00-00-00-00-00-00'
+
+If you see something more like this:
+
+	'Link encap:Ethernet  HWaddr 00:04:43:A7:0C:F4'
+
+your card is not in rfmon mode (recheck your driver and patch
+installation).
+
+**************************************************************
+* If you have further questions, please contact the team at  *
+*        Homepage: http://www.remote-exploit.org             *
+*        IRC: #wellenreiter @  openprojects.net              *
+**************************************************************
